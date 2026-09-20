@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Soporte de Astria | GALUMIO</title>
+
+  <meta
+    name="description"
+    content="Centro de soporte oficial de Astria, una aplicación desarrollada por GALUMIO."
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at 15% 10%, rgba(99, 102, 241, 0.18), transparent 35%),
+        radial-gradient(circle at 90% 90%, rgba(56, 189, 248, 0.12), transparent 35%),
+        #070916;
+      color: #f5f7ff;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    header {
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      background: rgba(7, 9, 22, 0.88);
+    }
+
+    .nav {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 22px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: 4px;
+      font-size: 20px;
+    }
+
+    .logo {
+      width: 42px;
+      height: 42px;
+      border-radius: 13px;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      letter-spacing: 0;
+      background: linear-gradient(135deg, #6366f1, #38bdf8);
+      box-shadow: 0 8px 30px rgba(56, 189, 248, 0.2);
+    }
+
+    .back {
+      color: #c5cae3;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .back:hover {
+      color: #ffffff;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 24px 100px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 8px 14px;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 999px;
+      color: #cfd5ff;
+      background: rgba(255,255,255,0.04);
+      margin-bottom: 25px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #38bdf8;
+      box-shadow: 0 0 15px #38bdf8;
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 74px);
+      line-height: 1;
+      margin-bottom: 22px;
+      letter-spacing: -2px;
+    }
+
+    .gradient {
+      background: linear-gradient(90deg, #ffffff, #a5b4fc, #38bdf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .intro {
+      color: #aeb7d2;
+      font-size: 19px;
+      max-width: 720px;
+      margin-bottom: 45px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.045);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 22px;
+      padding: 30px;
+      margin-bottom: 22px;
+    }
+
+    h2 {
+      font-size: 23px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: #aeb7d2;
+      margin-bottom: 12px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 12px 19px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      background: linear-gradient(135deg, #6366f1, #38bdf8);
+      color: #ffffff;
+    }
+
+    .button-secondary {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 11px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.15);
+      color: #dce2ff;
+    }
+
+    .small {
+      font-size: 14px;
+      color: #7f89aa;
+    }
+
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 30px 24px;
+      text-align: center;
+      color: #747e9d;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .nav {
+        padding: 18px;
+      }
+
+      .brand {
+        font-size: 17px;
+        letter-spacing: 3px;
+      }
+
+      main {
+        padding: 55px 20px 75px;
+      }
+
+      .card {
+        padding: 23px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav class="nav">
+    <a class="brand" href="/">
+      <span class="logo">G</span>
+      GALUMIO
+    </a>
+
+    <a class="back" href="/astria/">
+      ← Volver a Astria
+    </a>
+  </nav>
+</header>
+
+<main>
+
+  <div class="badge">
+    <span class="dot"></span>
+    Soporte oficial
+  </div>
+
+  <h1>
+    Soporte de <span class="gradient">Astria</span>
+  </h1>
+
+  <p class="intro">
+    Estamos para ayudarte. Si tenés alguna consulta, problema técnico
+    o sugerencia relacionada con Astria, podés encontrar aquí las
+    principales opciones de soporte.
+  </p>
+
+  <section class="card">
+    <h2>¿Necesitás ayuda?</h2>
+
+    <p>
+      Si Astria no funciona como esperabas, encontraste un error o
+      necesitás asistencia con alguna función de la aplicación,
+      contactanos indicando qué ocurrió y, si es posible, el modelo
+      de tu dispositivo y la versión del sistema operativo.
+    </p>
+
+    <a
+      class="button"
+      href="mailto:contacto.aeternalabs@gmail.com?subject=Soporte%20Astria"
+    >
+      Contactar soporte
+    </a>
+  </section>
+
+  <section class="card">
+    <h2>Problemas con la aplicación</h2>
+
+    <p>
+      Antes de contactarnos, verificá que estés utilizando la versión
+      más reciente de Astria y que tu dispositivo tenga conexión a
+      Internet cuando la función que intentás utilizar la requiera.
+    </p>
+
+    <p>
+      Si el problema continúa, envianos una descripción de lo ocurrido.
+      Cuanta más información nos brindes, más fácil será investigar el
+      inconveniente.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Privacidad</h2>
+
+    <p>
+      Podés consultar información sobre el tratamiento de datos y la
+      privacidad de Astria en nuestra Política de Privacidad.
+    </p>
+
+    <a
+      class="button-secondary"
+      href="/astria/privacidad/"
+    >
+      Ver Política de Privacidad
+    </a>
+  </section>
+
+  <section class="card">
+    <h2>Sugerencias</h2>
+
+    <p>
+      Astria continúa evolucionando. Si tenés una idea, sugerencia o
+      función que te gustaría encontrar en futuras versiones, también
+      podés escribirnos.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Sobre Astria</h2>
+
+    <p>
+      Astria es un producto digital desarrollado por GALUMIO.
+    </p>
+
+    <a class="button-secondary" href="/astria/">
+      Conocer Astria
+    </a>
+  </section>
+
+  <p class="small">
+    Última actualización: septiembre de 2026.
+  </p>
+
+</main>
+
+<footer>
+  © 2026 GALUMIO · Apps · Software · AI · Games
+</footer>
+
+</body>
+</html>
