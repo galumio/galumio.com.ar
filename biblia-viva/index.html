@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Biblia Viva — Historias que cobran vida | GALUMIO</title>
+
+  <meta
+    name="description"
+    content="Biblia Viva es una experiencia bíblica interactiva para adultos y niños, con lectura, audio, historias, juegos, favoritos y contenido offline."
+  >
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+      background:
+        radial-gradient(circle at 15% 15%, rgba(235, 172, 75, .12), transparent 32%),
+        radial-gradient(circle at 85% 30%, rgba(69, 132, 255, .10), transparent 30%),
+        #080a13;
+      color: #f7f7fb;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(8, 10, 19, .84);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    nav {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      font-weight: 800;
+      letter-spacing: .14em;
+    }
+
+    .brand-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 13px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #655cff, #29baff);
+      box-shadow: 0 10px 30px rgba(71,101,255,.3);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      color: #c6c8d5;
+      font-size: 15px;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    .hero {
+      min-height: 780px;
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      gap: 75px;
+      align-items: center;
+      padding: 85px 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 9px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      color: #e5cfaa;
+      margin-bottom: 26px;
+    }
+
+    .eyebrow-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #f0b95d;
+      box-shadow: 0 0 15px #f0b95d;
+    }
+
+    h1 {
+      font-size: clamp(62px, 8vw, 118px);
+      line-height: .9;
+      letter-spacing: -.06em;
+      margin-bottom: 30px;
+      background: linear-gradient(90deg, #ffffff, #f0dfbd, #e4ae55);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero h2 {
+      font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.12;
+      letter-spacing: -.035em;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      max-width: 680px;
+      color: #a2a6b8;
+      font-size: 19px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 36px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 24px;
+      border-radius: 13px;
+      font-weight: 700;
+      transition: .2s ease;
+    }
+
+    .button-primary {
+      background: linear-gradient(135deg, #d89a3e, #f0bd68);
+      color: #171008;
+      box-shadow: 0 12px 35px rgba(220,155,55,.18);
+    }
+
+    .button-secondary {
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.04);
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    /* PHONE */
+
+    .phone-wrap {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .orb {
+      position: absolute;
+      width: 440px;
+      height: 440px;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle, rgba(226,166,71,.20), transparent 67%);
+    }
+
+    .phone {
+      position: relative;
+      width: 305px;
+      min-height: 620px;
+      padding: 12px;
+      border-radius: 46px;
+      background: linear-gradient(145deg, #38342d, #151515);
+      box-shadow:
+        0 45px 100px rgba(0,0,0,.55),
+        0 0 0 1px rgba(255,255,255,.12);
+      transform: rotate(3deg);
+    }
+
+    .screen {
+      min-height: 596px;
+      border-radius: 36px;
+      overflow: hidden;
+      padding: 34px 21px;
+      text-align: center;
+      background:
+        radial-gradient(circle at 50% 15%, rgba(226,169,78,.23), transparent 30%),
+        linear-gradient(180deg, #181713, #0d0e13);
+    }
+
+    .book {
+      font-size: 67px;
+      margin: 38px 0 14px;
+    }
+
+    .screen-title {
+      font-size: 28px;
+      font-weight: 800;
+    }
+
+    .screen-sub {
+      color: #aaa79d;
+      font-size: 14px;
+      margin-top: 3px;
+    }
+
+    .app-card {
+      margin-top: 31px;
+      padding: 18px;
+      text-align: left;
+      border-radius: 19px;
+      border: 1px solid rgba(255,255,255,.09);
+      background: rgba(255,255,255,.05);
+    }
+
+    .app-card small {
+      color: #aaa79c;
+    }
+
+    .app-card strong {
+      display: block;
+      font-size: 18px;
+      margin-top: 5px;
+    }
+
+    section {
+      padding: 105px 0;
+    }
+
+    .section-label {
+      color: #dba552;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    .section-title {
+      font-size: clamp(38px, 5vw, 62px);
+      letter-spacing: -.045em;
+      line-height: 1.05;
+      max-width: 800px;
+      margin-bottom: 24px;
+    }
+
+    .section-intro {
+      color: #9da1b2;
+      max-width: 760px;
+      font-size: 18px;
+    }
+
+    /* MODES */
+
+    .modes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+      margin-top: 55px;
+    }
+
+    .mode {
+      position: relative;
+      overflow: hidden;
+      min-height: 390px;
+      padding: 38px;
+      border-radius: 28px;
+      border: 1px solid rgba(255,255,255,.09);
+      background: rgba(255,255,255,.035);
+    }
+
+    .mode-icon {
+      font-size: 42px;
+      margin-bottom: 28px;
+    }
+
+    .mode h3 {
+      font-size: 34px;
+      margin-bottom: 15px;
+      letter-spacing: -.03em;
+    }
+
+    .mode p {
+      color: #999eaf;
+      max-width: 500px;
+    }
+
+    .mode-list {
+      margin-top: 28px;
+      display: grid;
+      gap: 11px;
+      color: #c8cad5;
+    }
+
+    .mode-list span::before {
+      content: "✓";
+      color: #e1aa54;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+
+    /* FEATURES */
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 55px;
+    }
+
+    .feature {
+      min-height: 220px;
+      padding: 29px;
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.025);
+      transition: .25s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+      background: rgba(255,255,255,.045);
+      border-color: rgba(224,171,86,.25);
+    }
+
+    .feature-icon {
+      font-size: 29px;
+      margin-bottom: 21px;
+    }
+
+    .feature h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      color: #969aaa;
+    }
+
+    /* KIDS */
+
+    .kids {
+      border-top: 1px solid rgba(255,255,255,.07);
+      border-bottom: 1px solid rgba(255,255,255,.07);
+      background:
+        radial-gradient(circle at 80% 50%, rgba(65,145,255,.08), transparent 30%),
+        rgba(255,255,255,.012);
+    }
+
+    .kids-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 75px;
+      align-items: center;
+    }
+
+    .stories {
+      display: grid;
+      gap: 13px;
+    }
+
+    .story {
+      padding: 18px 21px;
+      border-radius: 17px;
+      border: 1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.035);
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .story span {
+      font-size: 25px;
+    }
+
+    .story strong {
+      font-size: 16px;
+    }
+
+    /* OFFLINE */
+
+    .offline-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .offline-card {
+      padding: 40px;
+      border-radius: 28px;
+      border: 1px solid rgba(255,255,255,.09);
+      background:
+        linear-gradient(145deg, rgba(219,164,79,.09), rgba(62,125,255,.04));
+    }
+
+    .offline-card h3 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .offline-card p {
+      color: #999eaf;
+    }
+
+    /* COMING */
+
+    .coming {
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,.07);
+      background: rgba(255,255,255,.012);
+    }
+
+    .coming .section-title,
+    .coming .section-intro {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .coming .buttons {
+      justify-content: center;
+    }
+
+    footer {
+      border-top: 1px solid rgba(255,255,255,.08);
+      padding: 38px 0;
+      color: #7f839b;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #a6abc2;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    @media (max-width: 900px) {
+      .hero,
+      .kids-grid,
+      .offline-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        text-align: center;
+      }
+
+      .hero p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero .buttons {
+        justify-content: center;
+      }
+
+      .modes {
+        grid-template-columns: 1fr;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .nav-links {
+        gap: 14px;
+        font-size: 13px;
+      }
+
+      .nav-links .optional {
+        display: none;
+      }
+
+      .phone {
+        width: 280px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+
+      <a class="brand" href="/">
+        <div class="brand-icon">G</div>
+        GALUMIO
+      </a>
+
+      <div class="nav-links">
+        <a class="optional" href="#experiencia">Experiencia</a>
+        <a href="#ninos">Niños</a>
+        <a href="#funciones">Funciones</a>
+        <a href="/">GALUMIO</a>
+      </div>
+
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+
+  <div class="container">
+
+    <section class="hero">
+
+      <div>
+
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          Un producto de GALUMIO
+        </div>
+
+        <h1>
+          BIBLIA<br>VIVA
+        </h1>
+
+        <h2>
+          Historias que cobran vida.
+        </h2>
+
+        <p>
+          Una experiencia bíblica creada para adultos y niños.
+          Leé, escuchá, buscá, guardá tus versículos favoritos
+          y descubrí historias interactivas a través de juegos
+          y actividades.
+        </p>
+
+        <div class="buttons">
+
+          <a class="button button-primary" href="#experiencia">
+            Descubrir Biblia Viva
+          </a>
+
+          <a class="button button-secondary" href="/">
+            Conocer GALUMIO
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="phone-wrap">
+
+        <div class="orb"></div>
+
+        <div class="phone">
+
+          <div class="screen">
+
+            <div class="book">
+              📖
+            </div>
+
+            <div class="screen-title">
+              BIBLIA VIVA
+            </div>
+
+            <div class="screen-sub">
+              Historias que cobran vida
+            </div>
+
+            <div class="app-card">
+
+              <small>
+                Versículo del día
+              </small>
+
+              <strong>
+                Descubrí un nuevo mensaje cada día.
+              </strong>
+
+            </div>
+
+            <div class="app-card">
+
+              <small>
+                Elegí tu experiencia
+              </small>
+
+              <strong>
+                📖 Lectura &nbsp; · &nbsp; ⭐ Modo Niños
+              </strong>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <!-- EXPERIENCE -->
+
+  <section id="experiencia">
+
+    <div class="container">
+
+      <div class="section-label">
+        Dos experiencias
+      </div>
+
+      <h2 class="section-title">
+        Una Biblia para grandes y chicos.
+      </h2>
+
+      <p class="section-intro">
+        Biblia Viva combina herramientas de lectura con una experiencia
+        interactiva especialmente creada para que los más chicos puedan
+        descubrir historias bíblicas jugando.
+      </p>
+
+
+      <div class="modes">
+
+        <article class="mode">
+
+          <div class="mode-icon">
+            📖
+          </div>
+
+          <h3>
+            Modo Lectura
+          </h3>
+
+          <p>
+            Una experiencia completa para leer y explorar la Biblia
+            desde tu dispositivo.
+          </p>
+
+          <div class="mode-list">
+            <span>Antiguo y Nuevo Testamento</span>
+            <span>Lectura por capítulos y versículos</span>
+            <span>Audio de capítulos</span>
+            <span>Búsqueda de versículos</span>
+            <span>Favoritos</span>
+            <span>Español e inglés</span>
+          </div>
+
+        </article>
+
+
+        <article class="mode" id="ninos">
+
+          <div class="mode-icon">
+            ⭐
+          </div>
+
+          <h3>
+            Modo Niños
+          </h3>
+
+          <p>
+            Historias bíblicas transformadas en pequeñas aventuras
+            interactivas para aprender mientras juegan.
+          </p>
+
+          <div class="mode-list">
+            <span>Historias ilustradas</span>
+            <span>Juegos interactivos</span>
+            <span>Desafíos y actividades</span>
+            <span>Estrellas de progreso</span>
+            <span>Experiencia simple y visual</span>
+            <span>Contenido pensado para niños</span>
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- KIDS STORIES -->
+
+  <section class="kids">
+
+    <div class="container kids-grid">
+
+      <div>
+
+        <div class="section-label">
+          Modo Niños
+        </div>
+
+        <h2 class="section-title">
+          Aprender jugando.
+        </h2>
+
+        <p class="section-intro">
+          Cada historia combina narración y juego para que los chicos
+          puedan participar de lo que están descubriendo.
+        </p>
+
+      </div>
+
+
+      <div class="stories">
+
+        <div class="story">
+          <span>🌎</span>
+          <strong>La Creación</strong>
+        </div>
+
+        <div class="story">
+          <span>🦁</span>
+          <strong>El Arca de Noé</strong>
+        </div>
+
+        <div class="story">
+          <span>🌊</span>
+          <strong>Moisés y el Mar Rojo</strong>
+        </div>
+
+        <div class="story">
+          <span>⚔️</span>
+          <strong>David y Goliat</strong>
+        </div>
+
+        <div class="story">
+          <span>⭐</span>
+          <strong>El Nacimiento de Jesús</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FEATURES -->
+
+  <section id="funciones">
+
+    <div class="container">
+
+      <div class="section-label">
+        Funciones
+      </div>
+
+      <h2 class="section-title">
+        Mucho más que una app de lectura.
+      </h2>
+
+      <p class="section-intro">
+        Herramientas pensadas para que cada persona pueda disfrutar
+        la experiencia de la forma que prefiera.
+      </p>
+
+
+      <div class="features">
+
+        <article class="feature">
+          <div class="feature-icon">🔊</div>
+          <h3>Audio</h3>
+          <p>
+            Escuchá capítulos y versículos directamente desde la aplicación.
+          </p>
+        </article>
+
+
+        <article class="feature">
+          <div class="feature-icon">🔎</div>
+          <h3>Búsqueda</h3>
+          <p>
+            Encontrá versículos y textos de manera rápida y sencilla.
+          </p>
+        </article>
+
+
+        <article class="feature">
+          <div class="feature-icon">♥</div>
+          <h3>Favoritos</h3>
+          <p>
+            Guardá los versículos que quieras volver a leer.
+          </p>
+        </article>
+
+
+        <article class="feature">
+          <div class="feature-icon">☁</div>
+          <h3>Modo offline</h3>
+          <p>
+            Descargá contenido para continuar leyendo incluso sin conexión.
+          </p>
+        </article>
+
+
+        <article class="feature">
+          <div class="feature-icon">🌐</div>
+          <h3>Español e inglés</h3>
+          <p>
+            Cambiá el idioma de la experiencia directamente desde la app.
+          </p>
+        </article>
+
+
+        <article class="feature">
+          <div class="feature-icon">🏆</div>
+          <h3>Progreso</h3>
+          <p>
+            Los chicos pueden completar historias y conseguir estrellas.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- OFFLINE -->
+
+  <section>
+
+    <div class="container offline-grid">
+
+      <div>
+
+        <div class="section-label">
+          Donde estés
+        </div>
+
+        <h2 class="section-title">
+          Tu Biblia también puede acompañarte sin conexión.
+        </h2>
+
+        <p class="section-intro">
+          Biblia Viva permite descargar contenido para poder seguir
+          leyendo cuando no tenés acceso a Internet.
+        </p>
+
+      </div>
+
+
+      <div class="offline-card">
+
+        <h3>
+          📱 Pensada para dispositivos móviles
+        </h3>
+
+        <p>
+          Una interfaz simple y accesible que reúne lectura,
+          audio, búsqueda, favoritos y experiencias interactivas
+          en una sola aplicación.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- COMING -->
+
+  <section class="coming">
+
+    <div class="container">
+
+      <div class="section-label">
+        En desarrollo
+      </div>
+
+      <h2 class="section-title">
+        Biblia Viva está preparando su lanzamiento.
+      </h2>
+
+      <p class="section-intro">
+        Estamos trabajando en los últimos detalles para llevar
+        Biblia Viva a dispositivos móviles.
+      </p>
+
+      <div class="buttons">
+
+        <span class="button button-secondary">
+          Próximamente en Android
+        </span>
+
+        <a class="button button-secondary" href="/">
+          Visitar GALUMIO
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <div class="container footer-inner">
+
+    <div>
+      © 2026 GALUMIO. Todos los derechos reservados.
+    </div>
+
+    <div class="footer-links">
+
+      <a href="/biblia-viva/">
+        Biblia Viva
+      </a>
+
+      <a href="/astria/">
+        Astria
+      </a>
+
+      <a href="/">
+        GALUMIO
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
