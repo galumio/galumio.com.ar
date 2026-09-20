@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="GALUMIO crea aplicaciones, software, experiencias con inteligencia artificial y videojuegos."
+    content="GALUMIO crea apps, software, inteligencia artificial y juegos. Transformamos ideas en productos y experiencias digitales."
   >
 
   <style>
@@ -26,10 +26,10 @@
       font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, Helvetica, Arial, sans-serif;
       background:
-        radial-gradient(circle at 15% 20%, rgba(103, 80, 255, 0.18), transparent 30%),
-        radial-gradient(circle at 85% 25%, rgba(0, 196, 255, 0.12), transparent 30%),
-        #070912;
-      color: #ffffff;
+        radial-gradient(circle at 15% 15%, rgba(72, 82, 255, .18), transparent 32%),
+        radial-gradient(circle at 85% 35%, rgba(0, 190, 255, .10), transparent 30%),
+        #070817;
+      color: #f7f7ff;
       line-height: 1.6;
     }
 
@@ -39,25 +39,21 @@
     }
 
     .container {
-      width: min(1180px, 90%);
-      margin: auto;
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
     }
 
-    /* NAV */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(7, 8, 23, .82);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
 
     nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1000;
-      background: rgba(7, 9, 18, 0.72);
-      backdrop-filter: blur(18px);
-      border-bottom: 1px solid rgba(255,255,255,0.07);
-    }
-
-    .nav-inner {
-      min-height: 76px;
+      min-height: 82px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -67,273 +63,319 @@
     .brand {
       display: flex;
       align-items: center;
-      gap: 12px;
-      font-size: 21px;
+      gap: 13px;
       font-weight: 800;
-      letter-spacing: 3px;
+      letter-spacing: .14em;
     }
 
     .brand-icon {
-      width: 36px;
-      height: 36px;
-      border-radius: 11px;
+      width: 42px;
+      height: 42px;
+      border-radius: 13px;
       display: grid;
       place-items: center;
-      font-size: 18px;
-      background: linear-gradient(135deg, #7657ff, #00c8ff);
-      box-shadow: 0 0 28px rgba(100, 87, 255, 0.4);
+      background: linear-gradient(135deg, #655cff, #29baff);
+      box-shadow: 0 10px 30px rgba(71, 101, 255, .3);
     }
 
     .nav-links {
       display: flex;
-      gap: 28px;
-      align-items: center;
-      color: #b8bed0;
-      font-size: 14px;
+      gap: 30px;
+      color: #c4c8db;
+      font-size: 15px;
     }
 
     .nav-links a {
-      transition: .2s ease;
+      transition: color .2s ease;
     }
 
     .nav-links a:hover {
-      color: #ffffff;
+      color: white;
     }
-
-    /* HERO */
 
     .hero {
-      min-height: 100vh;
+      min-height: 760px;
       display: flex;
       align-items: center;
-      padding: 130px 0 80px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      width: 550px;
-      height: 550px;
-      border-radius: 50%;
-      background: rgba(104, 75, 255, 0.13);
-      filter: blur(90px);
-      right: -180px;
-      top: 140px;
-      pointer-events: none;
+      padding: 90px 0;
     }
 
     .hero-content {
-      position: relative;
-      z-index: 2;
-      max-width: 900px;
+      max-width: 930px;
     }
 
     .eyebrow {
       display: inline-flex;
       align-items: center;
       gap: 9px;
-      padding: 8px 14px;
-      border: 1px solid rgba(255,255,255,.12);
+      padding: 9px 16px;
+      border: 1px solid rgba(255,255,255,.13);
       border-radius: 999px;
-      color: #bec5d9;
-      font-size: 13px;
-      margin-bottom: 28px;
-      background: rgba(255,255,255,.035);
+      color: #c9caff;
+      background: rgba(255,255,255,.04);
+      margin-bottom: 30px;
     }
 
-    .dot {
-      width: 7px;
-      height: 7px;
+    .eyebrow-dot {
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
-      background: #64dcff;
-      box-shadow: 0 0 12px #64dcff;
+      background: #52ddff;
+      box-shadow: 0 0 15px #52ddff;
     }
 
     h1 {
-      font-size: clamp(58px, 10vw, 118px);
-      line-height: .9;
-      letter-spacing: -5px;
-      margin-bottom: 30px;
-      background: linear-gradient(
-        110deg,
-        #ffffff 10%,
-        #b9c5ff 45%,
-        #7c65ff 70%,
-        #4edcff 100%
-      );
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-
-    .hero-subtitle {
-      max-width: 720px;
-      font-size: clamp(20px, 2.5vw, 30px);
-      color: #c1c6d5;
-      font-weight: 300;
-      margin-bottom: 18px;
-    }
-
-    .hero-description {
-      max-width: 650px;
-      color: #858ca0;
-      font-size: 16px;
+      font-size: clamp(72px, 12vw, 150px);
+      line-height: .85;
+      letter-spacing: -.07em;
       margin-bottom: 38px;
+      background: linear-gradient(90deg, #ffffff, #d6d8ff, #7fd9ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero h2 {
+      font-size: clamp(30px, 5vw, 55px);
+      line-height: 1.12;
+      letter-spacing: -.04em;
+      max-width: 900px;
+      font-weight: 500;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      max-width: 720px;
+      font-size: 19px;
+      color: #9da3bd;
     }
 
     .buttons {
       display: flex;
       gap: 14px;
       flex-wrap: wrap;
+      margin-top: 38px;
     }
 
     .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 52px;
-      padding: 0 24px;
-      border-radius: 12px;
-      font-weight: 650;
-      font-size: 14px;
-      transition: transform .2s ease, border-color .2s ease;
+      display: inline-block;
+      padding: 15px 24px;
+      border-radius: 13px;
+      font-weight: 700;
+      transition: .2s ease;
+    }
+
+    .button-primary {
+      background: linear-gradient(135deg, #655cff, #2cbcff);
+      box-shadow: 0 12px 35px rgba(71,98,255,.25);
+    }
+
+    .button-secondary {
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.04);
     }
 
     .button:hover {
       transform: translateY(-2px);
     }
 
-    .button-primary {
-      background: linear-gradient(135deg, #7358ff, #20bfff);
-      box-shadow: 0 12px 40px rgba(84, 94, 255, .28);
-    }
-
-    .button-secondary {
-      border: 1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.04);
-      color: #d9dceb;
-    }
-
-    /* SECTIONS */
-
     section {
-      padding: 105px 0;
+      padding: 110px 0;
     }
 
     .section-label {
-      color: #7468ff;
-      text-transform: uppercase;
-      letter-spacing: 3px;
+      color: #8178ff;
       font-weight: 700;
-      font-size: 12px;
-      margin-bottom: 14px;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: 13px;
+      margin-bottom: 15px;
     }
 
     .section-title {
-      font-size: clamp(36px, 5vw, 58px);
+      font-size: clamp(38px, 5vw, 64px);
       line-height: 1.05;
-      letter-spacing: -2px;
-      max-width: 800px;
-      margin-bottom: 18px;
+      letter-spacing: -.045em;
+      max-width: 850px;
+      margin-bottom: 22px;
     }
 
-    .section-text {
-      color: #9299ab;
-      max-width: 700px;
-      font-size: 17px;
-    }
-
-    /* AREAS */
-
-    .areas {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-      margin-top: 55px;
-    }
-
-    .area {
-      min-height: 220px;
-      padding: 30px;
-      border-radius: 22px;
-      background: linear-gradient(
-        145deg,
-        rgba(255,255,255,.065),
-        rgba(255,255,255,.025)
-      );
-      border: 1px solid rgba(255,255,255,.08);
-      transition: .25s ease;
-    }
-
-    .area:hover {
-      transform: translateY(-5px);
-      border-color: rgba(115, 98, 255, .5);
-    }
-
-    .area-icon {
-      font-size: 29px;
-      margin-bottom: 45px;
-    }
-
-    .area h3 {
-      margin-bottom: 7px;
+    .section-intro {
+      max-width: 760px;
+      color: #9da1ba;
       font-size: 18px;
     }
 
-    .area p {
-      color: #858ca0;
-      font-size: 14px;
-    }
+    /* PRODUCTS */
 
-    /* PRODUCT */
-
-    .product-card {
+    .products {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
       margin-top: 55px;
-      min-height: 420px;
-      padding: 55px;
-      border-radius: 30px;
+    }
+
+    .product {
+      position: relative;
       overflow: hidden;
-      position: relative;
-      border: 1px solid rgba(255,255,255,.1);
-      background:
-        radial-gradient(circle at 80% 50%, rgba(128, 71, 255, .28), transparent 30%),
-        linear-gradient(130deg, #111425, #0a0d18);
+      min-height: 430px;
+      padding: 38px;
+      border-radius: 28px;
+      border: 1px solid rgba(255,255,255,.09);
+      background: rgba(255,255,255,.035);
+      transition: .3s ease;
     }
 
-    .product-card::after {
-      content: "✦";
+    .product:hover {
+      transform: translateY(-6px);
+      border-color: rgba(122,119,255,.35);
+      background: rgba(255,255,255,.05);
+    }
+
+    .product-glow {
       position: absolute;
-      right: 9%;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 190px;
-      color: rgba(255,255,255,.07);
+      width: 280px;
+      height: 280px;
+      right: -100px;
+      top: -100px;
+      border-radius: 50%;
+      filter: blur(10px);
+      pointer-events: none;
     }
 
-    .product-badge {
-      color: #9ca5bd;
+    .astria-glow {
+      background: radial-gradient(circle, rgba(116,87,255,.32), transparent 70%);
+    }
+
+    .biblia-glow {
+      background: radial-gradient(circle, rgba(35,190,255,.24), transparent 70%);
+    }
+
+    .product-status {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.09);
+      color: #b8bdd3;
       font-size: 12px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 20px;
+      margin-bottom: 35px;
     }
 
-    .product-card h3 {
-      font-size: clamp(45px, 7vw, 75px);
-      letter-spacing: -3px;
-      line-height: 1;
-      margin-bottom: 20px;
+    .product-icon {
+      width: 64px;
+      height: 64px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      font-size: 30px;
+      margin-bottom: 25px;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.09);
     }
 
-    .product-card p {
-      max-width: 570px;
-      color: #a9afc0;
-      font-size: 17px;
-      margin-bottom: 30px;
-      position: relative;
-      z-index: 2;
+    .product h3 {
+      font-size: 36px;
+      letter-spacing: -.03em;
+      margin-bottom: 14px;
+    }
+
+    .product p {
+      color: #9ba0ba;
+      max-width: 500px;
+      margin-bottom: 28px;
+    }
+
+    .product-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      color: #d9dcff;
+    }
+
+    .product-link:hover {
+      color: white;
+    }
+
+    .coming-link {
+      color: #777d99;
+      cursor: default;
+    }
+
+    /* WHAT WE CREATE */
+
+    .capabilities {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 55px;
+    }
+
+    .capability {
+      min-height: 240px;
+      padding: 28px;
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.025);
+    }
+
+    .capability-icon {
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+
+    .capability h3 {
+      font-size: 21px;
+      margin-bottom: 11px;
+    }
+
+    .capability p {
+      color: #9298b3;
+      font-size: 15px;
+    }
+
+    /* AI */
+
+    .ai-section {
+      border-top: 1px solid rgba(255,255,255,.07);
+      border-bottom: 1px solid rgba(255,255,255,.07);
+      background:
+        radial-gradient(circle at 80% 50%, rgba(48,175,255,.08), transparent 30%),
+        rgba(255,255,255,.012);
+    }
+
+    .ai-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .ai-box {
+      padding: 38px;
+      border-radius: 26px;
+      border: 1px solid rgba(255,255,255,.09);
+      background:
+        linear-gradient(145deg, rgba(104,90,255,.12), rgba(35,181,255,.05));
+    }
+
+    .ai-box-item {
+      padding: 18px 0;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+    }
+
+    .ai-box-item:last-child {
+      border-bottom: 0;
+    }
+
+    .ai-box-item strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .ai-box-item span {
+      color: #8f95af;
+      font-size: 14px;
     }
 
     /* ABOUT */
@@ -341,106 +383,104 @@
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 70px;
+      gap: 80px;
       align-items: center;
     }
 
-    .about-box {
-      border-radius: 28px;
-      padding: 45px;
-      border: 1px solid rgba(255,255,255,.08);
+    .about-card {
+      padding: 40px;
+      border-radius: 26px;
+      border: 1px solid rgba(255,255,255,.09);
       background: rgba(255,255,255,.035);
     }
 
-    .about-box strong {
-      display: block;
-      font-size: 54px;
-      margin-bottom: 10px;
-      background: linear-gradient(135deg, #ffffff, #7a68ff);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
+    .about-card h3 {
+      font-size: 28px;
+      margin-bottom: 15px;
     }
 
-    .about-box p {
-      color: #9299ab;
+    .about-card p {
+      color: #969bb4;
     }
 
     /* CONTACT */
 
     .contact {
       text-align: center;
-      padding-bottom: 130px;
+      padding: 120px 0;
     }
 
     .contact .section-title,
-    .contact .section-text {
+    .contact .section-intro {
       margin-left: auto;
       margin-right: auto;
     }
 
     .contact .buttons {
       justify-content: center;
-      margin-top: 35px;
     }
-
-    /* FOOTER */
 
     footer {
       border-top: 1px solid rgba(255,255,255,.08);
-      padding: 35px 0;
-      color: #6f7689;
-      font-size: 13px;
+      padding: 38px 0;
+      color: #7f839b;
     }
 
     .footer-inner {
       display: flex;
       justify-content: space-between;
-      gap: 25px;
+      align-items: center;
+      gap: 30px;
       flex-wrap: wrap;
     }
 
     .footer-links {
       display: flex;
-      gap: 22px;
+      gap: 25px;
+      flex-wrap: wrap;
     }
 
-    /* RESPONSIVE */
+    .footer-links a {
+      color: #a6abc2;
+    }
 
-    @media (max-width: 850px) {
-      .nav-links {
-        display: none;
-      }
+    .footer-links a:hover {
+      color: white;
+    }
 
-      .areas {
-        grid-template-columns: 1fr 1fr;
-      }
-
+    @media (max-width: 900px) {
+      .products,
+      .ai-grid,
       .about-grid {
         grid-template-columns: 1fr;
       }
 
-      .product-card {
-        padding: 35px;
-      }
-
-      h1 {
-        letter-spacing: -3px;
+      .capabilities {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
 
-    @media (max-width: 520px) {
-      .areas {
-        grid-template-columns: 1fr;
+    @media (max-width: 700px) {
+      .nav-links {
+        gap: 14px;
+        font-size: 13px;
+      }
+
+      .nav-links .hide-mobile {
+        display: none;
       }
 
       .hero {
-        min-height: auto;
-        padding-top: 150px;
+        min-height: 680px;
       }
 
-      .product-card::after {
-        display: none;
+      .products,
+      .capabilities {
+        grid-template-columns: 1fr;
+      }
+
+      .product {
+        min-height: auto;
       }
     }
   </style>
@@ -448,223 +488,447 @@
 
 <body>
 
-  <nav>
-    <div class="container nav-inner">
-      <a href="#" class="brand">
-        <span class="brand-icon">G</span>
+<header>
+  <div class="container">
+    <nav>
+
+      <a class="brand" href="/">
+        <div class="brand-icon">G</div>
         GALUMIO
       </a>
 
       <div class="nav-links">
         <a href="#productos">Productos</a>
-        <a href="#tecnologia">Tecnología</a>
-        <a href="#nosotros">Nosotros</a>
+        <a class="hide-mobile" href="#tecnologia">Tecnología</a>
+        <a class="hide-mobile" href="#nosotros">Nosotros</a>
         <a href="#contacto">Contacto</a>
       </div>
-    </div>
-  </nav>
 
-  <main>
+    </nav>
+  </div>
+</header>
 
-    <header class="hero">
-      <div class="container hero-content">
+<main>
+
+  <!-- HERO -->
+
+  <div class="container">
+    <section class="hero">
+
+      <div class="hero-content">
 
         <div class="eyebrow">
-          <span class="dot"></span>
-          Building digital experiences
+          <span class="eyebrow-dot"></span>
+          Apps · Software · AI · Games
         </div>
 
         <h1>GALUMIO</h1>
 
-        <p class="hero-subtitle">
-          Apps, software, inteligencia artificial y juegos
-          creados para transformar ideas en experiencias.
-        </p>
+        <h2>
+          Creamos tecnología que transforma ideas en experiencias.
+        </h2>
 
-        <p class="hero-description">
-          Diseñamos y desarrollamos productos digitales combinando
-          tecnología, creatividad e inteligencia artificial.
+        <p>
+          Diseñamos y desarrollamos aplicaciones, software,
+          soluciones con inteligencia artificial y juegos digitales
+          pensados para resolver problemas, crear experiencias y
+          explorar nuevas posibilidades.
         </p>
 
         <div class="buttons">
-          <a href="#productos" class="button button-primary">
+
+          <a class="button button-primary" href="#productos">
             Explorar productos
           </a>
 
-          <a href="#nosotros" class="button button-secondary">
+          <a class="button button-secondary" href="#nosotros">
             Conocer GALUMIO
           </a>
-        </div>
-
-      </div>
-    </header>
-
-    <section id="tecnologia">
-      <div class="container">
-
-        <div class="section-label">Lo que hacemos</div>
-
-        <h2 class="section-title">
-          Tecnología convertida en productos.
-        </h2>
-
-        <p class="section-text">
-          Construimos experiencias digitales desde la idea inicial
-          hasta el producto final, combinando diseño, desarrollo y
-          nuevas tecnologías.
-        </p>
-
-        <div class="areas">
-
-          <div class="area">
-            <div class="area-icon">◈</div>
-            <h3>Apps</h3>
-            <p>
-              Aplicaciones móviles pensadas para ser simples,
-              útiles y atractivas.
-            </p>
-          </div>
-
-          <div class="area">
-            <div class="area-icon">⌘</div>
-            <h3>Software</h3>
-            <p>
-              Soluciones digitales orientadas a personas,
-              profesionales y empresas.
-            </p>
-          </div>
-
-          <div class="area">
-            <div class="area-icon">✦</div>
-            <h3>Artificial Intelligence</h3>
-            <p>
-              Productos que integran IA para crear nuevas
-              experiencias y automatizaciones.
-            </p>
-          </div>
-
-          <div class="area">
-            <div class="area-icon">◇</div>
-            <h3>Games</h3>
-            <p>
-              Juegos y experiencias interactivas diseñadas
-              para entretener y sorprender.
-            </p>
-          </div>
 
         </div>
 
       </div>
+
     </section>
+  </div>
 
-    <section id="productos">
-      <div class="container">
 
-        <div class="section-label">Productos</div>
+  <!-- PRODUCTS -->
 
-        <h2 class="section-title">
-          Estamos construyendo algo nuevo.
-        </h2>
+  <section id="productos">
 
-        <p class="section-text">
-          GALUMIO será el hogar de nuestras aplicaciones,
-          plataformas y experiencias digitales.
-        </p>
+    <div class="container">
 
-        <div class="product-card">
+      <div class="section-label">
+        Productos
+      </div>
 
-          <div class="product-badge">
-            Primer producto GALUMIO
+      <h2 class="section-title">
+        Ideas que se convierten en productos.
+      </h2>
+
+      <p class="section-intro">
+        Desarrollamos experiencias digitales propias combinando
+        diseño, software e inteligencia artificial.
+      </p>
+
+
+      <div class="products">
+
+        <!-- ASTRIA -->
+
+        <article class="product">
+
+          <div class="product-glow astria-glow"></div>
+
+          <div class="product-status">
+            Próximo lanzamiento
           </div>
 
-          <h3>ASTRIA</h3>
+          <div class="product-icon">
+            ☾
+          </div>
+
+          <h3>
+            Astria
+          </h3>
 
           <p>
-            Una experiencia astrológica moderna que combina
-            cartas natales, interpretación personalizada,
-            herramientas interactivas e inteligencia artificial.
+            Astrología, tecnología e inteligencia artificial
+            combinadas en una experiencia personal para explorar
+            tu carta natal, horóscopo, compatibilidad y mucho más.
           </p>
 
-          <span class="button button-secondary">
+          <a class="product-link" href="/astria/">
+            Descubrir Astria →
+          </a>
+
+        </article>
+
+
+        <!-- BIBLIA VIVA -->
+
+        <article class="product">
+
+          <div class="product-glow biblia-glow"></div>
+
+          <div class="product-status">
+            En desarrollo
+          </div>
+
+          <div class="product-icon">
+            📖
+          </div>
+
+          <h3>
+            Biblia Viva
+          </h3>
+
+          <p>
+            Una experiencia bíblica interactiva para adultos y niños,
+            con lectura, audio, historias, juegos y herramientas
+            diseñadas para descubrir la Biblia de una forma diferente.
+          </p>
+
+          <span class="product-link coming-link">
             Próximamente
+          </span>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CAPABILITIES -->
+
+  <section id="tecnologia">
+
+    <div class="container">
+
+      <div class="section-label">
+        Lo que creamos
+      </div>
+
+      <h2 class="section-title">
+        Tecnología, creatividad y producto.
+      </h2>
+
+      <p class="section-intro">
+        GALUMIO nace para construir productos digitales y desarrollar
+        soluciones que aprovechen las posibilidades de la tecnología actual.
+      </p>
+
+
+      <div class="capabilities">
+
+        <article class="capability">
+
+          <div class="capability-icon">
+            ◉
+          </div>
+
+          <h3>
+            Apps
+          </h3>
+
+          <p>
+            Aplicaciones móviles pensadas desde la experiencia del usuario
+            hasta su publicación.
+          </p>
+
+        </article>
+
+
+        <article class="capability">
+
+          <div class="capability-icon">
+            &lt;/&gt;
+          </div>
+
+          <h3>
+            Software
+          </h3>
+
+          <p>
+            Herramientas y soluciones digitales para transformar procesos,
+            ideas y necesidades en productos.
+          </p>
+
+        </article>
+
+
+        <article class="capability">
+
+          <div class="capability-icon">
+            AI
+          </div>
+
+          <h3>
+            Inteligencia artificial
+          </h3>
+
+          <p>
+            IA integrada en productos, automatizaciones y experiencias
+            digitales.
+          </p>
+
+        </article>
+
+
+        <article class="capability">
+
+          <div class="capability-icon">
+            ◆
+          </div>
+
+          <h3>
+            Games
+          </h3>
+
+          <p>
+            Juegos móviles y experiencias interactivas creadas alrededor
+            de mecánicas simples, creatividad y diversión.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- AI -->
+
+  <section class="ai-section">
+
+    <div class="container ai-grid">
+
+      <div>
+
+        <div class="section-label">
+          AI Solutions
+        </div>
+
+        <h2 class="section-title">
+          Inteligencia artificial aplicada a problemas reales.
+        </h2>
+
+        <p class="section-intro">
+          Exploramos cómo la inteligencia artificial puede integrarse
+          en productos, procesos y herramientas para crear nuevas
+          capacidades y experiencias.
+        </p>
+
+      </div>
+
+
+      <div class="ai-box">
+
+        <div class="ai-box-item">
+
+          <strong>
+            Agentes inteligentes
+          </strong>
+
+          <span>
+            Asistentes y agentes especializados para diferentes necesidades.
+          </span>
+
+        </div>
+
+
+        <div class="ai-box-item">
+
+          <strong>
+            Automatización
+          </strong>
+
+          <span>
+            Procesos potenciados por inteligencia artificial.
+          </span>
+
+        </div>
+
+
+        <div class="ai-box-item">
+
+          <strong>
+            Productos con IA
+          </strong>
+
+          <span>
+            Inteligencia artificial integrada directamente en aplicaciones
+            y servicios.
           </span>
 
         </div>
 
       </div>
-    </section>
 
-    <section id="nosotros">
-      <div class="container about-grid">
+    </div>
 
-        <div>
-          <div class="section-label">GALUMIO</div>
+  </section>
 
-          <h2 class="section-title">
-            Crear. Experimentar. Evolucionar.
-          </h2>
 
-          <p class="section-text">
-            GALUMIO nace para convertir ideas en productos digitales.
-            Exploramos nuevas formas de combinar software, diseño,
-            inteligencia artificial y entretenimiento para construir
-            experiencias que puedan crecer y llegar a personas de
-            todo el mundo.
-          </p>
-        </div>
+  <!-- ABOUT -->
 
-        <div class="about-box">
-          <strong>∞</strong>
-          <p>
-            Un proyecto pensado para crecer. Nuevas aplicaciones,
-            juegos, herramientas y soluciones digitales se irán
-            incorporando al ecosistema GALUMIO.
-          </p>
-        </div>
+  <section id="nosotros">
 
-      </div>
-    </section>
-
-    <section id="contacto" class="contact">
-      <div class="container">
-
-        <div class="section-label">Contacto</div>
-
-        <h2 class="section-title">
-          Construyamos algo extraordinario.
-        </h2>
-
-        <p class="section-text">
-          GALUMIO está comenzando. Muy pronto vas a encontrar
-          aquí nuestros productos, novedades y formas de contacto.
-        </p>
-
-        <div class="buttons">
-          <a href="#productos" class="button button-primary">
-            Ver productos
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="container footer-inner">
+    <div class="container about-grid">
 
       <div>
-        © 2026 GALUMIO. Todos los derechos reservados.
+
+        <div class="section-label">
+          GALUMIO
+        </div>
+
+        <h2 class="section-title">
+          De una idea a una experiencia digital.
+        </h2>
+
+        <p class="section-intro">
+          GALUMIO es un estudio de productos digitales enfocado en crear
+          aplicaciones, software, inteligencia artificial y juegos.
+          Construimos, experimentamos y transformamos ideas en productos
+          reales.
+        </p>
+
       </div>
 
-      <div class="footer-links">
-        <a href="#">Privacidad</a>
-        <a href="#">Soporte</a>
-        <a href="#contacto">Contacto</a>
+
+      <div class="about-card">
+
+        <h3>
+          Apps · Software · AI · Games
+        </h3>
+
+        <p>
+          Un mismo espacio para desarrollar productos propios,
+          experimentar con nuevas tecnologías y crear soluciones
+          digitales para personas y organizaciones.
+        </p>
+
       </div>
 
     </div>
-  </footer>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section class="contact" id="contacto">
+
+    <div class="container">
+
+      <div class="section-label">
+        Contacto
+      </div>
+
+      <h2 class="section-title">
+        ¿Tenés una idea?
+      </h2>
+
+      <p class="section-intro">
+        GALUMIO está construyendo nuevos productos y explorando
+        oportunidades para desarrollar soluciones digitales.
+      </p>
+
+      <div class="buttons">
+
+        <a
+          class="button button-primary"
+          href="mailto:contacto.aeternalabs@gmail.com?subject=Contacto%20GALUMIO"
+        >
+          Contactar GALUMIO
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <div class="container footer-inner">
+
+    <div>
+      © 2026 GALUMIO. Todos los derechos reservados.
+    </div>
+
+    <div class="footer-links">
+
+      <a href="/astria/">
+        Astria
+      </a>
+
+      <a href="#productos">
+        Productos
+      </a>
+
+      <a href="#nosotros">
+        Nosotros
+      </a>
+
+      <a href="#contacto">
+        Contacto
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
 
 </body>
 </html>
