@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="Astria combina astrología, tecnología e inteligencia artificial para explorar tu carta natal, compatibilidad, horóscopo y mucho más."
+    content="Astria combina astrología y tecnología para explorar tu carta natal, compatibilidad, horóscopo y mucho más."
   >
 
   <style>
@@ -314,21 +314,66 @@
       color: #969bb5;
     }
 
-    .coming {
+    .beta {
       text-align: center;
       border-top: 1px solid rgba(255,255,255,.07);
       border-bottom: 1px solid rgba(255,255,255,.07);
-      background: rgba(255,255,255,.018);
+      background:
+        radial-gradient(circle at 50% 50%, rgba(105,92,255,.13), transparent 45%),
+        rgba(255,255,255,.018);
     }
 
-    .coming .section-title,
-    .coming .section-intro {
+    .beta .section-title,
+    .beta .section-intro {
       margin-left: auto;
       margin-right: auto;
     }
 
-    .coming .section-intro {
-      margin-bottom: 34px;
+    .beta .section-intro {
+      margin-bottom: 20px;
+    }
+
+    .beta-badge {
+      display: inline-block;
+      margin-bottom: 22px;
+      padding: 8px 15px;
+      border-radius: 999px;
+      border: 1px solid rgba(92,225,255,.3);
+      background: rgba(92,225,255,.07);
+      color: #8ceaff;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .beta-info {
+      max-width: 720px;
+      margin: 26px auto 0;
+      padding: 22px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.035);
+      color: #9297b2;
+      font-size: 14px;
+    }
+
+    .beta-info strong {
+      color: #d9dcf1;
+    }
+
+    .beta-links {
+      margin-top: 18px;
+      font-size: 14px;
+      color: #aeb3ca;
+    }
+
+    .beta-links a {
+      color: #8cdfff;
+    }
+
+    .beta-links a:hover {
+      text-decoration: underline;
     }
 
     .galumio {
@@ -433,6 +478,7 @@
 
       <div class="nav-links">
         <a class="optional" href="#funciones">Funciones</a>
+        <a class="optional" href="#beta">Beta</a>
         <a href="/astria/privacidad/">Privacidad</a>
         <a href="/astria/soporte/">Soporte</a>
         <a href="/">GALUMIO</a>
@@ -449,7 +495,7 @@
       <div>
         <div class="eyebrow">
           <span class="eyebrow-dot"></span>
-          Un producto de GALUMIO
+          Beta para Android disponible
         </div>
 
         <h1>ASTRIA</h1>
@@ -457,18 +503,18 @@
         <h2>Descubrí tu universo.</h2>
 
         <p>
-          Astrología, tecnología e inteligencia artificial combinadas
-          en una experiencia personal para explorar tu carta natal,
-          tus relaciones y las energías que acompañan cada día.
+          Astrología y tecnología combinadas en una experiencia personal
+          para explorar tu carta natal, tus relaciones y las energías
+          que acompañan cada día.
         </p>
 
         <div class="buttons">
-          <a class="button button-primary" href="#funciones">
-            Descubrir Astria
+          <a class="button button-primary" href="#beta">
+            Probar Astria Beta
           </a>
 
-          <a class="button button-secondary" href="/">
-            Conocer GALUMIO
+          <a class="button button-secondary" href="#funciones">
+            Descubrir Astria
           </a>
         </div>
       </div>
@@ -572,11 +618,11 @@
         </article>
 
         <article class="feature">
-          <div class="feature-icon">AI</div>
-          <h3>Inteligencia artificial</h3>
+          <div class="feature-icon">PDF</div>
+          <h3>Informe astrológico</h3>
           <p>
-            Astria utiliza tecnología para convertir información
-            compleja en interpretaciones accesibles y personalizadas.
+            Generá un informe detallado con tu carta natal,
+            aspectos, casas, sinastría y tránsitos.
           </p>
         </article>
 
@@ -584,25 +630,57 @@
     </div>
   </section>
 
-  <section class="coming">
+  <section class="beta" id="beta">
     <div class="container">
 
+      <div class="beta-badge">
+        Beta pública · Android
+      </div>
+
       <div class="section-label">
-        Próximamente
+        Ya podés probar Astria
       </div>
 
       <h2 class="section-title">
-        Astria está preparando su lanzamiento.
+        Descargá Astria Beta.
       </h2>
 
       <p class="section-intro">
-        Estamos terminando los últimos detalles para llevar Astria
-        a dispositivos móviles.
+        Probá Astria antes de su lanzamiento oficial y explorá
+        sus principales funciones desde tu dispositivo Android.
       </p>
 
-      <span class="button button-secondary">
-        Próximamente en Android
-      </span>
+      <p style="color:#c5c8dc;font-weight:700;">
+        Astria Beta v3.0.1
+      </p>
+
+      <div class="buttons" style="justify-content:center;">
+        <a
+          class="button button-primary"
+          href="https://github.com/galumio/galumio.com.ar/releases/download/v3.0.1-beta.1/Astria-Beta-v3.0.1.apk"
+        >
+          Descargar Beta para Android
+        </a>
+      </div>
+
+      <div class="beta-info">
+        <strong>Importante:</strong>
+        esta es una versión Beta distribuida directamente por GALUMIO.
+        Como todavía no se instala desde Google Play, Android puede
+        solicitar autorización para instalar aplicaciones desde esta fuente.
+        La versión puede recibir cambios y mejoras antes del lanzamiento oficial.
+      </div>
+
+      <div class="beta-links">
+        Al descargar Astria podés consultar nuestra
+        <a href="/astria/privacidad/">Política de Privacidad</a>
+        y acceder a
+        <a href="/astria/soporte/">Soporte</a>.
+      </div>
+
+      <div style="margin-top:30px;color:#858aa6;font-size:14px;">
+        Próximamente disponible oficialmente en Google Play.
+      </div>
 
     </div>
   </section>
