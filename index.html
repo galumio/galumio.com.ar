@@ -1,14 +1,15 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>GALUMIO — Apps, Software, AI & Games</title>
+  <title>GALUMIO — Apps, Software, AI, Games & Digital Studio</title>
 
   <meta
     name="description"
-    content="GALUMIO crea apps, software, inteligencia artificial y juegos. Transformamos ideas en productos y experiencias digitales."
+    content="GALUMIO crea apps, software, inteligencia artificial, juegos y recursos digitales. Transformamos ideas en productos y experiencias."
   >
 
   <style>
@@ -249,8 +250,17 @@
     .biblia-glow {
       background: radial-gradient(circle, rgba(35,190,255,.24), transparent 70%);
     }
+
     .studio-glow {
       background: radial-gradient(circle, rgba(255,166,94,.28), transparent 70%);
+    }
+
+    .studio-product {
+      grid-column: 1 / -1;
+      min-height: 360px;
+      background:
+        radial-gradient(circle at 85% 30%, rgba(255,166,94,.08), transparent 30%),
+        rgba(255,255,255,.035);
     }
 
     .product-status {
@@ -284,7 +294,7 @@
 
     .product p {
       color: #9ba0ba;
-      max-width: 500px;
+      max-width: 650px;
       margin-bottom: 28px;
     }
 
@@ -298,11 +308,6 @@
 
     .product-link:hover {
       color: white;
-    }
-
-    .coming-link {
-      color: #777d99;
-      cursor: default;
     }
 
     /* WHAT WE CREATE */
@@ -458,6 +463,10 @@
         grid-template-columns: 1fr;
       }
 
+      .studio-product {
+        grid-column: auto;
+      }
+
       .capabilities {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -522,18 +531,18 @@
 
         <div class="eyebrow">
           <span class="eyebrow-dot"></span>
-          Apps · Software · AI · Games
+          Apps · Software · AI · Games · Digital Studio
         </div>
 
         <h1>GALUMIO</h1>
 
         <h2>
-          Creamos tecnología que transforma ideas en experiencias.
+          Creamos tecnología y productos digitales que transforman ideas en experiencias.
         </h2>
 
         <p>
           Diseñamos y desarrollamos aplicaciones, software,
-          soluciones con inteligencia artificial y juegos digitales
+          soluciones con inteligencia artificial, juegos y recursos digitales
           pensados para resolver problemas, crear experiencias y
           explorar nuevas posibilidades.
         </p>
@@ -555,7 +564,6 @@
     </section>
   </div>
 
-
   <!-- PRODUCTS -->
 
   <section id="productos">
@@ -571,10 +579,9 @@
       </h2>
 
       <p class="section-intro">
-        Desarrollamos experiencias digitales propias combinando
-        diseño, software e inteligencia artificial.
+        Desarrollamos experiencias y productos digitales propios combinando
+        diseño, software, creatividad e inteligencia artificial.
       </p>
-
 
       <div class="products">
 
@@ -608,7 +615,6 @@
 
         </article>
 
-
         <!-- BIBLIA VIVA -->
 
         <article class="product">
@@ -638,9 +644,10 @@
           </a>
 
         </article>
+
         <!-- GALUMIO STUDIO -->
 
-        <article class="product">
+        <article class="product studio-product">
 
           <div class="product-glow studio-glow"></div>
 
@@ -648,33 +655,32 @@
             Nuevo
           </div>
 
-       <div class="product-icon">
-    🎨
-       </div>
+          <div class="product-icon">
+            🎨
+          </div>
 
-       <h3>
-        Galumio Studio
-       </h3>
+          <h3>
+            Galumio Studio
+          </h3>
 
-       <p>
-        Arte digital y recursos creativos listos para sublimación,
-        impresión, decoración y proyectos comerciales.
-        Colecciones originales en alta resolución para creadores
-        y emprendedores.
-       </p>
+          <p>
+            Arte digital y recursos creativos listos para sublimación,
+            impresión, decoración y proyectos comerciales.
+            Colecciones originales en alta resolución para creadores,
+            diseñadores y emprendedores.
+          </p>
 
-       <a class="product-link" href="/studio/">
-        Explorar Galumio Studio →
-       </a>
+          <a class="product-link" href="/studio/">
+            Explorar Galumio Studio →
+          </a>
 
-       </article>
+        </article>
 
       </div>
 
     </div>
 
   </section>
-
 
   <!-- CAPABILITIES -->
 
@@ -695,78 +701,42 @@
         soluciones que aprovechen las posibilidades de la tecnología actual.
       </p>
 
-
       <div class="capabilities">
 
         <article class="capability">
-
-          <div class="capability-icon">
-            ◉
-          </div>
-
-          <h3>
-            Apps
-          </h3>
-
+          <div class="capability-icon">◉</div>
+          <h3>Apps</h3>
           <p>
             Aplicaciones móviles pensadas desde la experiencia del usuario
             hasta su publicación.
           </p>
-
         </article>
 
-
         <article class="capability">
-
-          <div class="capability-icon">
-            &lt;/&gt;
-          </div>
-
-          <h3>
-            Software
-          </h3>
-
+          <div class="capability-icon">&lt;/&gt;</div>
+          <h3>Software</h3>
           <p>
             Herramientas y soluciones digitales para transformar procesos,
             ideas y necesidades en productos.
           </p>
-
         </article>
 
-
         <article class="capability">
-
-          <div class="capability-icon">
-            AI
-          </div>
-
-          <h3>
-            Inteligencia artificial
-          </h3>
-
+          <div class="capability-icon">AI</div>
+          <h3>Inteligencia artificial</h3>
           <p>
             IA integrada en productos, automatizaciones y experiencias
             digitales.
           </p>
-
         </article>
 
-
         <article class="capability">
-
-          <div class="capability-icon">
-            ◆
-          </div>
-
-          <h3>
-            Games
-          </h3>
-
+          <div class="capability-icon">◆</div>
+          <h3>Games</h3>
           <p>
             Juegos móviles y experiencias interactivas creadas alrededor
             de mecánicas simples, creatividad y diversión.
           </p>
-
         </article>
 
       </div>
@@ -774,7 +744,6 @@
     </div>
 
   </section>
-
 
   <!-- AI -->
 
@@ -800,46 +769,28 @@
 
       </div>
 
-
       <div class="ai-box">
 
         <div class="ai-box-item">
-
-          <strong>
-            Agentes inteligentes
-          </strong>
-
+          <strong>Agentes inteligentes</strong>
           <span>
             Asistentes y agentes especializados para diferentes necesidades.
           </span>
-
         </div>
 
-
         <div class="ai-box-item">
-
-          <strong>
-            Automatización
-          </strong>
-
+          <strong>Automatización</strong>
           <span>
             Procesos potenciados por inteligencia artificial.
           </span>
-
         </div>
 
-
         <div class="ai-box-item">
-
-          <strong>
-            Productos con IA
-          </strong>
-
+          <strong>Productos con IA</strong>
           <span>
             Inteligencia artificial integrada directamente en aplicaciones
             y servicios.
           </span>
-
         </div>
 
       </div>
@@ -847,7 +798,6 @@
     </div>
 
   </section>
-
 
   <!-- ABOUT -->
 
@@ -867,24 +817,23 @@
 
         <p class="section-intro">
           GALUMIO es un estudio de productos digitales enfocado en crear
-          aplicaciones, software, inteligencia artificial y juegos.
-          Construimos, experimentamos y transformamos ideas en productos
-          reales.
+          aplicaciones, software, inteligencia artificial, juegos y
+          recursos creativos. Construimos, experimentamos y transformamos
+          ideas en productos reales.
         </p>
 
       </div>
 
-
       <div class="about-card">
 
         <h3>
-          Apps · Software · AI · Games
+          Apps · Software · AI · Games · Studio
         </h3>
 
         <p>
           Un mismo espacio para desarrollar productos propios,
           experimentar con nuevas tecnologías y crear soluciones
-          digitales para personas y organizaciones.
+          digitales para personas, creadores y organizaciones.
         </p>
 
       </div>
@@ -892,7 +841,6 @@
     </div>
 
   </section>
-
 
   <!-- CONTACT -->
 
@@ -917,7 +865,7 @@
 
         <a
           class="button button-primary"
-          href="mailto:contacto.aeternalabs@gmail.com?subject=Contacto%20GALUMIO"
+          href="mailto:contacto@galumio.com.ar?subject=Contacto%20GALUMIO"
         >
           Contactar GALUMIO
         </a>
@@ -929,7 +877,6 @@
   </section>
 
 </main>
-
 
 <footer>
 
@@ -943,6 +890,14 @@
 
       <a href="/astria/">
         Astria
+      </a>
+
+      <a href="/biblia-viva/">
+        Biblia Viva
+      </a>
+
+      <a href="/studio/">
+        Galumio Studio
       </a>
 
       <a href="#productos">
@@ -965,3 +920,4 @@
 
 </body>
 </html>
+```
