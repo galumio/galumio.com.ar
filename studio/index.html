@@ -1,0 +1,966 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Galumio Studio — Digital Art & Creative Resources</title>
+
+  <meta
+    name="description"
+    content="Galumio Studio crea colecciones de arte digital y recursos creativos de alta resolución para sublimación, impresión, decoración y proyectos comerciales."
+  >
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+      background:
+        radial-gradient(circle at 15% 10%, rgba(255, 183, 128, .20), transparent 30%),
+        radial-gradient(circle at 90% 30%, rgba(167, 211, 190, .18), transparent 32%),
+        #faf7f2;
+      color: #332f2b;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(250, 247, 242, .88);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(80, 65, 50, .10);
+    }
+
+    nav {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+    }
+
+    .brand-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      color: white;
+      background: linear-gradient(135deg, #d9a77f, #9bbfae);
+      box-shadow: 0 10px 30px rgba(120, 100, 80, .16);
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 17px;
+      letter-spacing: .10em;
+    }
+
+    .brand-text span {
+      display: block;
+      color: #91867c;
+      font-size: 11px;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      color: #756d65;
+      font-size: 14px;
+    }
+
+    .nav-links a {
+      transition: .2s ease;
+    }
+
+    .nav-links a:hover {
+      color: #332f2b;
+    }
+
+    .back-galumio {
+      padding: 10px 16px;
+      border: 1px solid rgba(80,65,50,.13);
+      border-radius: 999px;
+      background: rgba(255,255,255,.55);
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 660px;
+      display: flex;
+      align-items: center;
+      padding: 90px 0;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 80px;
+      align-items: center;
+      width: 100%;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 9px 15px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.65);
+      border: 1px solid rgba(80,65,50,.10);
+      color: #7c7168;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 26px;
+    }
+
+    .eyebrow-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #9bbfae;
+    }
+
+    h1 {
+      font-size: clamp(58px, 8vw, 105px);
+      line-height: .92;
+      letter-spacing: -.065em;
+      margin-bottom: 28px;
+      color: #332f2b;
+    }
+
+    .hero h2 {
+      font-size: clamp(25px, 3.5vw, 42px);
+      line-height: 1.12;
+      letter-spacing: -.035em;
+      font-weight: 500;
+      max-width: 700px;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: #81766c;
+      font-size: 18px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 13px;
+      flex-wrap: wrap;
+      margin-top: 34px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 13px;
+      font-weight: 750;
+      transition: .2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      color: white;
+      background: #3e4942;
+      box-shadow: 0 12px 30px rgba(62,73,66,.18);
+    }
+
+    .button-secondary {
+      background: rgba(255,255,255,.62);
+      border: 1px solid rgba(80,65,50,.12);
+    }
+
+    /* HERO ART */
+
+    .hero-art {
+      position: relative;
+      min-height: 430px;
+      border-radius: 38px;
+      background:
+        radial-gradient(circle at 25% 25%, rgba(255,190,145,.45), transparent 35%),
+        radial-gradient(circle at 75% 65%, rgba(156,199,178,.45), transparent 37%),
+        rgba(255,255,255,.58);
+      border: 1px solid rgba(80,65,50,.09);
+      box-shadow: 0 30px 80px rgba(90,70,50,.09);
+      overflow: hidden;
+    }
+
+    .art-circle {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(2px);
+    }
+
+    .circle-one {
+      width: 230px;
+      height: 230px;
+      background: rgba(255,193,153,.34);
+      top: 40px;
+      right: 35px;
+    }
+
+    .circle-two {
+      width: 260px;
+      height: 260px;
+      background: rgba(167,205,187,.32);
+      bottom: -60px;
+      left: 20px;
+    }
+
+    .hero-art-content {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 45px;
+    }
+
+    .hero-art-content span {
+      display: block;
+      font-size: 74px;
+      margin-bottom: 20px;
+    }
+
+    .hero-art-content strong {
+      display: block;
+      font-family: Georgia, serif;
+      font-size: 34px;
+      line-height: 1.05;
+      margin-bottom: 12px;
+    }
+
+    .hero-art-content p {
+      font-size: 14px;
+      color: #81766c;
+      max-width: 320px;
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 105px 0;
+    }
+
+    .section-label {
+      color: #a17357;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .15em;
+      font-weight: 800;
+      margin-bottom: 13px;
+    }
+
+    .section-title {
+      font-size: clamp(37px, 5vw, 60px);
+      line-height: 1.04;
+      letter-spacing: -.045em;
+      margin-bottom: 18px;
+    }
+
+    .section-intro {
+      color: #81766c;
+      font-size: 17px;
+      max-width: 720px;
+    }
+
+    /* COLLECTIONS */
+
+    .collections {
+      margin-top: 50px;
+    }
+
+    .collection-card {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      min-height: 520px;
+      border-radius: 32px;
+      overflow: hidden;
+      background: rgba(255,255,255,.75);
+      border: 1px solid rgba(80,65,50,.09);
+      box-shadow: 0 25px 70px rgba(90,70,50,.07);
+    }
+
+    .collection-image {
+      position: relative;
+      min-height: 520px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 30% 30%, rgba(255,190,145,.35), transparent 30%),
+        radial-gradient(circle at 70% 70%, rgba(156,199,178,.40), transparent 35%),
+        #f3eee6;
+    }
+
+    .collection-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .image-placeholder {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 35px;
+      color: #84796f;
+    }
+
+    .image-placeholder span {
+      display: block;
+      font-size: 65px;
+      margin-bottom: 15px;
+    }
+
+    .collection-content {
+      padding: 55px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .badge {
+      align-self: flex-start;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: #edf4ef;
+      color: #587064;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .09em;
+      margin-bottom: 24px;
+    }
+
+    .collection-content h3 {
+      font-size: clamp(34px, 4vw, 50px);
+      line-height: 1.03;
+      letter-spacing: -.04em;
+      margin-bottom: 10px;
+    }
+
+    .collection-subtitle {
+      color: #a17357;
+      font-family: Georgia, serif;
+      font-size: 21px;
+      font-style: italic;
+      margin-bottom: 22px;
+    }
+
+    .collection-content > p {
+      color: #7d736a;
+      margin-bottom: 26px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-bottom: 28px;
+    }
+
+    .feature {
+      padding: 7px 11px;
+      border-radius: 9px;
+      background: #f4f0ea;
+      border: 1px solid rgba(80,65,50,.08);
+      color: #6e665f;
+      font-size: 12px;
+      font-weight: 650;
+    }
+
+    .price {
+      font-size: 30px;
+      font-weight: 850;
+      letter-spacing: -.03em;
+      margin-bottom: 20px;
+    }
+
+    .collection-link {
+      display: inline-flex;
+      align-items: center;
+      align-self: flex-start;
+      gap: 8px;
+      padding: 14px 21px;
+      border-radius: 12px;
+      background: #3e4942;
+      color: white;
+      font-weight: 750;
+      transition: .2s ease;
+    }
+
+    .collection-link:hover {
+      transform: translateY(-2px);
+      background: #303a34;
+    }
+
+    /* WHY */
+
+    .why {
+      background: rgba(255,255,255,.42);
+      border-top: 1px solid rgba(80,65,50,.07);
+      border-bottom: 1px solid rgba(80,65,50,.07);
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 48px;
+    }
+
+    .benefit {
+      padding: 28px;
+      border-radius: 20px;
+      background: rgba(255,255,255,.70);
+      border: 1px solid rgba(80,65,50,.08);
+    }
+
+    .benefit-icon {
+      font-size: 28px;
+      margin-bottom: 19px;
+    }
+
+    .benefit h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .benefit p {
+      color: #81766c;
+      font-size: 14px;
+    }
+
+    /* COMING SOON */
+
+    .coming {
+      text-align: center;
+    }
+
+    .coming .section-title,
+    .coming .section-intro {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .coming-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 35px;
+    }
+
+    .coming-item {
+      padding: 10px 15px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.65);
+      border: 1px solid rgba(80,65,50,.09);
+      color: #776d65;
+      font-size: 14px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      border-top: 1px solid rgba(80,65,50,.09);
+      padding: 38px 0;
+      color: #8c8178;
+      font-size: 14px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a:hover {
+      color: #332f2b;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .collection-card {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-art {
+        min-height: 350px;
+      }
+
+      .collection-image {
+        min-height: 420px;
+      }
+
+      .benefits {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        width: min(100% - 28px, 1180px);
+      }
+
+      nav {
+        min-height: 72px;
+      }
+
+      .nav-links > a:not(.back-galumio) {
+        display: none;
+      }
+
+      .brand-text span {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 70px 0;
+      }
+
+      .hero-grid {
+        gap: 45px;
+      }
+
+      .hero-art {
+        min-height: 310px;
+      }
+
+      .hero-art-content span {
+        font-size: 55px;
+      }
+
+      section {
+        padding: 80px 0;
+      }
+
+      .collection-content {
+        padding: 35px 25px;
+      }
+
+      .collection-image {
+        min-height: 330px;
+      }
+
+      .benefits {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+
+    <nav>
+
+      <a class="brand" href="/studio/">
+        <div class="brand-icon">G</div>
+
+        <div class="brand-text">
+          <strong>GALUMIO STUDIO</strong>
+          <span>Digital Art & Creative Resources</span>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="#colecciones">Colecciones</a>
+        <a href="#por-que">Sobre Studio</a>
+        <a class="back-galumio" href="/">← GALUMIO</a>
+      </div>
+
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+
+  <div class="container">
+
+    <section class="hero">
+
+      <div class="hero-grid">
+
+        <div>
+
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            A creative division of GALUMIO
+          </div>
+
+          <h1>
+            Galumio<br>Studio
+          </h1>
+
+          <h2>
+            Arte digital para transformar tus ideas en algo único.
+          </h2>
+
+          <p>
+            Colecciones de ilustraciones y recursos creativos en alta resolución,
+            diseñados para sublimación, impresión, decoración, productos
+            personalizados y proyectos comerciales.
+          </p>
+
+          <div class="buttons">
+
+            <a class="button button-primary" href="#colecciones">
+              Explorar colecciones
+            </a>
+
+            <a class="button button-secondary" href="/">
+              Conocer GALUMIO
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="hero-art">
+
+          <div class="art-circle circle-one"></div>
+          <div class="art-circle circle-two"></div>
+
+          <div class="hero-art-content">
+
+            <div>
+              <span>🎨</span>
+
+              <strong>
+                Create.<br>
+                Print.<br>
+                Make it yours.
+              </strong>
+
+              <p>
+                Digital artwork created for makers,
+                creators and small businesses.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+  <!-- COLLECTIONS -->
+
+  <section id="colecciones">
+
+    <div class="container">
+
+      <div class="section-label">
+        Collections
+      </div>
+
+      <h2 class="section-title">
+        Descubrí nuestras colecciones.
+      </h2>
+
+      <p class="section-intro">
+        Recursos digitales cuidadosamente preparados para que puedas
+        incorporarlos fácilmente en tus propios proyectos y productos.
+      </p>
+
+      <div class="collections">
+
+        <!-- SAFARI BABY -->
+
+        <article class="collection-card">
+
+          <div class="collection-image">
+
+            <!--
+              Cuando subamos portada.png a:
+              /studio/safari-baby/images/portada.png
+
+              reemplazaremos el placeholder por:
+
+              <img
+                src="/studio/safari-baby/images/portada.png"
+                alt="Safari Baby Watercolor Clipart Bundle"
+              >
+            -->
+
+            <div class="image-placeholder">
+              <div>
+                <span>🦁</span>
+                <strong>Safari Baby Collection</strong>
+                <p>Watercolor Clipart Bundle</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="collection-content">
+
+            <div class="badge">
+              New Collection
+            </div>
+
+            <h3>
+              Safari Baby
+            </h3>
+
+            <div class="collection-subtitle">
+              Watercolor Clipart Bundle
+            </div>
+
+            <p>
+              Una adorable colección de animales bebé de safari en estilo
+              acuarela, creada para proyectos infantiles, sublimación,
+              decoración, papelería y productos personalizados.
+            </p>
+
+            <div class="features">
+
+              <span class="feature">
+                12 PNG
+              </span>
+
+              <span class="feature">
+                Transparent Background
+              </span>
+
+              <span class="feature">
+                High Resolution
+              </span>
+
+              <span class="feature">
+                Commercial Use
+              </span>
+
+            </div>
+
+            <div class="price">
+              US$ 6.90
+            </div>
+
+            <a
+              class="collection-link"
+              href="/studio/safari-baby/"
+            >
+              Ver colección →
+            </a>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- WHY GALUMIO STUDIO -->
+
+  <section class="why" id="por-que">
+
+    <div class="container">
+
+      <div class="section-label">
+        Galumio Studio
+      </div>
+
+      <h2 class="section-title">
+        Recursos listos para crear.
+      </h2>
+
+      <p class="section-intro">
+        Diseñamos cada colección pensando tanto en la estética como
+        en su uso práctico dentro de proyectos creativos.
+      </p>
+
+      <div class="benefits">
+
+        <article class="benefit">
+          <div class="benefit-icon">✦</div>
+          <h3>Alta resolución</h3>
+          <p>
+            Archivos preparados para obtener excelentes resultados
+            en impresión y proyectos digitales.
+          </p>
+        </article>
+
+        <article class="benefit">
+          <div class="benefit-icon">◌</div>
+          <h3>Fondo transparente</h3>
+          <p>
+            PNG individuales fáciles de integrar en diferentes
+            diseños y composiciones.
+          </p>
+        </article>
+
+        <article class="benefit">
+          <div class="benefit-icon">◆</div>
+          <h3>Estilo coherente</h3>
+          <p>
+            Cada colección mantiene una estética consistente para
+            combinar fácilmente todas sus ilustraciones.
+          </p>
+        </article>
+
+        <article class="benefit">
+          <div class="benefit-icon">✓</div>
+          <h3>Uso comercial</h3>
+          <p>
+            Podés incorporar las ilustraciones en tus diseños y
+            vender productos físicos terminados.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- COMING SOON -->
+
+  <section class="coming">
+
+    <div class="container">
+
+      <div class="section-label">
+        Coming Soon
+      </div>
+
+      <h2 class="section-title">
+        Esto recién empieza.
+      </h2>
+
+      <p class="section-intro">
+        Safari Baby es la primera colección de Galumio Studio.
+        Nuevos estilos, temáticas y recursos creativos se irán
+        incorporando al catálogo.
+      </p>
+
+      <div class="coming-list">
+
+        <span class="coming-item">
+          Forest Baby
+        </span>
+
+        <span class="coming-item">
+          Farm Baby
+        </span>
+
+        <span class="coming-item">
+          Ocean Baby
+        </span>
+
+        <span class="coming-item">
+          Dinosaurs
+        </span>
+
+        <span class="coming-item">
+          Nursery Collections
+        </span>
+
+        <span class="coming-item">
+          Sublimation Designs
+        </span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+
+  <div class="container footer-inner">
+
+    <div>
+      © 2026 Galumio Studio · A GALUMIO creative division.
+    </div>
+
+    <div class="footer-links">
+
+      <a href="/">
+        GALUMIO
+      </a>
+
+      <a href="#colecciones">
+        Colecciones
+      </a>
+
+      <a href="mailto:contacto@galumio.com.ar?subject=Galumio%20Studio">
+        Contacto
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
+```
