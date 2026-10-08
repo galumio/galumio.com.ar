@@ -1,0 +1,93 @@
+{
+  "name": "Validate and deploy Galumio Pages",
+  "on": {
+    "push": {
+      "branches": [
+        "main",
+        "feature/galumio-tienda"
+      ]
+    },
+    "pull_request": {
+      "branches": [
+        "main"
+      ]
+    },
+    "workflow_dispatch": {}
+  },
+  "permissions": {},
+  "concurrency": {
+    "group": "galumio-pages-${{ github.ref }}",
+    "cancel-in-progress": false
+  },
+  "jobs": {
+    "build": {
+      "runs-on": "ubuntu-latest",
+      "timeout-minutes": 10,
+      "permissions": {
+        "contents": "read"
+      },
+      "steps": [
+        {
+          "name": "Checkout",
+          "uses": "actions/checkout@v6",
+          "with": {
+            "persist-credentials": false
+          }
+        },
+        {
+          "name": "Setup Node.js",
+          "uses": "actions/setup-node@v7",
+          "with": {
+            "node-version": "24",
+            "package-manager-cache": false
+          }
+        },
+        {
+          "name": "Validate, build and test",
+          "run": "npm run check"
+        },
+        {
+          "name": "Validate final public artifact",
+          "run": "npm run validate:dist"
+        },
+        {
+          "name": "Upload only dist",
+          "if": "github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')",
+          "uses": "actions/upload-pages-artifact@v4",
+          "with": {
+            "path": "dist",
+            "retention-days": 1
+          }
+        }
+      ]
+    },
+    "deploy": {
+      "if": "github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')",
+      "needs": "build",
+      "runs-on": "ubuntu-latest",
+      "timeout-minutes": 10,
+      "permissions": {
+        "pages": "write",
+        "id-token": "write"
+      },
+      "environment": {
+        "name": "github-pages",
+        "url": "${{ steps.deployment.outputs.page_url }}"
+      },
+      "steps": [
+        {
+          "name": "Read existing Pages configuration",
+          "uses": "actions/configure-pages@v5",
+          "with": {
+            "enablement": false
+          }
+        },
+        {
+          "name": "Deploy validated artifact",
+          "id": "deployment",
+          "uses": "actions/deploy-pages@v4"
+        }
+      ]
+    }
+  }
+}

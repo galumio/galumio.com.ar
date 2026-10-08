@@ -1,0 +1,56 @@
+[
+  {
+    "id": "astria",
+    "title": "Astria",
+    "description": "Astrología y tecnología para explorar cartas natales, compatibilidad y horóscopos.",
+    "status": "beta-recorded",
+    "source": "existing-site",
+    "path": "/astria/",
+    "note": "La página existente presenta una beta para Android. Su vigencia está pendiente de verificación."
+  },
+  {
+    "id": "biblia-viva",
+    "title": "Biblia Viva",
+    "description": "Lectura bíblica y experiencias interactivas para adultos y niños.",
+    "status": "development-recorded",
+    "source": "existing-site",
+    "path": "/biblia-viva/",
+    "note": "La página existente indica que está en desarrollo. Estado actual pendiente de confirmación."
+  },
+  {
+    "id": "causelink",
+    "title": "CauseLink",
+    "description": "Proyecto de Galumio. Presentación y detalles pendientes de confirmación.",
+    "status": "unknown",
+    "source": "owner-project-list",
+    "path": null,
+    "note": "Disponibilidad sin confirmar."
+  },
+  {
+    "id": "nexuscore",
+    "title": "NexusCore",
+    "description": "Proyecto de Galumio. Presentación y detalles pendientes de confirmación.",
+    "status": "unknown",
+    "source": "owner-project-list",
+    "path": null,
+    "note": "Disponibilidad sin confirmar."
+  },
+  {
+    "id": "stack-overdrive",
+    "title": "Stack Overdrive",
+    "description": "Proyecto de Galumio. Presentación y detalles pendientes de confirmación.",
+    "status": "unknown",
+    "source": "owner-project-list",
+    "path": null,
+    "note": "Disponibilidad sin confirmar."
+  },
+  {
+    "id": "el-camino-ciego",
+    "title": "El Camino Ciego",
+    "description": "Proyecto de Galumio. Presentación y detalles pendientes de confirmación.",
+    "status": "unknown",
+    "source": "owner-project-list",
+    "path": null,
+    "note": "Disponibilidad sin confirmar."
+  }
+]

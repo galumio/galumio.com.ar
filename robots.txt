@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /templates/
+Disallow: /scripts/
+Disallow: /tests/
+Disallow: /data/
+Disallow: /docs/
+Sitemap: https://galumio.com.ar/sitemap.xml
