@@ -9,7 +9,13 @@
     "format": null,
     "publicationStatus": "published",
     "publicationSource": "owner-confirmed-2026-10-08",
-    "image": null,
+    "image": {
+      "original": "/assets/images/products/safari-baby-halloween-es/cover.jpg",
+      "display": "/assets/images/products/safari-baby-halloween-es/cover-web.jpg",
+      "alt": "Portada de Safari Baby Halloween · Español",
+      "width": 800,
+      "height": 1280
+    },
     "expectedImage": "/assets/images/products/safari-baby-halloween-es/cover.jpg",
     "offers": [
       {
@@ -59,7 +65,13 @@
     "format": null,
     "publicationStatus": "published",
     "publicationSource": "owner-confirmed-2026-10-08",
-    "image": null,
+    "image": {
+      "original": "/assets/images/products/safari-baby-halloween-en/cover.jpg",
+      "display": "/assets/images/products/safari-baby-halloween-en/cover-web.jpg",
+      "alt": "Portada de Safari Baby Halloween · English",
+      "width": 800,
+      "height": 1280
+    },
     "expectedImage": "/assets/images/products/safari-baby-halloween-en/cover.jpg",
     "offers": [
       {
@@ -109,7 +121,13 @@
     "format": null,
     "publicationStatus": "published",
     "publicationSource": "owner-confirmed-2026-10-08",
-    "image": null,
+    "image": {
+      "original": "/assets/images/products/cuidar-alzheimer-demencia/cover.jpg",
+      "display": "/assets/images/products/cuidar-alzheimer-demencia/cover-web.jpg",
+      "alt": "Portada de Cuidar a mamá o papá con Alzheimer o demencia",
+      "width": 800,
+      "height": 1200
+    },
     "expectedImage": "/assets/images/products/cuidar-alzheimer-demencia/cover.jpg",
     "offers": [
       {
@@ -159,7 +177,13 @@
     "format": null,
     "publicationStatus": "published",
     "publicationSource": "owner-confirmed-2026-10-08",
-    "image": null,
+    "image": {
+      "original": "/assets/images/products/ia-para-maestros/cover.jpg",
+      "display": "/assets/images/products/ia-para-maestros/cover-web.jpg",
+      "alt": "Portada de IA para docentes · Español",
+      "width": 800,
+      "height": 1280
+    },
     "expectedImage": "/assets/images/products/ia-para-maestros/cover.jpg",
     "offers": [
       {
@@ -194,7 +218,13 @@
     "format": null,
     "publicationStatus": "published",
     "publicationSource": "owner-confirmed-2026-10-08",
-    "image": null,
+    "image": {
+      "original": "/assets/images/products/ai-for-teachers-en/cover.jpg",
+      "display": "/assets/images/products/ai-for-teachers-en/cover-web.jpg",
+      "alt": "Portada de AI for Teachers · English",
+      "width": 800,
+      "height": 1280
+    },
     "expectedImage": "/assets/images/products/ai-for-teachers-en/cover.jpg",
     "offers": [
       {
@@ -229,7 +259,13 @@
     "format": null,
     "publicationStatus": "published",
     "publicationSource": "owner-confirmed-2026-10-08",
-    "image": null,
+    "image": {
+      "original": "/assets/images/products/safari-baby-cuentos-para-dormir-es/cover.jpg",
+      "display": "/assets/images/products/safari-baby-cuentos-para-dormir-es/cover-web.jpg",
+      "alt": "Portada de Safari Baby: Cuentos para Dormir — Español",
+      "width": 800,
+      "height": 1280
+    },
     "expectedImage": "/assets/images/products/safari-baby-cuentos-para-dormir-es/cover.jpg",
     "offers": [
       {
@@ -257,7 +293,13 @@
     "format": null,
     "publicationStatus": "published",
     "publicationSource": "owner-confirmed-2026-10-08",
-    "image": null,
+    "image": {
+      "original": "/assets/images/products/safari-baby-bedtime-stories/cover.jpg",
+      "display": "/assets/images/products/safari-baby-bedtime-stories/cover-web.jpg",
+      "alt": "Portada de Safari Baby: Bedtime Stories — Inglés",
+      "width": 800,
+      "height": 1280
+    },
     "expectedImage": "/assets/images/products/safari-baby-bedtime-stories/cover.jpg",
     "offers": [
       {
