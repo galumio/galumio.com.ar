@@ -220,33 +220,71 @@
     "linksFeatured": true
   },
   {
+    "id": "safari-baby-cuentos-para-dormir-es",
+    "slug": "safari-baby-cuentos-para-dormir-es",
+    "title": "Safari Baby: Cuentos para Dormir — Español",
+    "category": "libros-infantiles",
+    "description": "La edición en español de Safari Baby: Cuentos para Dormir.",
+    "language": "es",
+    "format": null,
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-10-08",
+    "image": null,
+    "expectedImage": "/assets/images/products/safari-baby-cuentos-para-dormir-es/cover.jpg",
+    "offers": [
+      {
+        "platform": "payhip",
+        "price": null,
+        "url": "https://payhip.com/b/HJGdE",
+        "verification": "verified",
+        "verifiedAt": "2026-10-08",
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null
+      }
+    ],
+    "featured": false,
+    "group": "safari-baby-bedtime-stories",
+    "details": [],
+    "legacyPath": null
+  },
+  {
     "id": "safari-baby-bedtime-stories",
     "slug": "safari-baby-bedtime-stories",
-    "title": "Safari Baby Bedtime Stories",
+    "title": "Safari Baby: Bedtime Stories — Inglés",
     "category": "libros-infantiles",
-    "description": "Un título de Safari Baby cuyas ediciones y detalles estamos verificando.",
-    "language": null,
+    "description": "La edición en inglés de Safari Baby: Bedtime Stories.",
+    "language": "en",
     "format": null,
-    "publicationStatus": "unknown",
-    "publicationSource": "pending",
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-10-08",
     "image": null,
     "expectedImage": "/assets/images/products/safari-baby-bedtime-stories/cover.jpg",
-    "offers": [],
+    "offers": [
+      {
+        "platform": "payhip",
+        "price": null,
+        "url": "https://payhip.com/b/KVDu2",
+        "verification": "verified",
+        "verifiedAt": "2026-10-08",
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null
+      }
+    ],
     "featured": false,
-    "group": null,
+    "group": "safari-baby-bedtime-stories",
     "details": [],
     "legacyPath": null
   },
   {
     "id": "safari-baby-12-animales",
     "slug": "safari-baby-12-animales",
-    "title": "Safari Baby Watercolor Clipart Bundle",
+    "title": "Safari Baby Animals Watercolor Clipart Bundle",
     "category": "disenos-digitales",
     "description": "Una colección de 12 animales bebé en PNG con fondo transparente para proyectos creativos.",
     "language": null,
     "format": "PNG",
-    "publicationStatus": "unknown",
-    "publicationSource": "pending",
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-10-08",
     "image": {
       "original": "/studio/safari-baby/images/portada.png",
       "display": "/assets/images/catalog/portada.jpg",
@@ -259,9 +297,11 @@
       {
         "platform": "payhip",
         "url": "https://payhip.com/b/5taEL",
-        "verification": "pending",
-        "verifiedAt": null,
-        "price": null
+        "verification": "verified",
+        "verifiedAt": "2026-10-08",
+        "price": null,
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null
       }
     ],
     "featured": true,
@@ -280,8 +320,8 @@
     "description": "30 actividades imprimibles para aprender jugando con los personajes de Safari Baby.",
     "language": null,
     "format": "PDF",
-    "publicationStatus": "unknown",
-    "publicationSource": "pending",
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-10-08",
     "image": {
       "original": "/studio/safari-baby/images/activity-book-cover.jpg",
       "display": "/assets/images/catalog/activity-book-cover.jpg",
@@ -294,9 +334,11 @@
       {
         "platform": "payhip",
         "url": "https://payhip.com/b/cLazk",
-        "verification": "pending",
-        "verifiedAt": null,
-        "price": null
+        "verification": "verified",
+        "verifiedAt": "2026-10-08",
+        "price": null,
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null
       },
       {
         "platform": "etsy",
@@ -322,8 +364,8 @@
     "description": "Después de una tormenta, Leo y sus amigos descubren cómo ayudarse para encontrar el camino de regreso.",
     "language": "es",
     "format": "Ebook",
-    "publicationStatus": "unknown",
-    "publicationSource": "pending",
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-10-08",
     "image": {
       "original": "/studio/safari-baby/images/leo-cover-es.png",
       "display": "/assets/images/catalog/leo-cover-es.jpg",
@@ -336,9 +378,11 @@
       {
         "platform": "payhip",
         "url": "https://payhip.com/b/rLfj8",
-        "verification": "pending",
-        "verifiedAt": null,
-        "price": null
+        "verification": "verified",
+        "verifiedAt": "2026-10-08",
+        "price": null,
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null
       },
       {
         "platform": "etsy",
@@ -363,8 +407,8 @@
     "description": "La aventura ilustrada de Leo y sus amigos, en su edición en inglés.",
     "language": "en",
     "format": "Ebook",
-    "publicationStatus": "unknown",
-    "publicationSource": "pending",
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-10-08",
     "image": {
       "original": "/studio/safari-baby/images/leo-cover-en.png",
       "display": "/assets/images/catalog/leo-cover-en.jpg",
@@ -377,9 +421,11 @@
       {
         "platform": "payhip",
         "url": "https://payhip.com/b/zqAP3",
-        "verification": "pending",
-        "verifiedAt": null,
-        "price": null
+        "verification": "verified",
+        "verifiedAt": "2026-10-08",
+        "price": null,
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null
       },
       {
         "platform": "etsy",

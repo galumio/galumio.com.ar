@@ -49,3 +49,47 @@ test('se conservan todos los productos y proyectos previos y la URL española de
  for(const id of ['astria','biblia-viva','causelink','nexuscore','stack-overdrive','el-camino-ciego'])assert.ok(data.projects.some(p=>p.id===id));
  assert.equal(data.products.find(p=>p.id==='ia-para-maestros').slug,'ia-para-maestros');
 });
+
+const newPayhip=[
+ ['safari-baby-cuentos-para-dormir-es','es','HJGdE'],
+ ['safari-baby-bedtime-stories','en','KVDu2'],
+ ['leo-luciernagas-es','es','rLfj8'],
+ ['leo-fireflies-en','en','zqAP3'],
+ ['safari-baby-activity-book',null,'cLazk'],
+ ['safari-baby-12-animales',null,'5taEL']
+];
+test('seis enlaces Payhip nuevos respetan edición, evidencia y precios no informados',()=>{
+ for(const [id,language,code] of newPayhip){
+  const p=data.products.find(p=>p.id===id);assert.ok(p,id);assert.equal(p.language,language);
+  assert.equal(p.publicationStatus,'published');assert.equal(p.publicationSource,'owner-confirmed-2026-10-08');
+  const offer=p.offers.find(o=>o.platform==='payhip');
+  assert.equal(offer.url,'https://payhip.com/b/'+code);assert.equal(offer.verification,'verified');
+  assert.equal(offer.verificationSource,'owner-provided');assert.equal(offer.verifiedAt,'2026-10-08');
+  assert.equal(offer.httpCheckedAt,null);assert.equal(offer.price,null);
+ }
+ assert.equal(data.products.flatMap(p=>p.offers).filter(o=>o.verification==='verified').length,14);
+ const editions=data.products.filter(p=>p.group==='safari-baby-bedtime-stories');
+ assert.deepEqual(editions.map(p=>p.language).sort(),['en','es']);
+});
+test('el pack confirmado de doce animales es único y conserva su ficha histórica',()=>{
+ const packs=data.products.filter(p=>p.offers.some(o=>o.url==='https://payhip.com/b/5taEL'));
+ assert.equal(packs.length,1);assert.equal(packs[0].id,'safari-baby-12-animales');
+ assert.equal(packs[0].legacyPath,'/studio/safari-baby/#resources');
+ assert.equal(data.products.filter(p=>p.category==='disenos-digitales').length,1);
+ assert.equal(data.products.find(p=>p.id==='leo-bundle-bilingue').publicationStatus,'unknown');
+});
+test('nuevas fichas ofrecen solo Payhip y aparecen en tienda y categoría sin saturar links',()=>{
+ const store=fs.readFileSync(path.join(distRoot,'tienda/index.html'),'utf8');
+ const links=fs.readFileSync(path.join(distRoot,'links/index.html'),'utf8');
+ assert.deepEqual(data.products.filter(p=>p.linksFeatured).map(p=>p.id),expected.map(p=>p[0]));
+ for(const [id,,code] of newPayhip){
+  const p=data.products.find(p=>p.id===id);
+  const html=fs.readFileSync(path.join(distRoot,'productos',p.slug,'index.html'),'utf8');
+  const buttons=[...html.matchAll(/<a\b([^>]*data-buy="[^"]+"[^>]*)>/g)];
+  assert.equal(buttons.length,1,id);assert.ok(buttons[0][1].includes('data-buy="payhip"'));
+  assert.ok(buttons[0][1].includes('href="https://payhip.com/b/'+code+'"'));
+  const route='href="/productos/'+p.slug+'/"';assert.ok(store.includes(route),id);
+  assert.ok(fs.readFileSync(path.join(distRoot,p.category,'index.html'),'utf8').includes(route),id);
+  assert.equal(links.includes(route),false,id);
+ }
+});
