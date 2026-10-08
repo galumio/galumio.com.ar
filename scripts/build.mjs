@@ -27,7 +27,7 @@ for(const p of data.products){
  if(p.image)schema.image=origin+p.image.display;
  const offers=p.offers.filter(o=>verifiedOffer(o)&&o.price&&o.price.kind!=='reference').map(o=>({'@type':'Offer',url:o.url,price:o.price.amount,priceCurrency:o.price.currency}));
  if(offers.length)schema.offers=offers;
- const extra={schema};if(p.image)extra.image=p.image.display;
+ const extra={schema,image:p.image?.display||null};
  page(url,p.title,p.description,productPage(p,data),extra);
 }
 const manifest=plan.manifest;
