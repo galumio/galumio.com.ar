@@ -1,6 +1,6 @@
 # Datos comerciales pendientes
 
-Actualización: 8 de octubre de 2026. El propietario proporcionó ocho URLs comerciales y cinco precios de referencia. Esos enlaces ya habilitan botones de compra. La evidencia es la confirmación del propietario, no una comprobación HTTP independiente. Los enlaces históricos pendientes continúan sin activarse en el catálogo nuevo.
+Actualización: 8 de octubre de 2026. El propietario proporcionó catorce URLs comerciales (ocho anteriores y seis Payhip adicionales) y cinco precios de referencia. Esos enlaces ya habilitan botones de compra. La evidencia es la confirmación del propietario, no una comprobación HTTP independiente. Los enlaces históricos pendientes continúan sin activarse en el catálogo nuevo.
 
 | Producto | Confirmado | Pendiente |
 |---|---|---|
@@ -9,11 +9,12 @@ Actualización: 8 de octubre de 2026. El propietario proporcionó ocho URLs come
 | Cuidar a mamá o papá con Alzheimer o demencia | Etsy y Payhip confirmados por el propietario; referencia USD 7.90 | Portada, idioma, formato, alcance y comprobación HTTP independiente |
 | IA para docentes · Español | Payhip confirmado por el propietario; español; referencia USD 6.90; conserva la ruta ia-para-maestros | Portada, formato, contenido y comprobación HTTP independiente |
 | AI for Teachers · English | Payhip confirmado por el propietario; inglés; referencia USD 6.90 | Portada, formato, contenido y comprobación HTTP independiente |
-| Safari Baby Bedtime Stories | Título aportado por el titular | Ediciones, portada, idioma, formato, estado y relación con los cuentos de Leo |
-| Safari Baby Watercolor Clipart Bundle | La página existente describe 12 animales PNG y contiene URL Payhip | Confirmar que sea el pack de sublimación solicitado; vigencia de URL, precio y licencia |
-| Safari Baby Activity Book | La página existente describe PDF, 30 actividades y edades 3–6; contiene URL Payhip | Idioma, URL Etsy, precio y vigencia |
-| Leo y el Sendero de las Luciérnagas | Página e imagen ES existentes, enlaces Payhip y Etsy | Vigencia de edición, enlaces, formato descargable concreto y precios |
-| Leo and the Path of Fireflies | Página e imagen EN existentes, enlaces Payhip y Etsy | Correspondencia de la URL Etsy con la edición EN; formato y precios |
+| Safari Baby: Cuentos para Dormir — Español | Payhip y edición española confirmados por el propietario | Portada, formato, descripción detallada y precio |
+| Safari Baby: Bedtime Stories — Inglés | Payhip y edición inglesa confirmados por el propietario; conserva la ruta safari-baby-bedtime-stories | Portada, formato, descripción detallada y precio |
+| Safari Baby Animals Watercolor Clipart Bundle | Único pack publicado de 12 animales, confirmado por el propietario; Payhip; fuente histórica PNG | Precio y términos vigentes de licencia |
+| Safari Baby Activity Book | Payhip confirmado por el propietario; fuente histórica PDF, 30 actividades y edades 3–6 | Idioma, URL Etsy y precio |
+| Leo y el Sendero de las Luciérnagas | Edición española y Payhip confirmados por el propietario; imagen original conservada | Confirmación de Etsy, formato descargable concreto y precio |
+| Leo and the Path of Fireflies | Edición inglesa y Payhip confirmados por el propietario; imagen original conservada | Correspondencia de Etsy con edición EN, formato descargable concreto y precio |
 | Leo · Bundle bilingüe | Página e imagen existentes, enlaces Payhip y Etsy | Ediciones exactas, formato, vigencia y precios |
 
 ## Enlaces proporcionados por el propietario
@@ -34,6 +35,17 @@ Registrados el 2026-10-08 a partir del mensaje del propietario de Galumio. En el
 - **AI for Teachers · English** — referencia USD 6.90.
   - payhip: https://payhip.com/b/jwF9l
 
+Los seis enlaces Payhip adicionales fueron confirmados por el propietario el 2026-10-08, sin precios nuevos ni comprobación HTTP independiente:
+
+- **Safari Baby: Cuentos para Dormir — Español** — https://payhip.com/b/HJGdE
+- **Safari Baby: Bedtime Stories — Inglés** — https://payhip.com/b/KVDu2
+- **Leo y el Sendero de las Luciérnagas** — https://payhip.com/b/rLfj8
+- **Leo and the Path of Fireflies** — https://payhip.com/b/zqAP3
+- **Safari Baby Activity Book** — https://payhip.com/b/cLazk
+- **Safari Baby Animals Watercolor Clipart Bundle** — https://payhip.com/b/5taEL
+
+Se reutilizaron cinco fichas y se creó solamente la edición española de Cuentos para Dormir. No se duplicó el pack de 12 animales. Activity Book y clipart mantienen idioma sin confirmar; el título inglés no acredita el idioma del contenido. /links/ conserva sus cinco productos destacados anteriores.
+
 Los precios tienen kind: reference y source: owner-provided. Se muestran identificados como referencia, no como precios finales revisados en cada tienda. Se excluyen del marcado de ofertas JSON-LD para no afirmar un precio de venta comprobado.
 
 No se proporcionaron enlaces Etsy para las ediciones de IA ni enlaces Amazon para estos productos; no se crearon ofertas ni botones para esas tiendas.
@@ -42,11 +54,7 @@ No se proporcionaron enlaces Etsy para las ediciones de IA ni enlaces Amazon par
 
 Son referencias históricas, NO verificaciones comerciales nuevas. Las URLs también están centralizadas en data/products.json.
 
-- Activity Book, Payhip: https://payhip.com/b/cLazk
-- Clipart de 12 animales, Payhip: https://payhip.com/b/5taEL
-- Leo ES, Payhip: https://payhip.com/b/rLfj8
 - Leo ES, Etsy: https://www.etsy.com/es/listing/4586416300/leo-y-el-sendero-de-las-luciernagas
-- Leo EN, Payhip: https://payhip.com/b/zqAP3
 - Leo EN, Etsy: https://www.etsy.com/es/listing/4586400478/leo-y-el-camino-de-las-luciernagas-libro
 - Bundle, Payhip: https://payhip.com/b/3D0xE
 - Bundle, Etsy: https://www.etsy.com/es/listing/4586417743/leo-and-the-path-of-fireflies-bilingual
