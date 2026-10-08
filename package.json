@@ -1,0 +1,19 @@
+{
+  "name": "galumio-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Catálogo estático de Galumio Studio, sin dependencias.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/validate.mjs",
+    "test": "node --test --test-concurrency=1 tests/*.test.mjs",
+    "check": "npm run validate && npm run build && npm run validate:dist && npm test",
+    "serve": "node scripts/serve.mjs",
+    "validate:dist": "node scripts/validate-dist.mjs",
+    "preview": "npm run serve"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

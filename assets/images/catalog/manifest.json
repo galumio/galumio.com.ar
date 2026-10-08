@@ -1,0 +1,86 @@
+﻿[
+    {
+        "bytes":  58158,
+        "width":  800,
+        "source":  "activity-book-cover.jpg",
+        "height":  800,
+        "file":  "activity-book-cover.jpg"
+    },
+    {
+        "bytes":  69831,
+        "width":  800,
+        "source":  "commercial-use.png",
+        "height":  800,
+        "file":  "commercial-use.jpg"
+    },
+    {
+        "bytes":  75350,
+        "width":  800,
+        "source":  "creative-uses.png",
+        "height":  800,
+        "file":  "creative-uses.jpg"
+    },
+    {
+        "bytes":  195927,
+        "width":  800,
+        "source":  "leo-bilingual-bundle.png",
+        "height":  800,
+        "file":  "leo-bilingual-bundle.jpg"
+    },
+    {
+        "bytes":  223027,
+        "width":  800,
+        "source":  "leo-cover-en.png",
+        "height":  1200,
+        "file":  "leo-cover-en.jpg"
+    },
+    {
+        "bytes":  202977,
+        "width":  800,
+        "source":  "leo-cover-es.png",
+        "height":  1200,
+        "file":  "leo-cover-es.jpg"
+    },
+    {
+        "bytes":  113436,
+        "width":  800,
+        "source":  "leo-firefly-scene.png",
+        "height":  1000,
+        "file":  "leo-firefly-scene.jpg"
+    },
+    {
+        "bytes":  197490,
+        "width":  800,
+        "source":  "leo-friends-scene.png",
+        "height":  960,
+        "file":  "leo-friends-scene.jpg"
+    },
+    {
+        "bytes":  127538,
+        "width":  800,
+        "source":  "mockups.png",
+        "height":  533,
+        "file":  "mockups.jpg"
+    },
+    {
+        "bytes":  210016,
+        "width":  800,
+        "source":  "portada.png",
+        "height":  800,
+        "file":  "portada.jpg"
+    },
+    {
+        "bytes":  153291,
+        "width":  800,
+        "source":  "premium.png",
+        "height":  533,
+        "file":  "premium.jpg"
+    },
+    {
+        "bytes":  95652,
+        "width":  800,
+        "source":  "safari-baby-whats-included.png",
+        "height":  800,
+        "file":  "safari-baby-whats-included.jpg"
+    }
+]

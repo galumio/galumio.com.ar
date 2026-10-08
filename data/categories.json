@@ -1,0 +1,26 @@
+[
+  {
+    "id": "libros-infantiles",
+    "title": "Libros infantiles",
+    "short": "Pequeñas grandes historias",
+    "description": "Cuentos y actividades para compartir, imaginar y aprender en familia."
+  },
+  {
+    "id": "guias-practicas",
+    "title": "Guías prácticas",
+    "short": "Una ayuda para cada día",
+    "description": "Lecturas y recursos para acompañar situaciones de la vida cotidiana."
+  },
+  {
+    "id": "educacion-ia",
+    "title": "Educación e IA",
+    "short": "Nuevas formas de aprender",
+    "description": "Recursos para explorar la enseñanza y la inteligencia artificial."
+  },
+  {
+    "id": "disenos-digitales",
+    "title": "Diseños digitales",
+    "short": "Tu próxima idea empieza acá",
+    "description": "Ilustraciones y recursos gráficos para tus proyectos creativos."
+  }
+]
