@@ -7,7 +7,7 @@ import {root,loadCatalog} from '../scripts/catalog.mjs';
 import {createServer} from '../scripts/serve.mjs';
 const data=loadCatalog();
 const legacy=['/astria/','/astria/privacidad/','/astria/soporte/','/biblia-viva/','/biblia-viva/privacidad/','/studio/','/studio/safari-baby/'];
-const routes=['/','/tienda/','/apps-y-juegos/','/links/',...data.categories.map(c=>'/'+c.id+'/'),...data.products.map(p=>'/productos/'+p.slug+'/'),...legacy];
+const routes=['/','/tienda/','/apps-y-juegos/','/causelink/','/links/',...data.categories.map(c=>'/'+c.id+'/'),...data.products.map(p=>'/productos/'+p.slug+'/'),...legacy];
 const read=url=>fs.readFileSync(path.join(distRoot,url,'index.html'),'utf8');
 function tags(html,name){return [...html.matchAll(new RegExp('<'+name+'\\b[^>]*>','g'))].map(m=>m[0]);}
 function attr(tag,name){return tag.match(new RegExp('(?:^|\\s)'+name+'="([^"]*)"'))?.[1];}

@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { root, loadCatalog, validateCatalog, verifiedOffer } from './catalog.mjs';
-import { origin, esc, layout, homePage, catalogPage, productPage, projectsPage, linksPage } from '../templates/site.mjs';
+import { origin, esc, layout, homePage, catalogPage, productPage, projectsPage, appPage, linksPage } from '../templates/site.mjs';
 import { distRoot, publicPlan, resetDist, copyPublicAssets, inside, legacyRoutes } from './public-output.mjs';
 import { validateOutput } from './validate-dist.mjs';
 const data=loadCatalog();
@@ -30,9 +30,18 @@ for(const p of data.products){
  const extra={schema,image:p.image?.display||null};
  page(url,p.title,p.description,productPage(p,data),extra);
 }
+for(const p of data.projects.filter(p=>p.public)) {
+ let body=appPage(p);
+ if(p.path){
+  const old=fs.readFileSync(path.join(root,'templates/legacy',p.path,'index.html'),'utf8');
+  body+=[...old.matchAll(/\bid="([^"]+)"/g)].map(m=>'<span class="historical-anchor" id="'+esc(m[1])+'" aria-hidden="true"></span>').join('');
+ }
+ page(p.detailPath,p.title,p.description,body,{image:p.banner?.display||p.icon?.display||null});
+}
 const manifest=plan.manifest;
 const legacyPaths=legacyRoutes;
 for(const route of legacyPaths){
+ if(data.projects.some(p=>p.public && p.detailPath==='/'+route))continue;
  let html=fs.readFileSync(path.join(root,'templates/legacy',route,'index.html'),'utf8');
  html=html.replace(/^```html\s*/,'').replace(/\s*```\s*$/,'');
  const title=html.match(/<title>([\s\S]*?)<\/title>/)[1];
