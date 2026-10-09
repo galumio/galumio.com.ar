@@ -6,7 +6,7 @@
     "category": "libros-infantiles",
     "description": "Una edición de Halloween de la colección Safari Baby.",
     "language": "es",
-    "format": null,
+    "format": "Ebook PDF",
     "publicationStatus": "published",
     "publicationSource": "owner-confirmed-2026-10-08",
     "image": {
@@ -62,7 +62,7 @@
     "category": "libros-infantiles",
     "description": "La edición en inglés de Safari Baby Halloween.",
     "language": "en",
-    "format": null,
+    "format": "Ebook PDF",
     "publicationStatus": "published",
     "publicationSource": "owner-confirmed-2026-10-08",
     "image": {
@@ -117,8 +117,8 @@
     "title": "Cuidar a mamá o papá con Alzheimer o demencia",
     "category": "guias-practicas",
     "description": "Una guía sobre el cuidado de mamá o papá con Alzheimer o demencia.",
-    "language": null,
-    "format": null,
+    "language": "es",
+    "format": "Ebook PDF",
     "publicationStatus": "published",
     "publicationSource": "owner-confirmed-2026-10-08",
     "image": {
@@ -174,7 +174,7 @@
     "category": "educacion-ia",
     "description": "Un recurso sobre inteligencia artificial para docentes, en español.",
     "language": "es",
-    "format": null,
+    "format": "Ebook PDF",
     "publicationStatus": "published",
     "publicationSource": "owner-confirmed-2026-10-08",
     "image": {
@@ -215,7 +215,7 @@
     "category": "educacion-ia",
     "description": "La edición en inglés del recurso de inteligencia artificial para docentes.",
     "language": "en",
-    "format": null,
+    "format": "Ebook PDF",
     "publicationStatus": "published",
     "publicationSource": "owner-confirmed-2026-10-08",
     "image": {
@@ -256,7 +256,7 @@
     "category": "libros-infantiles",
     "description": "La edición en español de Safari Baby: Cuentos para Dormir.",
     "language": "es",
-    "format": null,
+    "format": "Ebook PDF",
     "publicationStatus": "published",
     "publicationSource": "owner-confirmed-2026-10-08",
     "image": {
@@ -290,7 +290,7 @@
     "category": "libros-infantiles",
     "description": "La edición en inglés de Safari Baby: Bedtime Stories.",
     "language": "en",
-    "format": null,
+    "format": "Ebook PDF",
     "publicationStatus": "published",
     "publicationSource": "owner-confirmed-2026-10-08",
     "image": {
@@ -323,8 +323,8 @@
     "title": "Safari Baby Animals Watercolor Clipart Bundle",
     "category": "disenos-digitales",
     "description": "Una colección de 12 animales bebé en PNG con fondo transparente para proyectos creativos.",
-    "language": null,
-    "format": "PNG",
+    "language": "not-applicable",
+    "format": "PNG digital",
     "publicationStatus": "published",
     "publicationSource": "owner-confirmed-2026-10-08",
     "image": {
@@ -360,8 +360,8 @@
     "title": "Safari Baby Activity Book",
     "category": "libros-infantiles",
     "description": "30 actividades imprimibles para aprender jugando con los personajes de Safari Baby.",
-    "language": null,
-    "format": "PDF",
+    "language": "en",
+    "format": "PDF imprimible",
     "publicationStatus": "published",
     "publicationSource": "owner-confirmed-2026-10-08",
     "image": {
@@ -405,7 +405,7 @@
     "category": "libros-infantiles",
     "description": "Después de una tormenta, Leo y sus amigos descubren cómo ayudarse para encontrar el camino de regreso.",
     "language": "es",
-    "format": "Ebook",
+    "format": "Ebook PDF",
     "publicationStatus": "published",
     "publicationSource": "owner-confirmed-2026-10-08",
     "image": {
@@ -448,7 +448,7 @@
     "category": "libros-infantiles",
     "description": "La aventura ilustrada de Leo y sus amigos, en su edición en inglés.",
     "language": "en",
-    "format": "Ebook",
+    "format": "Ebook PDF",
     "publicationStatus": "published",
     "publicationSource": "owner-confirmed-2026-10-08",
     "image": {
@@ -491,7 +491,7 @@
     "category": "libros-infantiles",
     "description": "La historia de Leo y sus amigos en un conjunto de ediciones en español e inglés.",
     "language": "es-en",
-    "format": "Ebook",
+    "format": "Ebook PDF",
     "publicationStatus": "unknown",
     "publicationSource": "pending",
     "image": {

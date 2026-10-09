@@ -9,7 +9,7 @@ const data=loadCatalog();
 const expected=[
  ['safari-baby-halloween-es','es',4.90,{etsy:'https://www.etsy.com/es/listing/4590685161/safari-baby-cuentos-de-halloween-7',payhip:'https://payhip.com/b/463o5'}],
  ['safari-baby-halloween-en','en',4.90,{etsy:'https://www.etsy.com/es/listing/4590656261/cuentos-de-halloween-para-bebes-en-la',payhip:'https://payhip.com/b/gRrV4'}],
- ['cuidar-alzheimer-demencia',null,7.90,{etsy:'https://www.etsy.com/es/listing/4590736319/cuidar-a-mama-o-papa-con-alzheimer-o',payhip:'https://payhip.com/b/O8QHv'}],
+ ['cuidar-alzheimer-demencia','es',7.90,{etsy:'https://www.etsy.com/es/listing/4590736319/cuidar-a-mama-o-papa-con-alzheimer-o',payhip:'https://payhip.com/b/O8QHv'}],
  ['ia-para-maestros','es',6.90,{payhip:'https://payhip.com/b/hPo6v'}],
  ['ai-for-teachers-en','en',6.90,{payhip:'https://payhip.com/b/jwF9l'}]
 ];
@@ -55,8 +55,8 @@ const newPayhip=[
  ['safari-baby-bedtime-stories','en','KVDu2'],
  ['leo-luciernagas-es','es','rLfj8'],
  ['leo-fireflies-en','en','zqAP3'],
- ['safari-baby-activity-book',null,'cLazk'],
- ['safari-baby-12-animales',null,'5taEL']
+ ['safari-baby-activity-book','en','cLazk'],
+ ['safari-baby-12-animales','not-applicable','5taEL']
 ];
 test('seis enlaces Payhip nuevos respetan edición, evidencia y precios no informados',()=>{
  for(const [id,language,code] of newPayhip){
