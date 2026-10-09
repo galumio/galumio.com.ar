@@ -75,6 +75,16 @@ export function validateCatalog(data, options = {}) {
   for (const p of data.projects) {
     if (!safeSlug.test(p.id) || projectIds.has(p.id) || !p.title || !p.description || !p.note || !p.source) errors.push('Proyecto inválido: '+p.id);
     projectIds.add(p.id);
+    if(typeof p.public !== 'boolean')errors.push('Visibilidad de proyecto inválida: '+p.id);
+    if(p.children && (p.id!=='biblia-viva'||typeof p.children.title!=='string'||!p.children.title.trim()||typeof p.children.description!=='string'||!p.children.description.trim()||!Array.isArray(p.children.stories)||!p.children.stories.length||p.children.stories.some(s=>!s||typeof s.title!=='string'||!s.title.trim()||typeof s.activity!=='string'||!s.activity.trim())))errors.push('Sección infantil inválida: '+p.id);
+    if(p.public){
+      if(p.detailPath !== '/'+p.id+'/')errors.push('Ruta comercial inválida: '+p.id);
+      if(!p.statusTitle || !p.featureNote || !p.future || !p.platform || !Array.isArray(p.features) || !p.features.length || p.features.some(f=>typeof f!=='string'||!f.trim()))errors.push('Ficha de app incompleta: '+p.id);
+      if(!Array.isArray(p.downloads)||p.downloads.length)errors.push('Descargas sin confirmación: '+p.id);
+      if(!Array.isArray(p.screenshots)||p.screenshots.length)errors.push('Capturas sin revisión: '+p.id);
+      if(p.banner && (!/^\/assets\/images\/apps\/[a-z0-9-]+\/banner\.jpg$/.test(p.banner.display)||!exists(p.banner.display)||typeof p.banner.alt!=='string'||!p.banner.alt.trim()||!Number.isInteger(p.banner.width)||!Number.isInteger(p.banner.height)||p.banner.width<=0||p.banner.height<=0))errors.push('Banner inválido: '+p.id);
+      if(p.icon && (!/^\/assets\/images\/apps\/[a-z0-9-]+\/icon\.png$/.test(p.icon.display)||!exists(p.icon.display)||!p.icon.alt||!Number.isInteger(p.icon.width)||!Number.isInteger(p.icon.height)||p.icon.width<=0||p.icon.height<=0))errors.push('Ícono inválido: '+p.id);
+    }
     if (!['unknown','beta-recorded','development-recorded'].includes(p.status)) errors.push('Estado de proyecto inválido: '+p.id);
     if (p.path !== null && (!localPath(p.path) || !legacyExists(p.path))) errors.push('Ruta de proyecto inexistente: '+p.id);
   }

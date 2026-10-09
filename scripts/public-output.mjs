@@ -61,7 +61,8 @@ export function publicPlan(data = loadCatalog()) {
     if (!/^\/assets\/images\/[a-z0-9/-]+\.(jpg|jpeg|png|webp|avif|gif)$/.test(product.image.display)) throw new Error('La imagen web debe estar en assets/images');
     assets.add(product.image.display.slice(1));
   }
-  const routes = ['/', '/tienda/', '/apps-y-juegos/', '/links/', ...data.categories.map(c=>'/'+c.id+'/'), ...data.products.map(p=>'/productos/'+p.slug+'/'), ...legacyRoutes.map(p=>'/'+p)];
+  for (const project of data.projects.filter(p=>p.public)) { if(project.icon) assets.add(project.icon.display.slice(1)); if(project.banner) assets.add(project.banner.display.slice(1)); }
+  const routes = ['/', '/tienda/', '/apps-y-juegos/', '/links/', ...data.categories.map(c=>'/'+c.id+'/'), ...data.products.map(p=>'/productos/'+p.slug+'/'), ...legacyRoutes.map(p=>'/'+p), ...data.projects.filter(p=>p.public && !legacyRoutes.includes(p.detailPath.slice(1))).map(p=>p.detailPath)];
   const files = [...routes.map(r=>r.slice(1)+'index.html'), '404.html','sitemap.xml','robots.txt','CNAME','.nojekyll', ...assets];
   if (new Set(files).size !== files.length) throw new Error('Rutas de salida duplicadas');
   for (const file of files) inside(distRoot,file);

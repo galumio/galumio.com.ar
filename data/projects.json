@@ -2,29 +2,129 @@
   {
     "id": "astria",
     "title": "Astria",
-    "description": "Astrología y tecnología para explorar cartas natales, compatibilidad y horóscopos.",
+    "description": "Explorá tu carta natal, guardá perfiles y descubrí horóscopos, tránsitos y compatibilidad en español e inglés.",
     "status": "beta-recorded",
-    "source": "existing-site",
+    "source": "local-source-review-and-owner-confirmed-2026-10-09",
     "path": "/astria/",
-    "note": "La página existente presenta una beta para Android. Su vigencia está pendiente de verificación."
+    "note": "El código del proyecto tiene versión 3.1.0. Esto no confirma la versión publicada ni su disponibilidad en Google Play.",
+    "public": true,
+    "detailPath": "/astria/",
+    "icon": {
+      "display": "/assets/images/apps/astria/icon.png",
+      "alt": "Ícono original de Astria",
+      "width": 256,
+      "height": 256
+    },
+    "platform": "Android",
+    "screenshots": [],
+    "downloads": [],
+    "features": [
+      "Cálculo de cartas natales.",
+      "Perfiles guardados para volver a consultar tus cartas.",
+      "Horóscopo y tránsitos diarios.",
+      "Compatibilidad simbólica mediante aspectos entre dos cartas.",
+      "Oráculo simbólico con respuestas locales.",
+      "Generación y compartición de informes PDF."
+    ],
+    "featureNote": "Funciones verificadas en el código fuente. La revisión no incluyó pruebas de uso en un dispositivo Android.",
+    "statusTitle": "En desarrollo · publicación por confirmar",
+    "future": "Versión distribuida, disponibilidad pública y enlaces oficiales pendientes de confirmación.",
+    "banner": {
+      "display": "/assets/images/apps/astria/banner.jpg",
+      "alt": "Banner promocional original de Astria, con su identidad violeta y dorada",
+      "width": 1024,
+      "height": 500
+    }
   },
   {
     "id": "biblia-viva",
     "title": "Biblia Viva",
-    "description": "Lectura bíblica y experiencias interactivas para adultos y niños.",
+    "description": "Una aplicación para toda la familia: lectura y audio de la Biblia, con historias y juegos bíblicos interactivos para niños, en español e inglés.",
     "status": "development-recorded",
-    "source": "existing-site",
+    "source": "owner-confirmed-and-local-source-2026-10-09",
     "path": "/biblia-viva/",
-    "note": "La página existente indica que está en desarrollo. Estado actual pendiente de confirmación."
+    "note": "Versión Android generada. Pendiente de completar las pruebas cerradas de Google Play.",
+    "public": true,
+    "detailPath": "/biblia-viva/",
+    "icon": {
+      "display": "/assets/images/apps/biblia-viva/icon.png",
+      "alt": "Ícono original de Biblia Viva",
+      "width": 256,
+      "height": 256
+    },
+    "platform": "Android",
+    "screenshots": [],
+    "downloads": [],
+    "features": [
+      "Lectura de la Biblia en español e inglés.",
+      "Audio mediante texto a voz.",
+      "Biblia interactiva para niños con seis historias y juegos.",
+      "Versículo del día y favoritos.",
+      "Contenido descargable para lectura sin conexión."
+    ],
+    "featureNote": "Funciones verificadas en el código del proyecto Android. La revisión no incluyó pruebas de uso en un dispositivo. Publicación comercial pendiente.",
+    "statusTitle": "Pruebas cerradas pendientes",
+    "future": "Completar las pruebas cerradas de Google Play antes de confirmar el lanzamiento.",
+    "children": {
+      "title": "Biblia interactiva para niños",
+      "description": "Historias ilustradas para leer y escuchar, con actividades para participar y aprender en familia. Incluye preguntas sobre cada historia, estrellas y progreso guardado.",
+      "stories": [
+        {
+          "title": "La Creación",
+          "activity": "Completá el cielo y ubicá los animales arrastrando los elementos."
+        },
+        {
+          "title": "El Arca de Noé",
+          "activity": "Encontrá las parejas de animales y participá en el juego del arca."
+        },
+        {
+          "title": "Moisés y el Mar Rojo",
+          "activity": "Elegí el camino seguro y participá en la separación de las aguas."
+        },
+        {
+          "title": "David y Goliat",
+          "activity": "Buscá las cinco piedras y jugá con la honda de David."
+        },
+        {
+          "title": "El Buen Samaritano",
+          "activity": "Ayudá al viajero con agua, vendas y comida, y elegí cómo ayudar en distintas situaciones."
+        },
+        {
+          "title": "El nacimiento de Jesús",
+          "activity": "Seguí el camino hacia Belén y prepará el pesebre colocando sus elementos."
+        }
+      ]
+    }
   },
   {
     "id": "causelink",
     "title": "CauseLink",
-    "description": "Proyecto de Galumio. Presentación y detalles pendientes de confirmación.",
-    "status": "unknown",
-    "source": "owner-project-list",
+    "description": "Registrá hábitos, síntomas, alimentación y sueño. Consultá tus registros y datos de Health Connect a lo largo del tiempo.",
+    "status": "development-recorded",
+    "source": "local-source-review-and-owner-confirmed-2026-10-09",
     "path": null,
-    "note": "Disponibilidad sin confirmar."
+    "note": "Fase 3C implementada. El propietario confirmó su validación en Android; esta confirmación no procede de pruebas automáticas. Publicación comercial sin confirmar.",
+    "public": true,
+    "detailPath": "/causelink/",
+    "icon": {
+      "display": "/assets/images/apps/causelink/icon.png",
+      "alt": "Ícono oficial de CauseLink: hábitos, sueño, actividad y bienestar",
+      "width": 256,
+      "height": 256
+    },
+    "platform": "Android",
+    "screenshots": [],
+    "downloads": [],
+    "features": [
+      "Registro de hábitos y síntomas.",
+      "Registros de alimentación y sueño.",
+      "Línea de tiempo para consultar tus registros.",
+      "Integración con Health Connect en Android.",
+      "Sincronización y visualización de sueño, pasos y frecuencia cardíaca."
+    ],
+    "featureNote": "Funciones verificadas en el código fuente. La detección automática de patrones y los experimentos no están disponibles.",
+    "statusTitle": "En desarrollo · Fase 3C",
+    "future": "Disponibilidad pública y canales de distribución pendientes de confirmación."
   },
   {
     "id": "nexuscore",
@@ -33,7 +133,8 @@
     "status": "unknown",
     "source": "owner-project-list",
     "path": null,
-    "note": "Disponibilidad sin confirmar."
+    "note": "Disponibilidad sin confirmar.",
+    "public": false
   },
   {
     "id": "stack-overdrive",
@@ -42,7 +143,8 @@
     "status": "unknown",
     "source": "owner-project-list",
     "path": null,
-    "note": "Disponibilidad sin confirmar."
+    "note": "Disponibilidad sin confirmar.",
+    "public": false
   },
   {
     "id": "el-camino-ciego",
@@ -51,6 +153,7 @@
     "status": "unknown",
     "source": "owner-project-list",
     "path": null,
-    "note": "Disponibilidad sin confirmar."
+    "note": "Disponibilidad sin confirmar.",
+    "public": false
   }
 ]
