@@ -6,7 +6,7 @@ export function loadCatalog() {
   return Object.fromEntries(['categories','products','projects'].map(name => [name, JSON.parse(fs.readFileSync(path.join(root,'data',name+'.json'),'utf8'))]));
 }
 export const labels = {etsy:'Etsy', payhip:'Payhip', amazon:'Amazon'};
-export const languages = {es:'Español',en:'English','es-en':'Español + English'};
+export const languages = {es:'Español',en:'Inglés','es-en':'Español + Inglés','not-applicable':'No aplica'};
 export function verifiedOffer(o) { return o.verification === 'verified' && Boolean(o.url) && Boolean(o.verifiedAt) && ['owner-provided','independent-review'].includes(o.verificationSource); }
 export function statusLabel(p) { return p.publicationStatus === 'published' ? 'Publicado · enlaces en revisión' : 'Detalles en revisión'; }
 export function validateCatalog(data, options = {}) {
