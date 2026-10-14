@@ -808,5 +808,76 @@
     },
     "editorialSource": "Revisión de catálogo, portada original y presentación histórica; 2026-10-14",
     "visibility": "hidden"
+  },
+  {
+    "id": "como-estudiar-para-un-final",
+    "slug": "como-estudiar-para-un-final",
+    "title": "Cómo estudiar para un final",
+    "category": "educacion-estudio",
+    "description": "Prepará tu próximo final con una guía de 55 páginas, 10 capítulos y 8 plantillas imprimibles para organizar el estudio, practicar y planificar tus repasos.",
+    "subtitle": "Un método de estudio más claro para preparar tu próximo final",
+    "longDescription": [
+      "Preparar un examen final puede resultar abrumador cuando hay mucho contenido, poco tiempo y dificultades para organizar el estudio.",
+      "Esta guía reúne herramientas y estrategias prácticas para ayudarte a planificar la preparación, aprovechar mejor tus sesiones de estudio, organizar repasos y enfrentar tanto exámenes orales como escritos.",
+      "El objetivo es que puedas desarrollar un método de estudio más claro, sostenible y adaptado a tus necesidades.",
+      "El ebook completo tiene 55 páginas distribuidas en 10 capítulos. Incluye 8 plantillas imprimibles dentro del libro, que también se entregan como un PDF independiente para que puedas utilizarlas al preparar tus exámenes."
+    ],
+    "audience": "Estudiantes universitarios que preparan exámenes finales.",
+    "benefits": [
+      "Organizar la preparación y las sesiones de estudio.",
+      "Planificar repasos y la preparación para instancias orales y escritas.",
+      "Aplicar lo trabajado con las 8 plantillas imprimibles, disponibles también en un PDF independiente."
+    ],
+    "details": [
+      "Ebook completo de 55 páginas en español.",
+      "10 capítulos para acompañar la preparación del examen final.",
+      "8 plantillas imprimibles incluidas en el libro.",
+      "Las mismas 8 plantillas se entregan también como PDF independiente."
+    ],
+    "tags": [
+      "Estudio",
+      "Universidad",
+      "Exámenes finales"
+    ],
+    "language": "es",
+    "format": "Ebook PDF",
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-10-14",
+    "visibility": "public",
+    "image": {
+      "original": "/assets/images/products/como-estudiar-para-un-final/cover.png",
+      "display": "/assets/images/products/como-estudiar-para-un-final/cover-web.jpg",
+      "alt": "Portada original de Cómo estudiar para un final, guía práctica con 10 capítulos y 8 plantillas imprimibles",
+      "width": 800,
+      "height": 1132
+    },
+    "expectedImage": "/assets/images/products/como-estudiar-para-un-final/cover.png",
+    "offers": [
+      {
+        "platform": "payhip",
+        "url": "https://payhip.com/b/pSUB0",
+        "verification": "verified",
+        "verifiedAt": "2026-10-14",
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null,
+        "price": {
+          "amount": 3.99,
+          "currency": "USD",
+          "verifiedAt": "2026-10-14",
+          "kind": "listed",
+          "source": "owner-provided"
+        }
+      }
+    ],
+    "featured": false,
+    "linksFeatured": false,
+    "group": null,
+    "legacyPath": null,
+    "editorialSource": "Descripción del borrador y contenido comercial confirmados por el propietario; portada original revisada. 2026-10-14.",
+    "contentVerification": "owner-confirmed",
+    "seo": {
+      "title": "Cómo estudiar para un final: guía y plantillas",
+      "description": "Organizá tu estudio con un ebook de 55 páginas, 10 capítulos y 8 plantillas imprimibles. En español, disponible en Payhip por USD 3,99."
+    }
   }
 ]

@@ -10,7 +10,7 @@ const data=loadCatalog();
 const testDraft={...structuredClone(data.products[0]),id:'ejemplo-privado',slug:'ejemplo-privado',title:'Ejemplo de prueba',category:'educacion-estudio',categoryTitle:'Educación y estudio',visibility:'draft',publicationStatus:'unknown',publicationSource:'pending',offers:[],featured:false,linksFeatured:false,image:null,freeReading:{url:null,verification:'pending'}};
 test('descripciones conservan ediciones, imágenes, disponibilidad y ofertas originales',()=>{
  const baseline=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/catalog-preserved.json'),'utf8'));
- assert.equal(data.products.length,baseline.length);
+ assert.equal(data.products.filter(p=>p.id!=='como-estudiar-para-un-final').length,baseline.length);
  for(const previous of baseline){const p=data.products.find(p=>p.id===previous.id);for(const key of Object.keys(previous))assert.deepEqual(p[key],previous[key],p.id+': '+key);}
 });
 test('cada ficha muestra contenido ampliado, público, beneficios y SEO propio',()=>{
@@ -42,7 +42,7 @@ test('vista previa privada sirve el borrador con noindex sin exponer fuentes ni 
 });
 
 test('bundle pendiente se conserva privado y no aparece en ninguna página o recurso público',()=>{
- const p=data.products.find(p=>p.id==='leo-bundle-bilingue');assert.equal(p.visibility,'hidden');assert.equal(p.publicationStatus,'unknown');assert.equal(data.products.length,12);assert.equal(data.products.filter(isPublicProduct).length,11);
+ const p=data.products.find(p=>p.id==='leo-bundle-bilingue');assert.equal(p.visibility,'hidden');assert.equal(p.publicationStatus,'unknown');assert.equal(data.products.length,13);assert.equal(data.products.filter(isPublicProduct).length,12);
  for(const file of listFiles(distRoot)){
   assert.doesNotMatch(file,/leo-bilingual-bundle|leo-bundle-bilingue/);
   if(/\.(html|xml)$/.test(file))assert.doesNotMatch(fs.readFileSync(path.join(distRoot,file),'utf8'),/leo-bilingual-bundle|leo-bundle-bilingue|3D0xE|4586417743/);

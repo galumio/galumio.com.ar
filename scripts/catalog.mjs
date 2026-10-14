@@ -16,7 +16,7 @@ export function validFreeReading(link) {
 }
 export function validateDrafts(drafts, data=loadCatalog()) {
  if(!Array.isArray(drafts))return ['Borradores debe ser una lista'];
- const categories=[...data.categories,{id:'educacion-estudio',title:'Educación y estudio',description:'Preparación y organización del estudio.'}];
+ const categories=data.categories.some(c=>c.id==='educacion-estudio')?data.categories:[...data.categories,{id:'educacion-estudio',title:'Educación y estudio',description:'Preparación y organización del estudio.'}];
  const errors=validateCatalog({categories,products:drafts,projects:[]},{allowDrafts:true});
  for(const p of drafts){
   if(!p||p.visibility!=='draft'||p.publicationStatus!=='unknown'||p.offers?.length||p.featured||p.linksFeatured)errors.push('El borrador no puede habilitar publicación ni compras');

@@ -18,8 +18,8 @@ test('fichas y catálogo enlazan estados reales sin descargas ni capturas fictic
   assert.ok(html.includes(p.note));assert.ok(html.includes(p.statusTitle));
   assert.doesNotMatch(html,/href="[^"]*(?:\.apk|play.google.com)/);
  }
- assert.equal(data.products.length,12);assert.ok(data.products.every(p=>p.image));
- assert.equal(data.products.flatMap(p=>p.offers).filter(o=>o.verification==='verified').length,14);
+ assert.equal(data.products.length,13);assert.ok(data.products.every(p=>p.image));
+ assert.equal(data.products.flatMap(p=>p.offers).filter(o=>o.verification==='verified').length,15);
 });
 test('se rechazan recursos, visibilidad y descargas sin validación',()=>{
  for(const change of [p=>p.public='yes',p=>p.detailPath='/../bad/',p=>p.downloads=['https://example.com/app.apk'],p=>p.icon={display:'/data/projects.json'}]){

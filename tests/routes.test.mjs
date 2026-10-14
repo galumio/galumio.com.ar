@@ -39,7 +39,14 @@ test('se preservan secciones históricas y se agrega privacidad de Biblia Viva',
 });
 test('sitemap incluye todas las rutas y no usa ofertas inventadas',()=>{
  const xml=fs.readFileSync(path.join(distRoot,'sitemap.xml'),'utf8');for(const route of routes)assert.ok(xml.includes('<loc>https://galumio.com.ar'+route+'</loc>'));
- for(const p of data.products.filter(isPublicProduct)){const html=read('/productos/'+p.slug+'/');assert.ok(!html.includes('"offers":'));assert.ok(!html.includes('"availability":'));}
+ for(const p of data.products.filter(isPublicProduct)){
+  const html=read('/productos/'+p.slug+'/');
+  const schema=JSON.parse(html.split('<script type="application/ld+json">')[1].split('</script>')[0]);
+  const confirmed=p.offers.filter(o=>o.verification==='verified'&&o.price&&o.price.kind!=='reference');
+  assert.equal((schema.offers||[]).length,confirmed.length,p.id);
+  for(const offer of schema.offers||[]){const source=confirmed.find(o=>o.url===offer.url);assert.ok(source,p.id);assert.equal(offer.price,source.price.amount);assert.equal(offer.priceCurrency,source.price.currency);assert.equal(offer['@type'],'Offer');}
+  assert.ok(!html.includes('"availability":'));
+ }
 });
 test('servidor local: rutas HTTP, redirección, 404, HEAD y protección de archivos',async()=>{
  const server=createServer();await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
