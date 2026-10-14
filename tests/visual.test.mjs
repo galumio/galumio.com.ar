@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
-import {loadCatalog} from '../scripts/catalog.mjs';
+import {loadCatalog,isPublicProduct} from '../scripts/catalog.mjs';
 import {distRoot} from '../scripts/public-output.mjs';
 import {commercialSummary,productImage} from '../templates/site.mjs';
 const data=loadCatalog();
@@ -15,7 +15,7 @@ test('estado comercial y precio no se inventan ante datos pendientes',()=>{
  assert.match(commercialSummary(data.products[0]),/Precio de referencia/);
 });
 test('portadas ausentes no heredan imagen de otro producto al compartir',()=>{
- for(const p of data.products){
+ for(const p of data.products.filter(isPublicProduct)){
   const html=fs.readFileSync(path.join(distRoot,'productos',p.slug,'index.html'),'utf8');
   if(p.image){assert.ok(html.includes('property="og:image" content="https://galumio.com.ar'+p.image.display+'"'));assert.ok(productImage(p).includes('height="'+p.image.height+'"'));}
   else{assert.doesNotMatch(html,/property="og:image"/);assert.match(productImage(p),/Portada pendiente/);assert.doesNotMatch(productImage(p),/<img/);}

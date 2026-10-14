@@ -96,3 +96,7 @@ No se ha ejecutado el workflow, publicado ni cambiado Settings → Pages o DNS. 
 Ver [guía de despliegue](docs/DESPLIEGUE.md) para la transición, controles y procedimiento posterior a la autorización.
 
 Este aislamiento protege el sitio de GitHub Pages. Si el repositorio de GitHub es público, su código y documentación siguen siendo visibles en GitHub: no guardar secretos en el repositorio.
+
+## Revisión editorial y borradores
+
+Ejecutá `npm.cmd run preview:review` para revisar la tienda en http://127.0.0.1:4180/tienda/ y el nuevo ebook en http://127.0.0.1:4180/revision/como-estudiar-para-un-final/. El borrador no se incluye en `dist/` y `data/drafts.json` está ignorado por Git: existe únicamente en el equipo local. Su ausencia no impide construir ni ejecutar las pruebas en CI. Solo se generan productos publicados que no estén marcados como ocultos o borradores; el bundle bilingüe pendiente permanece fuera del sitio. Datos, fuentes, requisitos de publicación y verificaciones en [docs/CATALOGO-EDITORIAL.md](docs/CATALOGO-EDITORIAL.md). `npm.cmd run check:links` realiza una comprobación HTTP opcional, sin modificar precios ni evidencia comercial.

@@ -3,11 +3,11 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
-import {root,loadCatalog} from '../scripts/catalog.mjs';
+import {root,loadCatalog,isPublicProduct} from '../scripts/catalog.mjs';
 import {createServer} from '../scripts/serve.mjs';
 const data=loadCatalog();
 const legacy=['/astria/','/astria/privacidad/','/astria/soporte/','/biblia-viva/','/biblia-viva/privacidad/','/studio/','/studio/safari-baby/'];
-const routes=['/','/tienda/','/apps-y-juegos/','/causelink/','/links/',...data.categories.map(c=>'/'+c.id+'/'),...data.products.map(p=>'/productos/'+p.slug+'/'),...legacy];
+const routes=['/','/tienda/','/apps-y-juegos/','/causelink/','/links/',...data.categories.map(c=>'/'+c.id+'/'),...data.products.filter(isPublicProduct).map(p=>'/productos/'+p.slug+'/'),...legacy];
 const read=url=>fs.readFileSync(path.join(distRoot,url,'index.html'),'utf8');
 function tags(html,name){return [...html.matchAll(new RegExp('<'+name+'\\b[^>]*>','g'))].map(m=>m[0]);}
 function attr(tag,name){return tag.match(new RegExp('(?:^|\\s)'+name+'="([^"]*)"'))?.[1];}
@@ -39,7 +39,7 @@ test('se preservan secciones históricas y se agrega privacidad de Biblia Viva',
 });
 test('sitemap incluye todas las rutas y no usa ofertas inventadas',()=>{
  const xml=fs.readFileSync(path.join(distRoot,'sitemap.xml'),'utf8');for(const route of routes)assert.ok(xml.includes('<loc>https://galumio.com.ar'+route+'</loc>'));
- for(const p of data.products){const html=read('/productos/'+p.slug+'/');assert.ok(!html.includes('"offers":'));assert.ok(!html.includes('"availability":'));}
+ for(const p of data.products.filter(isPublicProduct)){const html=read('/productos/'+p.slug+'/');assert.ok(!html.includes('"offers":'));assert.ok(!html.includes('"availability":'));}
 });
 test('servidor local: rutas HTTP, redirección, 404, HEAD y protección de archivos',async()=>{
  const server=createServer();await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));

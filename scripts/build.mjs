@@ -1,11 +1,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { root, loadCatalog, validateCatalog, verifiedOffer } from './catalog.mjs';
+import { root, loadCatalog, validateCatalog, verifiedOffer, isPublicProduct } from './catalog.mjs';
 import { origin, esc, layout, homePage, catalogPage, productPage, projectsPage, appPage, linksPage } from '../templates/site.mjs';
 import { distRoot, publicPlan, resetDist, copyPublicAssets, inside, legacyRoutes } from './public-output.mjs';
 import { validateOutput } from './validate-dist.mjs';
-const data=loadCatalog();
-const errors=validateCatalog(data); if(errors.length) throw new Error(errors.join('\n'));
+const source=loadCatalog();
+const data={...source,products:source.products.filter(isPublicProduct)};
+const errors=validateCatalog(source); if(errors.length) throw new Error(errors.join('\n'));
 const plan=publicPlan(data);
 // Validar todas las fuentes antes de reemplazar la salida anterior.
 for (const file of plan.assets) { if (!fs.existsSync(path.join(root,file))) throw new Error('Recurso público faltante: '+file); }
@@ -24,11 +25,13 @@ page('/links/','Todos nuestros links','Encontrá la tienda, las colecciones y lo
 for(const p of data.products){
  const url='/productos/'+p.slug+'/';
  const schema={'@context':'https://schema.org','@type':'Product',name:p.title,description:p.description,url:origin+url,brand:{'@type':'Brand',name:'Galumio Studio'}};
+ schema.category=data.categories.find(c=>c.id===p.category).title;
+ schema.additionalProperty=[{'@type':'PropertyValue',name:'Formato',value:p.format},{'@type':'PropertyValue',name:'Idioma',value:p.language}];
  if(p.image)schema.image=origin+p.image.display;
  const offers=p.offers.filter(o=>verifiedOffer(o)&&o.price&&o.price.kind!=='reference').map(o=>({'@type':'Offer',url:o.url,price:o.price.amount,priceCurrency:o.price.currency}));
  if(offers.length)schema.offers=offers;
  const extra={schema,image:p.image?.display||null};
- page(url,p.title,p.description,productPage(p,data),extra);
+ page(url,p.seo.title,p.seo.description,productPage(p,data),extra);
 }
 for(const p of data.projects.filter(p=>p.public)) {
  let body=appPage(p);
@@ -43,6 +46,9 @@ const legacyPaths=legacyRoutes;
 for(const route of legacyPaths){
  if(data.projects.some(p=>p.public && p.detailPath==='/'+route))continue;
  let html=fs.readFileSync(path.join(root,'templates/legacy',route,'index.html'),'utf8');
+ // Ocultar promoción del bundle pendiente sin alterar las fuentes históricas.
+ if(route==='studio/safari-baby/')html=html.replace(/<div class="feature">[\s\S]*?(?=<div class="grid2">)/,'');
+ if(route==='studio/')html=html.replace('leo-bilingual-bundle.png','leo-friends-scene.png').replace('ediciones bilingües','ediciones en español e inglés');
  html=html.replace(/^```html\s*/,'').replace(/\s*```\s*$/,'');
  const title=html.match(/<title>([\s\S]*?)<\/title>/)[1];
  const description=html.match(/name="description"\s+content="([^"]*)"/)?.[1] || title;

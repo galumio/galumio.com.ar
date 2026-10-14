@@ -4,7 +4,7 @@
     "slug": "safari-baby-halloween-es",
     "title": "Safari Baby Halloween · Español",
     "category": "libros-infantiles",
-    "description": "Una edición de Halloween de la colección Safari Baby.",
+    "description": "Siete cuentos de Halloween con los personajes de Safari Baby, en español. Una lectura temática para compartir en familia.",
     "language": "es",
     "format": "Ebook PDF",
     "publicationStatus": "published",
@@ -51,16 +51,40 @@
     ],
     "featured": false,
     "group": "safari-baby-halloween",
-    "details": [],
+    "details": [
+      "Siete historias de Halloween.",
+      "Edición en español en formato Ebook PDF."
+    ],
     "legacyPath": null,
-    "linksFeatured": true
+    "linksFeatured": true,
+    "subtitle": "Siete historias para compartir un Halloween de cuento",
+    "longDescription": [
+      "Halloween llega al universo de Safari Baby con una colección de siete historias. Esta edición en español reúne cuentos para acompañar un momento de lectura con los pequeños de la casa.",
+      "El libro se entrega en formato PDF. Elegí esta edición si buscás leer en español; la edición en inglés tiene su propia ficha y se ofrece por separado."
+    ],
+    "audience": "Familias y personas que buscan cuentos infantiles de Halloween en español.",
+    "benefits": [
+      "Compartir una lectura temática con los personajes de Safari Baby.",
+      "Elegir entre siete historias dentro de una misma edición."
+    ],
+    "tags": [
+      "Safari Baby",
+      "Halloween",
+      "Cuentos",
+      "español"
+    ],
+    "seo": {
+      "title": "Safari Baby Halloween · Español",
+      "description": "Siete cuentos de Halloween con los personajes de Safari Baby, en español. Una lectura temática para compartir en familia."
+    },
+    "editorialSource": "Revisión de catálogo, portada original y presentación histórica; 2026-10-14"
   },
   {
     "id": "safari-baby-halloween-en",
     "slug": "safari-baby-halloween-en",
     "title": "Safari Baby Halloween · English",
     "category": "libros-infantiles",
-    "description": "La edición en inglés de Safari Baby Halloween.",
+    "description": "Siete cuentos de Halloween con los personajes de Safari Baby, en inglés. Una lectura temática para compartir en familia.",
     "language": "en",
     "format": "Ebook PDF",
     "publicationStatus": "published",
@@ -107,16 +131,40 @@
     ],
     "featured": false,
     "group": "safari-baby-halloween",
-    "details": [],
+    "details": [
+      "Siete historias de Halloween.",
+      "Edición en inglés en formato Ebook PDF."
+    ],
     "legacyPath": null,
-    "linksFeatured": true
+    "linksFeatured": true,
+    "subtitle": "Siete historias para compartir un Halloween de cuento",
+    "longDescription": [
+      "Halloween llega al universo de Safari Baby con una colección de siete historias. Esta edición en inglés reúne cuentos para acompañar un momento de lectura con los pequeños de la casa.",
+      "El libro se entrega en formato PDF. Elegí esta edición si buscás leer en inglés; la edición en español tiene su propia ficha y se ofrece por separado."
+    ],
+    "audience": "Familias y personas que buscan cuentos infantiles de Halloween en inglés.",
+    "benefits": [
+      "Compartir una lectura temática con los personajes de Safari Baby.",
+      "Elegir entre siete historias dentro de una misma edición."
+    ],
+    "tags": [
+      "Safari Baby",
+      "Halloween",
+      "Cuentos",
+      "inglés"
+    ],
+    "seo": {
+      "title": "Safari Baby Halloween · English",
+      "description": "Siete cuentos de Halloween con los personajes de Safari Baby, en inglés. Una lectura temática para compartir en familia."
+    },
+    "editorialSource": "Revisión de catálogo, portada original y presentación histórica; 2026-10-14"
   },
   {
     "id": "cuidar-alzheimer-demencia",
     "slug": "cuidar-alzheimer-demencia",
     "title": "Cuidar a mamá o papá con Alzheimer o demencia",
     "category": "guias-practicas",
-    "description": "Una guía sobre el cuidado de mamá o papá con Alzheimer o demencia.",
+    "description": "Una guía en español para acompañar a mamá o papá con Alzheimer o demencia: comunicación, vida cotidiana y cuidado de quien cuida.",
     "language": "es",
     "format": "Ebook PDF",
     "publicationStatus": "published",
@@ -163,16 +211,42 @@
     ],
     "featured": false,
     "group": null,
-    "details": [],
+    "details": [
+      "50 situaciones, según la portada original.",
+      "Cuaderno práctico para completar, incluido en la guía según su portada.",
+      "Temas de comunicación, vida cotidiana y cuidado del cuidador.",
+      "Ebook PDF en español."
+    ],
     "legacyPath": null,
-    "linksFeatured": true
+    "linksFeatured": true,
+    "subtitle": "Una guía práctica, humana y realista para familias y cuidadores",
+    "longDescription": [
+      "Cuidar a un familiar plantea preguntas sobre qué hacer, qué decir y cómo acompañar. Esta guía aborda el cuidado de mamá o papá con Alzheimer o demencia desde una perspectiva práctica y cercana a familias y cuidadores.",
+      "Su portada presenta 50 situaciones y un cuaderno práctico para completar, junto con temas de comunicación, organización cotidiana y cuidado del cuidador. Es un material de lectura y reflexión en español; no sustituye la orientación de profesionales de salud."
+    ],
+    "audience": "Familias y cuidadores que acompañan a mamá o papá con Alzheimer o demencia.",
+    "benefits": [
+      "Encontrar situaciones de cuidado reunidas en una guía de consulta.",
+      "Dedicar un espacio a la comunicación, la organización cotidiana y el cuidado del cuidador."
+    ],
+    "tags": [
+      "Familias",
+      "Cuidadores",
+      "Alzheimer",
+      "Demencia"
+    ],
+    "seo": {
+      "title": "Cuidar a mamá o papá con Alzheimer o demencia",
+      "description": "Una guía en español para acompañar a mamá o papá con Alzheimer o demencia: comunicación, vida cotidiana y cuidado de quien cuida."
+    },
+    "editorialSource": "Revisión de catálogo, portada original y presentación histórica; 2026-10-14"
   },
   {
     "id": "ia-para-maestros",
     "slug": "ia-para-maestros",
     "title": "IA para docentes · Español",
     "category": "educacion-ia",
-    "description": "Un recurso sobre inteligencia artificial para docentes, en español.",
+    "description": "Guía en español con más de 50 prompts para docentes, orientados a la planificación y la evaluación con inteligencia artificial.",
     "language": "es",
     "format": "Ebook PDF",
     "publicationStatus": "published",
@@ -204,16 +278,42 @@
     ],
     "featured": false,
     "group": "ia-para-docentes",
-    "details": [],
+    "details": [
+      "Más de 50 prompts para docentes.",
+      "Propuestas orientadas a planificar y evaluar.",
+      "Ebook PDF en español."
+    ],
     "legacyPath": null,
-    "linksFeatured": true
+    "linksFeatured": true,
+    "subtitle": "Ideas para planificar y evaluar con IA",
+    "longDescription": [
+      "Una guía práctica dirigida a docentes que quieren explorar el uso de la inteligencia artificial en su trabajo. Reúne más de 50 prompts relacionados con la planificación y la evaluación, tal como se indica en la portada de esta edición.",
+      "Los prompts ofrecen un punto de partida para formular pedidos y adaptarlos a las necesidades de cada docente. Esta es la edición en español, entregada como Ebook PDF."
+    ],
+    "audience": "Docentes interesados en explorar la inteligencia artificial para planificar y evaluar, con materiales en español.",
+    "benefits": [
+      "Contar con ejemplos de prompts como punto de partida.",
+      "Reunir propuestas de planificación y evaluación en una guía de consulta."
+    ],
+    "tags": [
+      "Docentes",
+      "Inteligencia artificial",
+      "Planificación",
+      "Evaluación",
+      "español"
+    ],
+    "seo": {
+      "title": "IA para docentes · Español",
+      "description": "Guía en español con más de 50 prompts para docentes, orientados a la planificación y la evaluación con inteligencia artificial."
+    },
+    "editorialSource": "Revisión de catálogo, portada original y presentación histórica; 2026-10-14"
   },
   {
     "id": "ai-for-teachers-en",
     "slug": "ai-for-teachers-en",
     "title": "AI for Teachers · English",
     "category": "educacion-ia",
-    "description": "La edición en inglés del recurso de inteligencia artificial para docentes.",
+    "description": "Guía en inglés con más de 50 prompts para docentes, orientados a la planificación y la evaluación con inteligencia artificial.",
     "language": "en",
     "format": "Ebook PDF",
     "publicationStatus": "published",
@@ -245,16 +345,42 @@
     ],
     "featured": false,
     "group": "ia-para-docentes",
-    "details": [],
+    "details": [
+      "Más de 50 prompts para docentes.",
+      "Propuestas orientadas a planificar y evaluar.",
+      "Ebook PDF en inglés."
+    ],
     "legacyPath": null,
-    "linksFeatured": true
+    "linksFeatured": true,
+    "subtitle": "Prompts para la práctica docente, en inglés",
+    "longDescription": [
+      "Una guía práctica dirigida a docentes que quieren explorar el uso de la inteligencia artificial en su trabajo. Reúne más de 50 prompts relacionados con la planificación y la evaluación, tal como se indica en la portada de esta edición.",
+      "Los prompts ofrecen un punto de partida para formular pedidos y adaptarlos a las necesidades de cada docente. Esta es la edición en inglés, entregada como Ebook PDF."
+    ],
+    "audience": "Docentes interesados en explorar la inteligencia artificial para planificar y evaluar, con materiales en inglés.",
+    "benefits": [
+      "Contar con ejemplos de prompts como punto de partida.",
+      "Reunir propuestas de planificación y evaluación en una guía de consulta."
+    ],
+    "tags": [
+      "Docentes",
+      "Inteligencia artificial",
+      "Planificación",
+      "Evaluación",
+      "inglés"
+    ],
+    "seo": {
+      "title": "AI for Teachers · English",
+      "description": "Guía en inglés con más de 50 prompts para docentes, orientados a la planificación y la evaluación con inteligencia artificial."
+    },
+    "editorialSource": "Revisión de catálogo, portada original y presentación histórica; 2026-10-14"
   },
   {
     "id": "safari-baby-cuentos-para-dormir-es",
     "slug": "safari-baby-cuentos-para-dormir-es",
     "title": "Safari Baby: Cuentos para Dormir — Español",
     "category": "libros-infantiles",
-    "description": "La edición en español de Safari Baby: Cuentos para Dormir.",
+    "description": "Diez cuentos suaves de Safari Baby en español para acompañar la lectura antes de dormir y compartir un momento en familia.",
     "language": "es",
     "format": "Ebook PDF",
     "publicationStatus": "published",
@@ -280,15 +406,39 @@
     ],
     "featured": false,
     "group": "safari-baby-bedtime-stories",
-    "details": [],
-    "legacyPath": null
+    "details": [
+      "Diez cuentos para dormir.",
+      "Edición en español en formato Ebook PDF."
+    ],
+    "legacyPath": null,
+    "subtitle": "Diez cuentos para el momento de ir a dormir",
+    "longDescription": [
+      "La colección Safari Baby acompaña el final del día con diez cuentos suaves. Esta edición en español está pensada como una propuesta de lectura para el momento de ir a dormir.",
+      "Podés elegir una historia para compartir o volver a leer una favorita. El ebook se entrega en PDF; las ediciones en español e inglés son productos independientes."
+    ],
+    "audience": "Familias que buscan cuentos en español para leer juntos al final del día.",
+    "benefits": [
+      "Disponer de diez cuentos para alternar las lecturas.",
+      "Acompañar un momento compartido antes de dormir."
+    ],
+    "tags": [
+      "Safari Baby",
+      "Cuentos para dormir",
+      "Lectura en familia",
+      "español"
+    ],
+    "seo": {
+      "title": "Safari Baby: Cuentos para Dormir — Español",
+      "description": "Diez cuentos suaves de Safari Baby en español para acompañar la lectura antes de dormir y compartir un momento en familia."
+    },
+    "editorialSource": "Revisión de catálogo, portada original y presentación histórica; 2026-10-14"
   },
   {
     "id": "safari-baby-bedtime-stories",
     "slug": "safari-baby-bedtime-stories",
     "title": "Safari Baby: Bedtime Stories — Inglés",
     "category": "libros-infantiles",
-    "description": "La edición en inglés de Safari Baby: Bedtime Stories.",
+    "description": "Diez cuentos suaves de Safari Baby en inglés para acompañar la lectura antes de dormir y compartir un momento en familia.",
     "language": "en",
     "format": "Ebook PDF",
     "publicationStatus": "published",
@@ -314,15 +464,39 @@
     ],
     "featured": false,
     "group": "safari-baby-bedtime-stories",
-    "details": [],
-    "legacyPath": null
+    "details": [
+      "Diez cuentos para dormir.",
+      "Edición en inglés en formato Ebook PDF."
+    ],
+    "legacyPath": null,
+    "subtitle": "Diez cuentos para el momento de ir a dormir",
+    "longDescription": [
+      "La colección Safari Baby acompaña el final del día con diez cuentos suaves. Esta edición en inglés está pensada como una propuesta de lectura para el momento de ir a dormir.",
+      "Podés elegir una historia para compartir o volver a leer una favorita. El ebook se entrega en PDF; las ediciones en español e inglés son productos independientes."
+    ],
+    "audience": "Familias que buscan cuentos en inglés para leer juntos al final del día.",
+    "benefits": [
+      "Disponer de diez cuentos para alternar las lecturas.",
+      "Acompañar un momento compartido antes de dormir."
+    ],
+    "tags": [
+      "Safari Baby",
+      "Cuentos para dormir",
+      "Lectura en familia",
+      "inglés"
+    ],
+    "seo": {
+      "title": "Safari Baby: Bedtime Stories — Inglés",
+      "description": "Diez cuentos suaves de Safari Baby en inglés para acompañar la lectura antes de dormir y compartir un momento en familia."
+    },
+    "editorialSource": "Revisión de catálogo, portada original y presentación histórica; 2026-10-14"
   },
   {
     "id": "safari-baby-12-animales",
     "slug": "safari-baby-12-animales",
     "title": "Safari Baby Animals Watercolor Clipart Bundle",
     "category": "disenos-digitales",
-    "description": "Una colección de 12 animales bebé en PNG con fondo transparente para proyectos creativos.",
+    "description": "Pack único de 12 animales bebé en PNG con fondo transparente. Ilustraciones Safari Baby para incorporar a tus proyectos gráficos.",
     "language": "not-applicable",
     "format": "PNG digital",
     "publicationStatus": "published",
@@ -352,14 +526,36 @@
       "12 animales bebé con fondo transparente.",
       "La página original describe uso comercial para productos físicos terminados; confirmar los términos de la licencia en la tienda."
     ],
-    "legacyPath": "/studio/safari-baby/#resources"
+    "legacyPath": "/studio/safari-baby/#resources",
+    "subtitle": "Doce animales bebé para tus composiciones creativas",
+    "longDescription": [
+      "Una colección de doce animales bebé de Safari Baby en archivos PNG con fondo transparente. El fondo transparente permite integrar las ilustraciones en distintas composiciones sin un rectángulo de fondo.",
+      "La presentación original menciona uso comercial en productos físicos terminados. Revisá la licencia vigente en la tienda antes de utilizar los recursos: la ficha no amplía esos permisos ni autoriza revender los archivos."
+    ],
+    "audience": "Personas que crean composiciones gráficas y productos físicos terminados, sujetas a la licencia de la tienda.",
+    "benefits": [
+      "Integrar ilustraciones con fondo transparente en una composición.",
+      "Trabajar con una colección de doce animales de la misma línea visual."
+    ],
+    "tags": [
+      "Safari Baby",
+      "Clipart",
+      "PNG",
+      "Animales",
+      "Diseño digital"
+    ],
+    "seo": {
+      "title": "Safari Baby Animals Watercolor Clipart Bundle",
+      "description": "Pack único de 12 animales bebé en PNG con fondo transparente. Ilustraciones Safari Baby para incorporar a tus proyectos gráficos."
+    },
+    "editorialSource": "Revisión de catálogo, portada original y presentación histórica; 2026-10-14"
   },
   {
     "id": "safari-baby-activity-book",
     "slug": "safari-baby-activity-book",
     "title": "Safari Baby Activity Book",
     "category": "libros-infantiles",
-    "description": "30 actividades imprimibles para aprender jugando con los personajes de Safari Baby.",
+    "description": "30 actividades imprimibles en inglés para jugar y aprender con Safari Baby. Un PDF pensado para pequeños exploradores de 3 a 6 años.",
     "language": "en",
     "format": "PDF imprimible",
     "publicationStatus": "published",
@@ -396,14 +592,35 @@
       "30 actividades imprimibles.",
       "La presentación original indica edades de 3 a 6 años."
     ],
-    "legacyPath": "/studio/safari-baby/#activities"
+    "legacyPath": "/studio/safari-baby/#activities",
+    "subtitle": "Treinta actividades para seguir explorando Safari Baby",
+    "longDescription": [
+      "El universo Safari Baby también se puede explorar en papel. Este libro reúne 30 actividades imprimibles con sus personajes, en un archivo PDF con consignas en inglés.",
+      "La presentación original lo dirige a niños de 3 a 6 años. Es una propuesta para familias que buscan actividades para compartir fuera de la pantalla, con el material listo para imprimir."
+    ],
+    "audience": "Familias con niños de 3 a 6 años que buscan actividades imprimibles con consignas en inglés.",
+    "benefits": [
+      "Llevar las actividades de Safari Baby al papel.",
+      "Disponer de 30 propuestas reunidas en un PDF imprimible."
+    ],
+    "tags": [
+      "Safari Baby",
+      "Actividades",
+      "Imprimibles",
+      "Inglés"
+    ],
+    "seo": {
+      "title": "Safari Baby Activity Book",
+      "description": "30 actividades imprimibles en inglés para jugar y aprender con Safari Baby. Un PDF pensado para pequeños exploradores de 3 a 6 años."
+    },
+    "editorialSource": "Revisión de catálogo, portada original y presentación histórica; 2026-10-14"
   },
   {
     "id": "leo-luciernagas-es",
     "slug": "leo-luciernagas-es",
     "title": "Leo y el Sendero de las Luciérnagas",
     "category": "libros-infantiles",
-    "description": "Después de una tormenta, Leo y sus amigos descubren cómo ayudarse para encontrar el camino de regreso.",
+    "description": "Después de una tormenta, Leo y sus amigos buscan el camino de regreso. Una aventura ilustrada de amistad y cooperación, en español.",
     "language": "es",
     "format": "Ebook PDF",
     "publicationStatus": "published",
@@ -439,14 +656,36 @@
     "details": [
       "La página original describe 47 páginas por edición."
     ],
-    "legacyPath": "/studio/safari-baby/#stories"
+    "legacyPath": "/studio/safari-baby/#stories",
+    "subtitle": "Una aventura sobre amistad y trabajo en equipo",
+    "longDescription": [
+      "Después de una tormenta, Leo y sus amigos pierden el camino de regreso. Cuando oscurece y aparecen las luciérnagas, cada uno descubre que su habilidad especial puede ayudar al grupo.",
+      "Esta edición en español presenta la historia ilustrada en formato PDF. La presentación original describe 47 páginas y destaca la amistad, la valentía y el trabajo en equipo."
+    ],
+    "audience": "Familias que buscan una historia ilustrada en español para leer y conversar juntos.",
+    "benefits": [
+      "Compartir una aventura centrada en la cooperación.",
+      "Conversar sobre las distintas fortalezas de los personajes."
+    ],
+    "tags": [
+      "Safari Baby",
+      "Leo",
+      "Amistad",
+      "Cuento ilustrado",
+      "español"
+    ],
+    "seo": {
+      "title": "Leo y el Sendero de las Luciérnagas",
+      "description": "Después de una tormenta, Leo y sus amigos buscan el camino de regreso. Una aventura ilustrada de amistad y cooperación, en español."
+    },
+    "editorialSource": "Revisión de catálogo, portada original y presentación histórica; 2026-10-14"
   },
   {
     "id": "leo-fireflies-en",
     "slug": "leo-fireflies-en",
     "title": "Leo and the Path of Fireflies",
     "category": "libros-infantiles",
-    "description": "La aventura ilustrada de Leo y sus amigos, en su edición en inglés.",
+    "description": "Después de una tormenta, Leo y sus amigos buscan el camino de regreso. Una aventura ilustrada de amistad y cooperación, en inglés.",
     "language": "en",
     "format": "Ebook PDF",
     "publicationStatus": "published",
@@ -482,14 +721,36 @@
     "details": [
       "La página original describe 47 páginas por edición."
     ],
-    "legacyPath": "/studio/safari-baby/#stories"
+    "legacyPath": "/studio/safari-baby/#stories",
+    "subtitle": "Una aventura sobre amistad y trabajo en equipo",
+    "longDescription": [
+      "Después de una tormenta, Leo y sus amigos pierden el camino de regreso. Cuando oscurece y aparecen las luciérnagas, cada uno descubre que su habilidad especial puede ayudar al grupo.",
+      "Esta edición en inglés presenta la historia ilustrada en formato PDF. La presentación original describe 47 páginas y destaca la amistad, la valentía y el trabajo en equipo."
+    ],
+    "audience": "Familias que buscan una historia ilustrada en inglés para leer y conversar juntos.",
+    "benefits": [
+      "Compartir una aventura centrada en la cooperación.",
+      "Conversar sobre las distintas fortalezas de los personajes."
+    ],
+    "tags": [
+      "Safari Baby",
+      "Leo",
+      "Amistad",
+      "Cuento ilustrado",
+      "inglés"
+    ],
+    "seo": {
+      "title": "Leo and the Path of Fireflies",
+      "description": "Después de una tormenta, Leo y sus amigos buscan el camino de regreso. Una aventura ilustrada de amistad y cooperación, en inglés."
+    },
+    "editorialSource": "Revisión de catálogo, portada original y presentación histórica; 2026-10-14"
   },
   {
     "id": "leo-bundle-bilingue",
     "slug": "leo-bundle-bilingue",
     "title": "Leo · Bundle bilingüe",
     "category": "libros-infantiles",
-    "description": "La historia de Leo y sus amigos en un conjunto de ediciones en español e inglés.",
+    "description": "La aventura ilustrada de Leo en español e inglés, reunida en un bundle cuya disponibilidad sigue pendiente de confirmación.",
     "language": "es-en",
     "format": "Ebook PDF",
     "publicationStatus": "unknown",
@@ -523,6 +784,29 @@
     "details": [
       "La página original describe 47 páginas por edición."
     ],
-    "legacyPath": "/studio/safari-baby/#stories"
+    "legacyPath": "/studio/safari-baby/#stories",
+    "subtitle": "Una misma aventura en español e inglés",
+    "longDescription": [
+      "Después de una tormenta, Leo y sus amigos pierden el camino de regreso. Cuando oscurece y aparecen las luciérnagas, cada uno descubre que su habilidad especial puede ayudar al grupo.",
+      "El bundle reúne las ediciones en español e inglés de la misma historia. La presentación original describe 47 páginas por edición. Su disponibilidad y sus enlaces de compra siguen pendientes de verificación."
+    ],
+    "audience": "Familias interesadas en compartir la misma historia en español e inglés.",
+    "benefits": [
+      "Compartir una aventura centrada en la cooperación.",
+      "Conversar sobre las distintas fortalezas de los personajes."
+    ],
+    "tags": [
+      "Safari Baby",
+      "Leo",
+      "Amistad",
+      "Cuento ilustrado",
+      "Bilingüe"
+    ],
+    "seo": {
+      "title": "Leo · Bundle bilingüe",
+      "description": "La aventura ilustrada de Leo en español e inglés, reunida en un bundle cuya disponibilidad sigue pendiente de confirmación."
+    },
+    "editorialSource": "Revisión de catálogo, portada original y presentación histórica; 2026-10-14",
+    "visibility": "hidden"
   }
 ]

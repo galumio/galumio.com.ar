@@ -5,6 +5,26 @@ export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '
 export function loadCatalog() {
   return Object.fromEntries(['categories','products','projects'].map(name => [name, JSON.parse(fs.readFileSync(path.join(root,'data',name+'.json'),'utf8'))]));
 }
+export const isPublicProduct = p => p.publicationStatus === 'published' && !['hidden','draft'].includes(p.visibility);
+export function loadDrafts() {
+ const file=path.join(root,'data/drafts.json');
+ return fs.existsSync(file)?JSON.parse(fs.readFileSync(file,'utf8')):[];
+}
+export function validFreeReading(link) {
+ if(!link || link.verification!=='owner-confirmed' || link.verificationSource!=='owner-provided')return false;
+ try {const u=new URL(link.url);return u.protocol==='https:'&&!u.username&&!u.password&&u.pathname!=='/'&&!/[<>]/.test(link.url);}catch{return false;}
+}
+export function validateDrafts(drafts, data=loadCatalog()) {
+ if(!Array.isArray(drafts))return ['Borradores debe ser una lista'];
+ const categories=[...data.categories,{id:'educacion-estudio',title:'Educación y estudio',description:'Preparación y organización del estudio.'}];
+ const errors=validateCatalog({categories,products:drafts,projects:[]},{allowDrafts:true});
+ for(const p of drafts){
+  if(!p||p.visibility!=='draft'||p.publicationStatus!=='unknown'||p.offers?.length||p.featured||p.linksFeatured)errors.push('El borrador no puede habilitar publicación ni compras');
+  if(data.products.some(x=>x.id===p?.id||x.slug===p?.slug))errors.push('Borrador duplicado en catálogo público');
+  if(p?.freeReading?.url!==null&&!validFreeReading(p?.freeReading))errors.push('Lectura gratuita sin URL segura y confirmación del propietario');
+ }
+ return errors;
+}
 export const labels = {etsy:'Etsy', payhip:'Payhip', amazon:'Amazon'};
 export const languages = {es:'Español',en:'Inglés','es-en':'Español + Inglés','not-applicable':'No aplica'};
 export function verifiedOffer(o) { return o.verification === 'verified' && Boolean(o.url) && Boolean(o.verifiedAt) && ['owner-provided','independent-review'].includes(o.verificationSource); }
@@ -30,6 +50,11 @@ export function validateCatalog(data, options = {}) {
     if (!safeSlug.test(p.slug) || slugs.has(p.slug)) error('slug inválido o duplicado'); slugs.add(p.slug);
     if (typeof p.title !== 'string' || !p.title.trim() || typeof p.description !== 'string' || !p.description.trim()) error('título y descripción obligatorios');
     if (!categoryIds.has(p.category)) error('categoría desconocida');
+    if(p.visibility!==undefined&&!['hidden','draft','public'].includes(p.visibility))error('Visibilidad de producto inválida');
+    if(p.visibility==='draft' && !options.allowDrafts) error('Un borrador no puede estar en el catálogo público');
+    for(const field of ['subtitle','audience','editorialSource'])if(typeof p[field]!=='string'||!p[field].trim())error(field+' obligatorio');
+    for(const field of ['longDescription','benefits','tags'])if(!Array.isArray(p[field])||!p[field].length||p[field].some(s=>typeof s!=='string'||!s.trim()))error(field+' inválido');
+    if(!p.seo||typeof p.seo.title!=='string'||!p.seo.title.trim()||typeof p.seo.description!=='string'||!p.seo.description.trim())error('SEO incompleto');
     if (p.language !== null && !languages[p.language]) error('idioma desconocido');
     if (p.format !== null && (typeof p.format !== 'string' || !p.format.trim())) error('formato inválido');
     if (!['published','unknown'].includes(p.publicationStatus)) error('estado de publicación inválido');

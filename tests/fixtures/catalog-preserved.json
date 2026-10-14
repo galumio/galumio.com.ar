@@ -1,0 +1,468 @@
+[
+  {
+    "id": "safari-baby-halloween-es",
+    "slug": "safari-baby-halloween-es",
+    "category": "libros-infantiles",
+    "language": "es",
+    "format": "Ebook PDF",
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-10-08",
+    "image": {
+      "original": "/assets/images/products/safari-baby-halloween-es/cover.jpg",
+      "display": "/assets/images/products/safari-baby-halloween-es/cover-web.jpg",
+      "alt": "Portada de Safari Baby Halloween · Español",
+      "width": 800,
+      "height": 1280
+    },
+    "offers": [
+      {
+        "platform": "etsy",
+        "url": "https://www.etsy.com/es/listing/4590685161/safari-baby-cuentos-de-halloween-7",
+        "verification": "verified",
+        "verifiedAt": "2026-10-08",
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null,
+        "price": {
+          "amount": 4.9,
+          "currency": "USD",
+          "verifiedAt": "2026-10-08",
+          "kind": "reference",
+          "source": "owner-provided"
+        }
+      },
+      {
+        "platform": "payhip",
+        "url": "https://payhip.com/b/463o5",
+        "verification": "verified",
+        "verifiedAt": "2026-10-08",
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null,
+        "price": {
+          "amount": 4.9,
+          "currency": "USD",
+          "verifiedAt": "2026-10-08",
+          "kind": "reference",
+          "source": "owner-provided"
+        }
+      }
+    ],
+    "featured": false,
+    "group": "safari-baby-halloween",
+    "legacyPath": null,
+    "linksFeatured": true
+  },
+  {
+    "id": "safari-baby-halloween-en",
+    "slug": "safari-baby-halloween-en",
+    "category": "libros-infantiles",
+    "language": "en",
+    "format": "Ebook PDF",
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-10-08",
+    "image": {
+      "original": "/assets/images/products/safari-baby-halloween-en/cover.jpg",
+      "display": "/assets/images/products/safari-baby-halloween-en/cover-web.jpg",
+      "alt": "Portada de Safari Baby Halloween · English",
+      "width": 800,
+      "height": 1280
+    },
+    "offers": [
+      {
+        "platform": "etsy",
+        "url": "https://www.etsy.com/es/listing/4590656261/cuentos-de-halloween-para-bebes-en-la",
+        "verification": "verified",
+        "verifiedAt": "2026-10-08",
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null,
+        "price": {
+          "amount": 4.9,
+          "currency": "USD",
+          "verifiedAt": "2026-10-08",
+          "kind": "reference",
+          "source": "owner-provided"
+        }
+      },
+      {
+        "platform": "payhip",
+        "url": "https://payhip.com/b/gRrV4",
+        "verification": "verified",
+        "verifiedAt": "2026-10-08",
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null,
+        "price": {
+          "amount": 4.9,
+          "currency": "USD",
+          "verifiedAt": "2026-10-08",
+          "kind": "reference",
+          "source": "owner-provided"
+        }
+      }
+    ],
+    "featured": false,
+    "group": "safari-baby-halloween",
+    "legacyPath": null,
+    "linksFeatured": true
+  },
+  {
+    "id": "cuidar-alzheimer-demencia",
+    "slug": "cuidar-alzheimer-demencia",
+    "category": "guias-practicas",
+    "language": "es",
+    "format": "Ebook PDF",
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-10-08",
+    "image": {
+      "original": "/assets/images/products/cuidar-alzheimer-demencia/cover.jpg",
+      "display": "/assets/images/products/cuidar-alzheimer-demencia/cover-web.jpg",
+      "alt": "Portada de Cuidar a mamá o papá con Alzheimer o demencia",
+      "width": 800,
+      "height": 1200
+    },
+    "offers": [
+      {
+        "platform": "etsy",
+        "url": "https://www.etsy.com/es/listing/4590736319/cuidar-a-mama-o-papa-con-alzheimer-o",
+        "verification": "verified",
+        "verifiedAt": "2026-10-08",
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null,
+        "price": {
+          "amount": 7.9,
+          "currency": "USD",
+          "verifiedAt": "2026-10-08",
+          "kind": "reference",
+          "source": "owner-provided"
+        }
+      },
+      {
+        "platform": "payhip",
+        "url": "https://payhip.com/b/O8QHv",
+        "verification": "verified",
+        "verifiedAt": "2026-10-08",
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null,
+        "price": {
+          "amount": 7.9,
+          "currency": "USD",
+          "verifiedAt": "2026-10-08",
+          "kind": "reference",
+          "source": "owner-provided"
+        }
+      }
+    ],
+    "featured": false,
+    "group": null,
+    "legacyPath": null,
+    "linksFeatured": true
+  },
+  {
+    "id": "ia-para-maestros",
+    "slug": "ia-para-maestros",
+    "category": "educacion-ia",
+    "language": "es",
+    "format": "Ebook PDF",
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-10-08",
+    "image": {
+      "original": "/assets/images/products/ia-para-maestros/cover.jpg",
+      "display": "/assets/images/products/ia-para-maestros/cover-web.jpg",
+      "alt": "Portada de IA para docentes · Español",
+      "width": 800,
+      "height": 1280
+    },
+    "offers": [
+      {
+        "platform": "payhip",
+        "url": "https://payhip.com/b/hPo6v",
+        "verification": "verified",
+        "verifiedAt": "2026-10-08",
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null,
+        "price": {
+          "amount": 6.9,
+          "currency": "USD",
+          "verifiedAt": "2026-10-08",
+          "kind": "reference",
+          "source": "owner-provided"
+        }
+      }
+    ],
+    "featured": false,
+    "group": "ia-para-docentes",
+    "legacyPath": null,
+    "linksFeatured": true
+  },
+  {
+    "id": "ai-for-teachers-en",
+    "slug": "ai-for-teachers-en",
+    "category": "educacion-ia",
+    "language": "en",
+    "format": "Ebook PDF",
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-10-08",
+    "image": {
+      "original": "/assets/images/products/ai-for-teachers-en/cover.jpg",
+      "display": "/assets/images/products/ai-for-teachers-en/cover-web.jpg",
+      "alt": "Portada de AI for Teachers · English",
+      "width": 800,
+      "height": 1280
+    },
+    "offers": [
+      {
+        "platform": "payhip",
+        "url": "https://payhip.com/b/jwF9l",
+        "verification": "verified",
+        "verifiedAt": "2026-10-08",
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null,
+        "price": {
+          "amount": 6.9,
+          "currency": "USD",
+          "verifiedAt": "2026-10-08",
+          "kind": "reference",
+          "source": "owner-provided"
+        }
+      }
+    ],
+    "featured": false,
+    "group": "ia-para-docentes",
+    "legacyPath": null,
+    "linksFeatured": true
+  },
+  {
+    "id": "safari-baby-cuentos-para-dormir-es",
+    "slug": "safari-baby-cuentos-para-dormir-es",
+    "category": "libros-infantiles",
+    "language": "es",
+    "format": "Ebook PDF",
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-10-08",
+    "image": {
+      "original": "/assets/images/products/safari-baby-cuentos-para-dormir-es/cover.jpg",
+      "display": "/assets/images/products/safari-baby-cuentos-para-dormir-es/cover-web.jpg",
+      "alt": "Portada de Safari Baby: Cuentos para Dormir — Español",
+      "width": 800,
+      "height": 1280
+    },
+    "offers": [
+      {
+        "platform": "payhip",
+        "price": null,
+        "url": "https://payhip.com/b/HJGdE",
+        "verification": "verified",
+        "verifiedAt": "2026-10-08",
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null
+      }
+    ],
+    "featured": false,
+    "group": "safari-baby-bedtime-stories",
+    "legacyPath": null
+  },
+  {
+    "id": "safari-baby-bedtime-stories",
+    "slug": "safari-baby-bedtime-stories",
+    "category": "libros-infantiles",
+    "language": "en",
+    "format": "Ebook PDF",
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-10-08",
+    "image": {
+      "original": "/assets/images/products/safari-baby-bedtime-stories/cover.jpg",
+      "display": "/assets/images/products/safari-baby-bedtime-stories/cover-web.jpg",
+      "alt": "Portada de Safari Baby: Bedtime Stories — Inglés",
+      "width": 800,
+      "height": 1280
+    },
+    "offers": [
+      {
+        "platform": "payhip",
+        "price": null,
+        "url": "https://payhip.com/b/KVDu2",
+        "verification": "verified",
+        "verifiedAt": "2026-10-08",
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null
+      }
+    ],
+    "featured": false,
+    "group": "safari-baby-bedtime-stories",
+    "legacyPath": null
+  },
+  {
+    "id": "safari-baby-12-animales",
+    "slug": "safari-baby-12-animales",
+    "category": "disenos-digitales",
+    "language": "not-applicable",
+    "format": "PNG digital",
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-10-08",
+    "image": {
+      "original": "/studio/safari-baby/images/portada.png",
+      "display": "/assets/images/catalog/portada.jpg",
+      "alt": "Colección original de animales Safari Baby",
+      "width": 800,
+      "height": 800
+    },
+    "offers": [
+      {
+        "platform": "payhip",
+        "url": "https://payhip.com/b/5taEL",
+        "verification": "verified",
+        "verifiedAt": "2026-10-08",
+        "price": null,
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null
+      }
+    ],
+    "featured": true,
+    "group": null,
+    "legacyPath": "/studio/safari-baby/#resources"
+  },
+  {
+    "id": "safari-baby-activity-book",
+    "slug": "safari-baby-activity-book",
+    "category": "libros-infantiles",
+    "language": "en",
+    "format": "PDF imprimible",
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-10-08",
+    "image": {
+      "original": "/studio/safari-baby/images/activity-book-cover.jpg",
+      "display": "/assets/images/catalog/activity-book-cover.jpg",
+      "alt": "Portada original de Safari Baby Activity Book",
+      "width": 800,
+      "height": 800
+    },
+    "offers": [
+      {
+        "platform": "payhip",
+        "url": "https://payhip.com/b/cLazk",
+        "verification": "verified",
+        "verifiedAt": "2026-10-08",
+        "price": null,
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null
+      },
+      {
+        "platform": "etsy",
+        "url": null,
+        "verification": "pending",
+        "verifiedAt": null,
+        "price": null
+      }
+    ],
+    "featured": true,
+    "group": null,
+    "legacyPath": "/studio/safari-baby/#activities"
+  },
+  {
+    "id": "leo-luciernagas-es",
+    "slug": "leo-luciernagas-es",
+    "category": "libros-infantiles",
+    "language": "es",
+    "format": "Ebook PDF",
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-10-08",
+    "image": {
+      "original": "/studio/safari-baby/images/leo-cover-es.png",
+      "display": "/assets/images/catalog/leo-cover-es.jpg",
+      "alt": "Portada original de Leo y el Sendero de las Luciérnagas",
+      "width": 800,
+      "height": 1200
+    },
+    "offers": [
+      {
+        "platform": "payhip",
+        "url": "https://payhip.com/b/rLfj8",
+        "verification": "verified",
+        "verifiedAt": "2026-10-08",
+        "price": null,
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null
+      },
+      {
+        "platform": "etsy",
+        "url": "https://www.etsy.com/es/listing/4586416300/leo-y-el-sendero-de-las-luciernagas",
+        "verification": "pending",
+        "verifiedAt": null,
+        "price": null
+      }
+    ],
+    "featured": false,
+    "group": "leo-luciernagas",
+    "legacyPath": "/studio/safari-baby/#stories"
+  },
+  {
+    "id": "leo-fireflies-en",
+    "slug": "leo-fireflies-en",
+    "category": "libros-infantiles",
+    "language": "en",
+    "format": "Ebook PDF",
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-10-08",
+    "image": {
+      "original": "/studio/safari-baby/images/leo-cover-en.png",
+      "display": "/assets/images/catalog/leo-cover-en.jpg",
+      "alt": "Portada original de Leo and the Path of Fireflies",
+      "width": 800,
+      "height": 1200
+    },
+    "offers": [
+      {
+        "platform": "payhip",
+        "url": "https://payhip.com/b/zqAP3",
+        "verification": "verified",
+        "verifiedAt": "2026-10-08",
+        "price": null,
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null
+      },
+      {
+        "platform": "etsy",
+        "url": "https://www.etsy.com/es/listing/4586400478/leo-y-el-camino-de-las-luciernagas-libro",
+        "verification": "pending",
+        "verifiedAt": null,
+        "price": null
+      }
+    ],
+    "featured": false,
+    "group": "leo-luciernagas",
+    "legacyPath": "/studio/safari-baby/#stories"
+  },
+  {
+    "id": "leo-bundle-bilingue",
+    "slug": "leo-bundle-bilingue",
+    "category": "libros-infantiles",
+    "language": "es-en",
+    "format": "Ebook PDF",
+    "publicationStatus": "unknown",
+    "publicationSource": "pending",
+    "image": {
+      "original": "/studio/safari-baby/images/leo-bilingual-bundle.png",
+      "display": "/assets/images/catalog/leo-bilingual-bundle.jpg",
+      "alt": "Portada original de Leo · Bundle bilingüe",
+      "width": 800,
+      "height": 800
+    },
+    "offers": [
+      {
+        "platform": "payhip",
+        "url": "https://payhip.com/b/3D0xE",
+        "verification": "pending",
+        "verifiedAt": null,
+        "price": null
+      },
+      {
+        "platform": "etsy",
+        "url": "https://www.etsy.com/es/listing/4586417743/leo-and-the-path-of-fireflies-bilingual",
+        "verification": "pending",
+        "verifiedAt": null,
+        "price": null
+      }
+    ],
+    "featured": true,
+    "group": "leo-luciernagas",
+    "legacyPath": "/studio/safari-baby/#stories"
+  }
+]

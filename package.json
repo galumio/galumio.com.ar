@@ -11,7 +11,9 @@
     "check": "npm run validate && npm run build && npm run validate:dist && npm test",
     "serve": "node scripts/serve.mjs",
     "validate:dist": "node scripts/validate-dist.mjs",
-    "preview": "npm run serve"
+    "preview": "npm run serve",
+    "preview:review": "npm run build && node scripts/preview-review.mjs",
+    "check:links": "node scripts/check-commercial-links.mjs"
   },
   "engines": {
     "node": ">=22"
