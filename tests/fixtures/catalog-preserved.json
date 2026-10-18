@@ -127,9 +127,9 @@
         "verificationSource": "owner-provided",
         "httpCheckedAt": null,
         "price": {
-          "amount": 7.9,
+          "amount": 4.99,
           "currency": "USD",
-          "verifiedAt": "2026-10-08",
+          "verifiedAt": "2026-10-18",
           "kind": "reference",
           "source": "owner-provided"
         }
@@ -142,9 +142,9 @@
         "verificationSource": "owner-provided",
         "httpCheckedAt": null,
         "price": {
-          "amount": 7.9,
+          "amount": 4.99,
           "currency": "USD",
-          "verifiedAt": "2026-10-08",
+          "verifiedAt": "2026-10-18",
           "kind": "reference",
           "source": "owner-provided"
         }
