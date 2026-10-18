@@ -9,7 +9,7 @@ const data=loadCatalog();
 const expected=[
  ['safari-baby-halloween-es','es',4.90,{etsy:'https://www.etsy.com/es/listing/4590685161/safari-baby-cuentos-de-halloween-7',payhip:'https://payhip.com/b/463o5'}],
  ['safari-baby-halloween-en','en',4.90,{etsy:'https://www.etsy.com/es/listing/4590656261/cuentos-de-halloween-para-bebes-en-la',payhip:'https://payhip.com/b/gRrV4'}],
- ['cuidar-alzheimer-demencia','es',7.90,{etsy:'https://www.etsy.com/es/listing/4590736319/cuidar-a-mama-o-papa-con-alzheimer-o',payhip:'https://payhip.com/b/O8QHv'}],
+ ['cuidar-alzheimer-demencia','es',4.99,{etsy:'https://www.etsy.com/es/listing/4590736319/cuidar-a-mama-o-papa-con-alzheimer-o',payhip:'https://payhip.com/b/O8QHv'}],
  ['ia-para-maestros','es',6.90,{payhip:'https://payhip.com/b/hPo6v'}],
  ['ai-for-teachers-en','en',6.90,{payhip:'https://payhip.com/b/jwF9l'}]
 ];
@@ -17,7 +17,7 @@ test('enlaces y precios del propietario corresponden a cada edición sin cruzar 
  for(const [id,language,amount,urls] of expected){
   const p=data.products.find(p=>p.id===id);assert.ok(p,id);assert.equal(p.language,language);
   assert.deepEqual(Object.fromEntries(p.offers.map(o=>[o.platform,o.url])),urls);
-  for(const o of p.offers){assert.equal(o.verification,'verified');assert.equal(o.verificationSource,'owner-provided');assert.equal(o.verifiedAt,'2026-10-08');assert.equal(o.httpCheckedAt,null);assert.deepEqual(o.price,{amount,currency:'USD',verifiedAt:'2026-10-08',kind:'reference',source:'owner-provided'});}
+  for(const o of p.offers){assert.equal(o.verification,'verified');assert.equal(o.verificationSource,'owner-provided');assert.equal(o.verifiedAt,'2026-10-08');assert.equal(o.httpCheckedAt,null);assert.deepEqual(o.price,{amount,currency:'USD',verifiedAt:id==='cuidar-alzheimer-demencia'?'2026-10-18':'2026-10-08',kind:'reference',source:'owner-provided'});}
  }
  assert.equal(data.products.find(p=>p.id==='ia-para-maestros').group,data.products.find(p=>p.id==='ai-for-teachers-en').group);
 });
