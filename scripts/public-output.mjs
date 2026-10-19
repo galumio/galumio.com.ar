@@ -51,7 +51,7 @@ export function resetDist(target = distRoot) {
 export function publicPlan(data = loadCatalog()) {
   const manifestPath = assertRegularSource('assets/images/catalog/manifest.json');
   const manifest = JSON.parse(fs.readFileSync(manifestPath,'utf8').replace(/^\uFEFF/,'')).filter(image=>image.file!=='leo-bilingual-bundle.jpg');
-  const assets = new Set(['assets/css/site.css','assets/css/legacy.css','assets/js/site.js']);
+  const assets = new Set(['app-ads.txt','assets/css/site.css','assets/css/legacy.css','assets/js/site.js']);
   for (const image of manifest) {
     if (!/^[a-z0-9-]+\.jpg$/.test(image.file)) throw new Error('Nombre de imagen inválido en manifest');
     assets.add('assets/images/catalog/'+image.file);
