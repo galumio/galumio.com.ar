@@ -1011,5 +1011,133 @@
       "title": "Everyday AI for Seniors",
       "description": "Explore artificial intelligence in everyday life with a book written for seniors. English edition, available in PDF and EPUB."
     }
+  },
+  {
+    "id": "ia-para-todos-los-dias",
+    "title": "IA para el día a día",
+    "language": "es",
+    "description": "Explorá la IA en tu vida cotidiana con pedidos para usar en casa y en el trabajo. Ebook en español, disponible como producto independiente.",
+    "subtitle": "IA para acompañar tu día a día",
+    "longDescription": [
+      "Explorá la IA en tu vida cotidiana con pedidos para usar en casa y en el trabajo. Ebook en español, disponible como producto independiente.",
+      "Elegí la edición en español y accedé a su compra en Payhip. La edición en inglés se ofrece por separado."
+    ],
+    "audience": "Personas interesadas en usar IA en situaciones cotidianas.",
+    "benefits": [
+      "Explorar pedidos para usar IA en casa y en el trabajo."
+    ],
+    "details": [
+      "Edición en español.",
+      "Producto digital independiente."
+    ],
+    "tags": [
+      "Inteligencia artificial",
+      "Vida cotidiana",
+      "Español"
+    ],
+    "slug": "ia-para-todos-los-dias",
+    "category": "educacion-ia",
+    "format": null,
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-10-22",
+    "visibility": "public",
+    "image": {
+      "original": "/assets/images/products/ia-para-todos-los-dias/cover.jpg",
+      "display": "/assets/images/products/ia-para-todos-los-dias/cover-web.jpg",
+      "alt": "Portada original de IA para el día a día",
+      "width": 800,
+      "height": 1280
+    },
+    "expectedImage": "/assets/images/products/ia-para-todos-los-dias/cover.jpg",
+    "offers": [
+      {
+        "platform": "payhip",
+        "url": "https://payhip.com/b/FmX4P",
+        "verification": "verified",
+        "verifiedAt": "2026-10-22",
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null,
+        "price": {
+          "amount": 4.99,
+          "currency": "USD",
+          "verifiedAt": "2026-10-22",
+          "kind": "listed",
+          "source": "owner-provided"
+        }
+      }
+    ],
+    "featured": false,
+    "linksFeatured": false,
+    "group": "everyday-ai",
+    "legacyPath": null,
+    "editorialSource": "Título comercial, idioma, precio y enlace confirmados por el propietario. Descripción basada en la portada original revisada; formato de descarga no confirmado. 2026-10-22.",
+    "seo": {
+      "title": "IA para el día a día",
+      "description": "Explorá la IA en tu vida cotidiana con pedidos para usar en casa y en el trabajo. Ebook en español, disponible como producto independiente."
+    }
+  },
+  {
+    "id": "everyday-ai",
+    "title": "AI for Everyday Life",
+    "language": "en",
+    "description": "Explore AI in everyday life with prompts for use at home and at work. English ebook, available as an independent product.",
+    "subtitle": "AI for your everyday life",
+    "longDescription": [
+      "Explore AI in everyday life with prompts for use at home and at work. English ebook, available as an independent product.",
+      "Choose the English edition and purchase it on Payhip. The Spanish edition is offered separately."
+    ],
+    "audience": "Readers interested in using AI in everyday situations.",
+    "benefits": [
+      "Explore prompts for using AI at home and at work."
+    ],
+    "details": [
+      "English edition.",
+      "Independent digital product."
+    ],
+    "tags": [
+      "Artificial intelligence",
+      "Everyday life",
+      "English"
+    ],
+    "slug": "everyday-ai",
+    "category": "educacion-ia",
+    "format": null,
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-10-22",
+    "visibility": "public",
+    "image": {
+      "original": "/assets/images/products/everyday-ai/cover.jpg",
+      "display": "/assets/images/products/everyday-ai/cover-web.jpg",
+      "alt": "Original cover of AI for Everyday Life",
+      "width": 800,
+      "height": 1280
+    },
+    "expectedImage": "/assets/images/products/everyday-ai/cover.jpg",
+    "offers": [
+      {
+        "platform": "payhip",
+        "url": "https://payhip.com/b/DvYKc",
+        "verification": "verified",
+        "verifiedAt": "2026-10-22",
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null,
+        "price": {
+          "amount": 4.99,
+          "currency": "USD",
+          "verifiedAt": "2026-10-22",
+          "kind": "listed",
+          "source": "owner-provided"
+        }
+      }
+    ],
+    "featured": false,
+    "linksFeatured": false,
+    "group": "everyday-ai",
+    "legacyPath": null,
+    "editorialSource": "Título comercial, idioma, precio y enlace confirmados por el propietario. Descripción basada en la portada original revisada; formato de descarga no confirmado. 2026-10-22.",
+    "seo": {
+      "title": "AI for Everyday Life",
+      "description": "Explore AI in everyday life with prompts for use at home and at work. English ebook, available as an independent product."
+    }
   }
 ]

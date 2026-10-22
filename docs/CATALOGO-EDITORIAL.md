@@ -99,3 +99,27 @@ Alzheimer y demencia: el propietario informa 68 páginas en Payhip y la existenc
 Preparación de integración: origin/main actualizado mediante fetch; HEAD y origin/main coinciden, sin divergencia. Tras autorización final: revisar nuevamente referencias, crear commit descriptivo, subir la rama, integrar en main y subir main para activar el workflow existente que publica únicamente dist. Luego comprobar el despliegue y las 11 fichas públicas. No se ejecuta ninguno de esos pasos de publicación en esta revisión. El bundle permanece oculto y el borrador local privado.
 
 Pruebas finales tras la confirmación: npm.cmd run check aprobado (59/59); build de producción, 27 páginas más 404, 57 archivos públicos válidos. Sin cambios en las ofertas, precios, portadas, estados ni proyectos.
+
+## Revisión de coherencia de títulos — 2026-10-22 (histórico, resuelto)
+
+Alcance: revisión previa a publicación de los dos ebooks nuevos en el worktree Galumio-IA-TodosLosDias. No se cambian títulos, slugs, portadas, ofertas ni productos existentes.
+
+| Edición | Título impreso en la portada original | Título del catálogo y SEO antes de la confirmación | Payhip confirmado por el propietario | Precio del catálogo |
+| --- | --- | --- | --- | --- |
+| Español | IA para el día a día | IA para todos los días | https://payhip.com/b/FmX4P | USD 4,99 |
+| Inglés | AI for Everyday Life | Everyday AI | https://payhip.com/b/DvYKc | USD 4,99 |
+
+Evidencia local: los títulos de portada se verificaron visualmente en assets/images/products/ia-para-todos-los-dias/cover.jpg y assets/images/products/everyday-ai/cover.jpg. Antes de añadir esta nota, la búsqueda de los títulos completos de portada no encontró coincidencias en data/, docs/, assets/images/products/ ni tests/. Los títulos comerciales actuales aparecen en data/products.json (title, seo.title y image.alt) y tests/everyday-ai.test.mjs. No se encontraron manuscritos PDF, EPUB o DOCX dentro del worktree revisado. Las portadas son, por tanto, la evidencia editorial original disponible; los nombres de catálogo proceden de las instrucciones del propietario. Everyday AI for Seniors es otro producto y queda fuera de este cambio.
+
+Comprobación externa: se intentó abrir ambas URLs de Payhip con la herramienta web, pero no fueron accesibles. Esto no demuestra que los enlaces estén rotos. No se pudo verificar de forma independiente el título ni el precio visible en Payhip; las asociaciones y los precios se conservan como datos confirmados por el propietario.
+
+Recomendación: adoptar «IA para el día a día» y «AI for Everyday Life» como títulos visibles canónicos en Galumio y Payhip para coincidir con las portadas originales. Antes de cambiar datos, comprobar los títulos visibles de ambas fichas de Payhip y confirmar la decisión editorial. Si Payhip utiliza los nombres actuales del catálogo, alinear también allí los títulos. No hace falta cambiar los enlaces comerciales ni los slugs de Galumio para alinear el título visible. Una actualización posterior deberá abarcar title, seo.title, image.alt y las expectativas de título en las pruebas, conservando las portadas.
+
+No se infieren formatos de descarga, extensión ni materiales adicionales. Esta nota documenta una recomendación; no autoriza ni realiza cambios comerciales externos ni publicación.
+
+
+## Títulos definitivos confirmados — 2026-10-22
+
+El propietario confirmó «IA para el día a día» (español) y «AI for Everyday Life» (inglés) como títulos comerciales definitivos, en concordancia con las portadas originales y las fichas de Payhip según su confirmación. Se actualizaron title, seo.title, image.alt y las expectativas de las pruebas. Las fichas, tarjetas y metadatos se generan desde el catálogo. La diferencia documentada arriba queda resuelta; los nombres anteriores se mantienen únicamente como historial editorial.
+
+Se conservan los slugs ia-para-todos-los-dias y everyday-ai, los enlaces Payhip FmX4P y DvYKc respectivamente, USD 4,99 en cada oferta, las portadas originales y los quince productos anteriores. No se modifican formatos de descarga ni se atribuyen contenidos adicionales. La confirmación de Payhip procede del propietario; no se afirma una comprobación externa independiente. Publicación pendiente de autorización; sin commit, push ni despliegue.
