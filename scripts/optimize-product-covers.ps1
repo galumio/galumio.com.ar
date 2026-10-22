@@ -1,4 +1,5 @@
 # Copias web de las portadas originales incorporadas al catálogo. No altera originales.
+param([string[]]$ProductIds = @())
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.Drawing
 $projectRoot = Split-Path $PSScriptRoot -Parent
@@ -8,6 +9,7 @@ $parameters = New-Object System.Drawing.Imaging.EncoderParameters(1)
 $parameters.Param[0] = New-Object System.Drawing.Imaging.EncoderParameter([System.Drawing.Imaging.Encoder]::Quality, [long]82)
 try {
  foreach ($product in $products) {
+  if ($ProductIds.Count -gt 0 -and $product.id -notin $ProductIds) { continue }
   if (!$product.image -or $product.image.original -notmatch '^/assets/images/products/[a-z0-9-]+/cover.jpg$') { continue }
   $originalPath = Join-Path $projectRoot $product.image.original.TrimStart('/')
   $outputPath = Join-Path (Split-Path $originalPath -Parent) 'cover-web.jpg'

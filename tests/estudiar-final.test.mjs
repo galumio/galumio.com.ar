@@ -12,10 +12,10 @@ const product=data.products.find(p=>p.id===id);
 const read=route=>fs.readFileSync(path.join(distRoot,route),'utf8');
 test('nuevo ebook conserva exactamente los doce productos anteriores',()=>{
  const hashes=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/pre-estudiar-final-hashes.json'),'utf8'));
- assert.equal(data.products.length,Object.keys(hashes).length+1);
+ assert.equal(data.products.length,Object.keys(hashes).length+3);
  for(const [id,hash] of Object.entries(hashes))assert.equal(crypto.createHash('sha256').update(JSON.stringify(data.products.find(p=>p.id===id))).digest('hex'),hash,id);
- assert.equal(data.products.filter(isPublicProduct).length,12);
- assert.equal(data.products.flatMap(p=>p.offers).filter(o=>o.verification==='verified').length,15);
+ assert.equal(data.products.filter(isPublicProduct).length,14);
+ assert.equal(data.products.flatMap(p=>p.offers).filter(o=>o.verification==='verified').length,17);
 });
 test('final publicado tiene contenido confirmado, precio y solo Payhip',()=>{
  assert.ok(isPublicProduct(product));assert.equal(product.category,'educacion-estudio');assert.equal(product.language,'es');assert.equal(product.format,'Ebook PDF');
