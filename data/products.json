@@ -879,5 +879,137 @@
       "title": "Cómo estudiar para un final: guía y plantillas",
       "description": "Organizá tu estudio con un ebook de 55 páginas, 10 capítulos y 8 plantillas imprimibles. En español, disponible en Payhip por USD 3,99."
     }
+  },
+  {
+    "id": "ia-cotidiana-para-adultos-mayores",
+    "title": "IA cotidiana para adultos mayores",
+    "language": "es",
+    "description": "Acercate a la inteligencia artificial en la vida cotidiana con una lectura pensada para adultos mayores. Edición en español, disponible en PDF y EPUB.",
+    "subtitle": "Una invitación a explorar la IA en tu día a día",
+    "longDescription": [
+      "Descubrí una lectura sobre inteligencia artificial cotidiana dirigida a adultos mayores. Una propuesta para acercarte al tema y explorar su lugar en la vida diaria.",
+      "Esta edición está en español e incluye los formatos PDF y EPUB. Elegí el formato que prefieras para leer; la edición en inglés se ofrece por separado."
+    ],
+    "audience": "Adultos mayores interesados en explorar la inteligencia artificial cotidiana.",
+    "benefits": [
+      "Acercarte al tema de la inteligencia artificial con una lectura dirigida a adultos mayores.",
+      "Elegir entre PDF y EPUB según tu forma de leer."
+    ],
+    "details": [
+      "Edición en español.",
+      "Incluye PDF + EPUB."
+    ],
+    "tags": [
+      "Inteligencia artificial",
+      "Adultos mayores",
+      "Vida cotidiana",
+      "español"
+    ],
+    "slug": "ia-cotidiana-para-adultos-mayores",
+    "category": "educacion-ia",
+    "format": "PDF + EPUB",
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-10-22",
+    "visibility": "public",
+    "image": {
+      "original": "/assets/images/products/ia-cotidiana-para-adultos-mayores/cover.jpg",
+      "display": "/assets/images/products/ia-cotidiana-para-adultos-mayores/cover-web.jpg",
+      "alt": "Portada original de IA cotidiana para adultos mayores",
+      "width": 800,
+      "height": 1280
+    },
+    "expectedImage": "/assets/images/products/ia-cotidiana-para-adultos-mayores/cover.jpg",
+    "offers": [
+      {
+        "platform": "payhip",
+        "url": "https://payhip.com/b/CHPS9",
+        "verification": "verified",
+        "verifiedAt": "2026-10-22",
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null,
+        "price": {
+          "amount": 4.99,
+          "currency": "USD",
+          "verifiedAt": "2026-10-22",
+          "kind": "listed",
+          "source": "owner-provided"
+        }
+      }
+    ],
+    "featured": false,
+    "linksFeatured": false,
+    "group": "everyday-ai-for-seniors",
+    "legacyPath": null,
+    "editorialSource": "Título, idioma, formatos, precio y enlace confirmados por el propietario; 2026-10-22. Descripción basada en esos datos; portada original aportada por el propietario y revisada visualmente.",
+    "seo": {
+      "title": "IA cotidiana para adultos mayores",
+      "description": "Acercate a la inteligencia artificial en la vida cotidiana con una lectura pensada para adultos mayores. Edición en español, disponible en PDF y EPUB."
+    }
+  },
+  {
+    "id": "everyday-ai-for-seniors",
+    "title": "Everyday AI for Seniors",
+    "language": "en",
+    "description": "Explore artificial intelligence in everyday life with a book written for seniors. English edition, available in PDF and EPUB.",
+    "subtitle": "Explore AI in your everyday life",
+    "longDescription": [
+      "Discover a book about everyday artificial intelligence, written for older adults interested in exploring the topic and its place in daily life.",
+      "This English edition includes PDF and EPUB formats so you can choose how you prefer to read. The Spanish edition is available separately."
+    ],
+    "audience": "Seniors interested in exploring everyday artificial intelligence.",
+    "benefits": [
+      "Explore the topic of artificial intelligence through a book written for seniors.",
+      "Choose between PDF and EPUB to suit your reading preferences."
+    ],
+    "details": [
+      "English edition.",
+      "Includes PDF + EPUB."
+    ],
+    "tags": [
+      "Artificial intelligence",
+      "Seniors",
+      "Everyday life",
+      "English"
+    ],
+    "slug": "everyday-ai-for-seniors",
+    "category": "educacion-ia",
+    "format": "PDF + EPUB",
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-10-22",
+    "visibility": "public",
+    "image": {
+      "original": "/assets/images/products/everyday-ai-for-seniors/cover.jpg",
+      "display": "/assets/images/products/everyday-ai-for-seniors/cover-web.jpg",
+      "alt": "Original cover of Everyday AI for Seniors",
+      "width": 800,
+      "height": 1280
+    },
+    "expectedImage": "/assets/images/products/everyday-ai-for-seniors/cover.jpg",
+    "offers": [
+      {
+        "platform": "payhip",
+        "url": "https://payhip.com/b/Y9fCO",
+        "verification": "verified",
+        "verifiedAt": "2026-10-22",
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null,
+        "price": {
+          "amount": 4.99,
+          "currency": "USD",
+          "verifiedAt": "2026-10-22",
+          "kind": "listed",
+          "source": "owner-provided"
+        }
+      }
+    ],
+    "featured": false,
+    "linksFeatured": false,
+    "group": "everyday-ai-for-seniors",
+    "legacyPath": null,
+    "editorialSource": "Título, idioma, formatos, precio y enlace confirmados por el propietario; 2026-10-22. Descripción basada en esos datos; portada original aportada por el propietario y revisada visualmente.",
+    "seo": {
+      "title": "Everyday AI for Seniors",
+      "description": "Explore artificial intelligence in everyday life with a book written for seniors. English edition, available in PDF and EPUB."
+    }
   }
 ]

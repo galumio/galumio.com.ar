@@ -67,7 +67,7 @@ test('seis enlaces Payhip nuevos respetan edición, evidencia y precios no infor
   assert.equal(offer.verificationSource,'owner-provided');assert.equal(offer.verifiedAt,'2026-10-08');
   assert.equal(offer.httpCheckedAt,null);assert.equal(offer.price,null);
  }
- assert.equal(data.products.flatMap(p=>p.offers).filter(o=>o.verification==='verified').length,15);
+ assert.equal(data.products.flatMap(p=>p.offers).filter(o=>o.verification==='verified').length,17);
  const editions=data.products.filter(p=>p.group==='safari-baby-bedtime-stories');
  assert.deepEqual(editions.map(p=>p.language).sort(),['en','es']);
 });
