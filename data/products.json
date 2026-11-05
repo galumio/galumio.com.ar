@@ -1139,5 +1139,180 @@
       "title": "AI for Everyday Life",
       "description": "Explore AI in everyday life with prompts for use at home and at work. English ebook, available as an independent product."
     }
+  },
+  {
+    "id": "photography-job-payment-tracker",
+    "title": "Photography Job & Payment Tracker",
+    "description": "Organizá clientes, sesiones y cobros de fotografía en Excel, con saldos automáticos y un panel de seguimiento.",
+    "subtitle": "Tus trabajos y pagos, en un solo lugar",
+    "audience": "Fotógrafos independientes y estudios de fotografía.",
+    "benefits": [
+      "Relacioná cada cobro con su trabajo y consultá el saldo pendiente.",
+      "Seguí próximas sesiones, entregas pendientes y pagos vencidos."
+    ],
+    "details": [
+      "Plantilla Excel limpia, guía PDF en inglés, licencia e instrucciones de bienvenida, en un ZIP.",
+      "Capacidad: 500 clientes, 500 trabajos y 2.000 pagos.",
+      "Estados de trabajo y entrega, métodos de pago y fórmulas protegidas."
+    ],
+    "requirements": [
+      "Microsoft Excel de escritorio, no incluido. Validado con Excel 16.0 para Windows; otras versiones y plataformas no están garantizadas.",
+      "Archivo XLSX y guía en inglés. Sin macros ni activación en línea.",
+      "Trabaja en USD; no calcula gastos, impuestos, reembolsos ni conversión de moneda. Los filtros de fechas del panel usan fechas de sesión."
+    ],
+    "longDescription": [
+      "Registrá un cliente, creá su trabajo y cargá cada pago mediante el identificador del trabajo. El nombre del cliente, el importe recibido y el saldo se calculan automáticamente.",
+      "El panel reúne trabajos, próximas sesiones, entregas pendientes y cobros. Las imágenes muestran datos ficticios de demostración; el archivo para compradores comienza limpio."
+    ],
+    "slug": "photography-job-payment-tracker",
+    "category": "herramientas-para-negocios",
+    "language": "en",
+    "format": "Excel XLSX",
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-11-05",
+    "visibility": "public",
+    "image": {
+      "original": "/assets/images/products/photography-job-payment-tracker/cover.jpg",
+      "display": "/assets/images/products/photography-job-payment-tracker/cover-web.jpg",
+      "alt": "Imagen comercial original de Photography Job & Payment Tracker",
+      "width": 1200,
+      "height": 1000
+    },
+    "expectedImage": "/assets/images/products/photography-job-payment-tracker/cover.jpg",
+    "offers": [
+      {
+        "platform": "etsy",
+        "url": "https://www.etsy.com/es/listing/4609675290/photography-job-and-payment-tracker",
+        "verification": "verified",
+        "verifiedAt": "2026-11-05",
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null,
+        "price": {
+          "amount": 4.9,
+          "currency": "USD",
+          "verifiedAt": "2026-11-05",
+          "kind": "reference",
+          "source": "owner-provided"
+        }
+      },
+      {
+        "platform": "payhip",
+        "url": "https://payhip.com/b/3FAqk",
+        "verification": "verified",
+        "verifiedAt": "2026-11-05",
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null,
+        "price": {
+          "amount": 4.9,
+          "currency": "USD",
+          "verifiedAt": "2026-11-05",
+          "kind": "reference",
+          "source": "owner-provided"
+        }
+      }
+    ],
+    "featured": false,
+    "linksFeatured": false,
+    "group": null,
+    "legacyPath": null,
+    "tags": [
+      "Excel",
+      "Negocios",
+      "Servicios"
+    ],
+    "editorialSource": "Funciones y requisitos: documentación comercial original. Precio y enlaces: propietario, 2026-11-05.",
+    "seo": {
+      "title": "Photography Job & Payment Tracker | Plantilla Excel",
+      "description": "Organizá clientes, sesiones y cobros de fotografía en Excel, con saldos automáticos y un panel de seguimiento."
+    }
+  },
+  {
+    "id": "service-estimate-profit-manager",
+    "title": "Service Estimate & Profit Manager",
+    "description": "Prepará presupuestos de servicios en Excel con medidas, materiales, mano de obra y seguimiento de rentabilidad.",
+    "subtitle": "Del costo estimado al resultado del trabajo",
+    "audience": "Profesionales y pequeños negocios que presupuestan trabajos de servicios.",
+    "benefits": [
+      "Calculá precios a partir de costos, margen o recargo.",
+      "Prepará cotizaciones para clientes sin mostrar costos internos ni márgenes.",
+      "Compará los costos reales y el ingreso final con el presupuesto del trabajo terminado."
+    ],
+    "details": [
+      "Plantilla Excel limpia, manual PDF en inglés, licencia e instrucciones de bienvenida, en un ZIP.",
+      "Medidas rectangulares, materiales, mano de obra, otros costos y panel de seguimiento.",
+      "Cotizaciones Summary o Detailed, con hasta 24 ítems y diseños A4 y Letter.",
+      "Capacidad: 100 clientes, presupuestos e ítems de catálogo por archivo."
+    ],
+    "requirements": [
+      "Microsoft Excel de escritorio para Windows, no incluido. Validado con Excel 16.0. Mac y Excel web no validados; sin compatibilidad ofrecida con Google Sheets ni LibreOffice.",
+      "Archivo XLSX y manual en inglés. Sin macros, complementos ni activación en línea.",
+      "Una moneda por archivo, sin conversión. Una tasa de impuesto por presupuesto. Las tablas protegidas no se expanden automáticamente.",
+      "Exportación a PDF manual desde Excel: seleccionar la cotización y usar las opciones de exportación. No incluye exportación automática."
+    ],
+    "longDescription": [
+      "Conectá medidas rectangulares, cantidades de materiales, mano de obra y otros costos con el presupuesto. Ingresá tus precios, rendimientos, desperdicios, contingencias, descuentos e impuestos.",
+      "Elegí una cotización resumida o detallada y registrá los costos reales al finalizar. Las imágenes usan ejemplos ficticios; el ZIP incluye la plantilla limpia, sin el archivo DEMO."
+    ],
+    "slug": "service-estimate-profit-manager",
+    "category": "herramientas-para-negocios",
+    "language": "en",
+    "format": "Excel XLSX",
+    "publicationStatus": "published",
+    "publicationSource": "owner-confirmed-2026-11-05",
+    "visibility": "public",
+    "image": {
+      "original": "/assets/images/products/service-estimate-profit-manager/cover.png",
+      "display": "/assets/images/products/service-estimate-profit-manager/cover-web.jpg",
+      "alt": "Imagen comercial original de Service Estimate & Profit Manager",
+      "width": 1200,
+      "height": 900
+    },
+    "expectedImage": "/assets/images/products/service-estimate-profit-manager/cover.png",
+    "offers": [
+      {
+        "platform": "etsy",
+        "url": "https://www.etsy.com/es/listing/4610518135/service-estimate-excel-template-job-cost",
+        "verification": "verified",
+        "verifiedAt": "2026-11-05",
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null,
+        "price": {
+          "amount": 6.9,
+          "currency": "USD",
+          "verifiedAt": "2026-11-05",
+          "kind": "reference",
+          "source": "owner-provided"
+        }
+      },
+      {
+        "platform": "payhip",
+        "url": "https://payhip.com/b/qg6cQ",
+        "verification": "verified",
+        "verifiedAt": "2026-11-05",
+        "verificationSource": "owner-provided",
+        "httpCheckedAt": null,
+        "price": {
+          "amount": 6.9,
+          "currency": "USD",
+          "verifiedAt": "2026-11-05",
+          "kind": "reference",
+          "source": "owner-provided"
+        }
+      }
+    ],
+    "featured": false,
+    "linksFeatured": false,
+    "group": null,
+    "legacyPath": null,
+    "tags": [
+      "Excel",
+      "Negocios",
+      "Servicios"
+    ],
+    "editorialSource": "Funciones y requisitos: documentación comercial original. Precio y enlaces: propietario, 2026-11-05.",
+    "seo": {
+      "title": "Service Estimate & Profit Manager | Plantilla Excel",
+      "description": "Prepará presupuestos de servicios en Excel con medidas, materiales, mano de obra y seguimiento de rentabilidad."
+    }
   }
 ]
