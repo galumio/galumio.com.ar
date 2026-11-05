@@ -1,0 +1,12 @@
+[
+  {
+    "id": "photography-job-payment-tracker",
+    "source": "PhotographyJobTracker/marketing/01_Excel_Tracker_Overview.jpg",
+    "sha256": "e6c3cfe7537e9d8972082f6f327a8f2f29572c0d61c05be06639aa18faf49906"
+  },
+  {
+    "id": "service-estimate-profit-manager",
+    "source": "ServiceEstimateManager/marketing/01_cover.png",
+    "sha256": "e4175d3fd450fed855b26d38cf28f911807bba9f2530c51c324e5833edf85085"
+  }
+]

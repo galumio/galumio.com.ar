@@ -28,5 +28,11 @@
     "title": "Educación y estudio",
     "short": "Prepará tu próximo desafío",
     "description": "Guías y herramientas prácticas para organizar el estudio y preparar exámenes."
+  },
+  {
+    "id": "herramientas-para-negocios",
+    "title": "Herramientas para negocios",
+    "short": "Organizá tu trabajo",
+    "description": "Plantillas Excel para gestionar trabajos, cobros, presupuestos y rentabilidad de pequeños negocios."
   }
 ]

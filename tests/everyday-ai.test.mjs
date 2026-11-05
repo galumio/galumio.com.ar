@@ -11,9 +11,9 @@ const read=route=>fs.readFileSync(path.join(distRoot,route),'utf8');
 const editions=[['ia-para-todos-los-dias','IA para el día a día','es','FmX4P','DvYKc','6a26d0232f6a3185a1e0180ca6b8dd88f6beb2e713e4da2b1c2e9ed7cf062ba2'],['everyday-ai','AI for Everyday Life','en','DvYKc','FmX4P','1934a1ac6ec321c2426c6db0e43152304538eac0e0905eb6f2a2460efaa19f32']];
 test('everyday AI: conserva íntegros los quince productos previos',()=>{
  const baseline=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/pre-everyday-ai-hashes.json'),'utf8'));
- assert.equal(Object.keys(baseline).length,15);assert.equal(products.length,17);
+ assert.equal(Object.keys(baseline).length,15);assert.equal(products.length,19);
  for(const [id,expected] of Object.entries(baseline))assert.equal(hash(JSON.stringify(products.find(p=>p.id===id))),expected,id);
- assert.equal(new Set(products.map(p=>p.id)).size,17);assert.equal(new Set(products.map(p=>p.slug)).size,17);
+ assert.equal(new Set(products.map(p=>p.id)).size,19);assert.equal(new Set(products.map(p=>p.slug)).size,19);
 });
 test('everyday AI: fichas independientes, precios centralizados y destinos exclusivos',()=>{
  for(const [id,title,language,code,other] of editions){
