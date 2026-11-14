@@ -17,7 +17,7 @@ function save(url,content,indexable=true){
  for(const image of plan.manifest) content=content.replace(new RegExp('(src="/assets/images/catalog/'+image.file.replaceAll('.','\\.')+'"[^>]*?)width="800" height="800"','g'),'$1width="'+image.width+'" height="'+image.height+'"');
  const target=inside(distRoot,url.slice(1)+'index.html');fs.mkdirSync(path.dirname(target),{recursive:true});fs.writeFileSync(target,content);routes.push({url,indexable});}
 function page(url,title,description,body,extra={}){save(url,layout({url,title,description,body,...extra}),!extra.noindex);}
-page('/','Historias, recursos e ideas digitales','Libros infantiles, guías, recursos de educación e IA, diseños digitales y proyectos de Galumio Studio.',homePage(data),{schema:{'@context':'https://schema.org','@type':'Organization',name:'Galumio Studio',url:origin}});
+page('/','Galumio Studio – Ideas para tu mundo','Libros, guías y recursos digitales para aprender, imaginar y crear.',homePage(data),{schema:{'@context':'https://schema.org','@type':'Organization',name:'Galumio Studio',url:origin}});
 page('/tienda/','Tienda','Explorá el catálogo de productos digitales de Galumio Studio: libros, guías y recursos creativos.',catalogPage(data));
 for(const c of data.categories)page('/'+c.id+'/',c.title,c.description,catalogPage(data,c));
 page('/apps-y-juegos/','Apps y juegos','Conocé Astria, Biblia Viva y los proyectos de Galumio, con información sobre sus estados.',projectsPage(data));

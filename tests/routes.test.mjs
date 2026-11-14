@@ -35,8 +35,17 @@ test('enlaces que abren pestañas protegen opener y avisan al lector',()=>{
 test('se preservan secciones históricas y se agrega privacidad de Biblia Viva',()=>{
  for(const route of legacy){const original=fs.readFileSync(path.join(root,'templates/legacy',route,'index.html'),'utf8');for(const m of original.matchAll(/\bid="([^"]+)"/g))assert.ok(read(route).includes(m[0]),route+' '+m[0]);}
  assert.ok(read('/biblia-viva/').includes('href="/biblia-viva/privacidad/"'));
- for(const id of ['productos','tecnologia','nosotros','contacto'])assert.ok(read('/').includes('id="'+id+'"'));
+ for(const id of ['inicio','destacados','amazon','redes','contacto'])assert.ok(read('/').includes('id="'+id+'"'));
 });
+test('portada simplificada: cuatro compras y navegación por anclas',()=>{
+ const html=read('/');
+ assert.equal((html.match(/aria-label="Comprar /g)||[]).length,4);
+ assert.ok(!/Astria|Biblia Viva/.test(html));
+ for(const text of ['USD 5,90','USD 4,90','Novelas de Gael Beltra','Libros de Galumio Studio','https://www.instagram.com/galumiostudio/','https://ar.pinterest.com/galumiostudio/'])assert.ok(html.includes(text));
+ for(const nav of html.matchAll(/<nav\b[^>]*>([\s\S]*?)<\/nav>/g))for(const link of nav[1].matchAll(/href="([^"]+)"/g))assert.ok(link[1].startsWith('#'));
+ for(const asin of ['B0HPZLBH4D','B0HNDY9RVM','B0HP83C3NP','B0HBND5DYW','B0HMJJFK2V','B0HMJN3QQK','B0HN2LDBXD','B0HN2DZ2GV','B0HMJRKF8X','B0HNGSM89H'])assert.ok(html.includes('https://www.amazon.com/dp/'+asin));
+});
+
 test('sitemap incluye todas las rutas y no usa ofertas inventadas',()=>{
  const xml=fs.readFileSync(path.join(distRoot,'sitemap.xml'),'utf8');for(const route of routes)assert.ok(xml.includes('<loc>https://galumio.com.ar'+route+'</loc>'));
  for(const p of data.products.filter(isPublicProduct)){
