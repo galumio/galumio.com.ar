@@ -71,7 +71,7 @@ Los precios históricos permanecen únicamente en las presentaciones antiguas, a
 
 ## Otras decisiones pendientes
 
-- Confirmar canal de contacto: contacto@galumio.com.ar, soporte@galumio.com.ar y contacto.aeternalabs@gmail.com aparecen en las fuentes. Se preservaron los destinos anteriores; el sitio comercial utiliza el contacto de la portada original.
+- Confirmar canal de contacto: soporte@galumio.com.ar, soporte@galumio.com.ar y contacto.aeternalabs@gmail.com aparecen en las fuentes. Se preservaron los destinos anteriores; el sitio comercial utiliza el contacto de la portada original.
 - Confirmar licencias por producto. No extender la licencia comercial del clipart a libros y guías.
 - Confirmar perfil oficial de Instagram antes de enlazarlo. /links/ ya puede utilizarse como destino de la biografía.
 - Verificar fuente de GitHub Pages, dominio y HTTPS antes de autorizar publicación. La salida segura ahora es dist/; la activación futura de GitHub Actions se detalla en DESPLIEGUE.md y aún no se realizó.
